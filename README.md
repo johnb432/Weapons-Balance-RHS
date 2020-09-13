@@ -1,0 +1,1312 @@
+# Changelog for Weapons balance 23.8.2020
+
+- New additions:
+    - 12 Gauge 8Rnd from vanilla (are put in the ACE fix)
+    - 50 & 100Rnd 7.62x51mm NATO M993 AP Belts
+    - Project Opfor Lee Enfield
+    - Change barrel option for AUGs and ACRs as ACE interaction if ACE is loaded
+    - Added Quick-change barrels for the ACR (works the same as the AUG barrels)
+    - Changed vanilla medical looting:
+        - First Aid Kits give now (previously 1 basic, 1 packing, 1 morph, 1 tour):
+            - 2 packing bandages
+            - 1 morphine
+            - 1 tourniquet
+        - Medikits give now (previously, 1 basic, 2 packing, 1 morph, 1 epi, 1 tour, 1 250 saline, 2 splint):
+            - 4 packing bandages
+            - 1 morphine
+            - 1 epinephrine
+            - 1 tourniquet
+            - 2 splints
+            - 3x 500ml blood
+
+- Tweaked Vanilla MAAWS HEAT rounds - need testing
+
+- From the last changelog:
+"- TO FIX: Ammo changes: RHS RGP rounds should autodetonate after about 950m"
+    - Removed it entirely. Rounds don't fly any further if you change timeToLive or thrust parameters in the configs.
+
+- Weapon changes:
+    - Vanilla:
+        - AK-15 GLs:
+            - Changed weight from 4.76kg to 4.99kg
+        - FN Minimi SPW:
+            - Changed weight from 6.85kg to 8.00kg
+        - HK416A5 11"s:
+            - Changed weight from 3.36kg to 3.12kg
+        - HK416A5 11" GLs:
+            - Changed weight from 4.79kg to 4.62kg
+        - HK416A5 14.5"s:
+            - Changed weight from 3.54kg to 3.49kg
+        - HK417A2 20"s:
+            - Changed weight from 4.22kg to 4.74kg
+        - MP5K:
+            - Changed weight from 1.81kg to 2.54kg
+        - P90:
+            - Changed weight from 1.81kg to 2.60kg
+        - PS90:
+            - Changed weight from 1.81kg to 2.85kg
+        - RPKs:
+            - Changed names to "RPKM"
+            - Changed icon for DUI to MG
+        - VS-121:
+            - Removed full auto firing mode
+
+    - NIArms:
+        - AAC Honey-Badger:
+            - Changed weight from 2.13kg to 2.77kg
+        - AI AWC-Ms:
+            - Changed weight from 5.99kg to 7.28kg
+        - AI AWMs:
+            - Changed weight from 6.49kg to 6.89kg
+        - AR15 .300 AAC:
+            - Changed weight from 2.49kg to 3.49kg
+        - AR15 Magpul & Sanitised Carbines:
+            - Changed weight from 2.18kg to 2.59kg
+        - Arsenal Inc. SLR107U:
+            - Changed weight from 2.54kg to 2.77kg
+        - Arsenal Inc. SLR107U (MTK):
+            - Changed weight from 2.72kg to 2.95kg
+        - BCM Black-Jack & Jack:
+            - Changed weight from 2.63kg to 3.22kg
+        - Bushmaster .300 AAC:
+            - Changed weight from 2.36kg to 3.57kg
+        - CAL C1A1 SLR:
+            - Added L1A1 scopes (changed rail)
+        - Colt M4A1 & Carryhandle:
+            - Changed weight from 2.63kg to 2.89kg
+        - Colt M4A1 Carbine (GL):
+            - Changed weight from 3.54kg to 4.39kg
+        - Colt M4LE Commando:
+            - Changed weight from 2.45kg to 2.72kg
+        - Colt RO727:
+            - Changed weight from 2.27kg to 3.15kg
+        - Colt RO7272 Carbine (GL):
+            - Changed weight from 3.54kg to 4.65kg
+        - Colt RO727 Commando:
+            - Changed weight from 2.72kg to 3.05kg
+        - Colt RO733 Commando:
+            - Changed weight from 2.18kg to 2.89kg
+        - DSArms SA58-OSW (GL):
+            - Changed weight from 5.90kg to 5.53kg
+        - Enfield L1A1:
+            - Added L1A1 scopes (changed rail)
+        - FN FAL 50.00 & Rhod. Spraycam:
+            - Added L1A1 scopes (changed rail)
+            - Changed weight from 4.08kg to 4.26kg
+        - FN FAL 50.00 (RIS):
+            - Changed weight from 4.49kg to 4.35kg
+        - FN FAL 50.61:
+            - Added L1A1 scopes (changed rail) (does not work for some reason)
+            - Changed name to "FN FAL 50.62"
+            - Changed weight from 3.81kg to 4.31kg
+        - FN FAL 50.61 (RIS):
+            - Changed name to "FN FAL 50.62 (RIS)"
+            - Changed weight from 4.35kg to 4.40kg
+        - FN LAR:
+            - Added L1A1 scopes (changed rail)
+            - Changed icon for DUI to MG
+            - Changed weight from 4.26kg to 4.99kg
+        - FN Minimi (Long):
+            - Changed weight from 6.53kg to 7.44kg
+        - FN Minimi (Long/RIS):
+            - Changed name to "FN Minimi (Long/Rail)"
+            - Changed weight from 6.58kg to 7.53kg
+        - FN Minimi Para (Long):
+            - Changed weight from 6.21kg to 7.28kg
+        - FN Minimi Para (Short/RIS):
+            - Changed name to "FN Minimi Para (Long/Rail)"
+            - Changed weight from 6.58kg to 7.37kg
+        - FN Minimi Para (Short):
+            - Changed weight from 6.21kg to 7.05kg
+        - FN Minimi Para (Short/RIS):
+            - Changed name to "FN Minimi Para (Short/Rail)"
+            - Changed weight from 6.58kg to 7.14kg
+        - FR Ordnance MC51:
+            - Changed weight from 3.63kg to 3.10kg
+        - G3/SG1:
+            - Changed weight from 4.35kg to 5.13kg
+        - G3/SG1 (RIS):
+            - Changed weight from 4.35kg to 5.22kg
+        - G36 MLI:
+            - Changed weight from 3.18kg to 3.82kg
+        - G36 MLI (GL):
+            - Changed weight from 4.54kg to 5.32kg
+        - G36A1:
+            - Changed weight from 3.58kg to 3.63kg
+        - G36A1 (GL):
+            - Changed weight from 4.85kg to 5.13kg
+        - G36C:
+            - Changed weight from 2.77kg to 2.98kg
+        - G36CV:
+            - Changed weight from 3.13kg to 2.98kg
+        - G36CV (TAC):
+            - Changed weight from 3.13kg to 3.07kg
+        - G36E:
+            - Changed weight from 3.63kg to 3.58kg
+        - G36E (Romi GL & GL):
+            - Changed weight from 4.85kg to 5.08kg
+        - G36K-KSK:
+            - Changed weight from 2.72kg to 3.38kg
+        - G36K MLI:
+            - Changed weight from 2.86kg to 3.56kg
+        - G36KA1:
+            - Changed weight from 3.13kg to 3.27kg
+        - G36KE:
+            - Changed weight from 3.13kg to 3.24kg
+        - G36KV:
+            - Changed weight from 2.72kg to 3.27kg
+        - G36KV (TAC):
+            - Changed weight from 2.72kg to 3.36kg
+        - G36V:
+            - Changed weight from 3.13kg to 3.63kg
+        - G36V (GL):
+            - Changed weight from 4.54kg to 5.13kg
+        - G36V (TAC):
+            - Changed weight from 3.13kg to 3.72kg
+        - G3A3 & Widegrip (RIS):
+            - Changed weight from 4.40kg to 4.49kg
+        - G3KA4 RAS:
+            - Changed weight from 4.63kg to 4.40kg
+        - G3KA4 RAS (GL):
+            - Changed weight from 5.44kg to 5.89kg
+        - HK33A2 (RIS):
+            - Changed weight from 3.81kg to 3.88kg
+        - HK33A2 (RIS/GL):
+            - Changed weight from 5.13kg to 5.38kg
+        - HK33KA3:
+            - Changed weight from 3.70kg to 3.90kg
+        - HK416 D10 (without GL):
+            - Changed weight from 3.00kg/3.25kg to 3.12kg
+        - HK416 D10 (GL):
+            - Changed weight from 4.52kg to 4.62kg
+        - HK416 D14.5 (without GL):
+            - Changed weight from 3.25kg to 3.49kg
+        - HK416 D14.5 (GL):
+            - Changed weight from 5.13kg to 4.99kg
+        - HK416 D16.5 (without GL):
+            - Changed weight from 3.61kg to 3.56kg
+        - HK416 D16.5 (GL):
+            - Changed weight from 5.08kg to 5.06kg
+        - HK416 D20:
+            - Changed weight from 3.61kg to 3.85kg
+        - HK416N:
+            - Changed weight from 3.27kg to 3.49kg
+        - HK53 (RAS):
+            - Changed weight from 3.08kg to 3.27kg
+        - MG36:
+            - Changed icon for DUI to MG
+            - Changed weight from 3.63kg to 3.81kg
+        - MP5:
+            - add 0.1lb/0.045kg for TAC variants
+            - MP5/10A4:
+                - Changed weight from 2.59/2.63kg to 2.92kg
+            - MP5A2:
+                - Changed weight from 2.27/2.63kg to 2.89kg
+            - MP5A3:
+                - Changed weight from 2.81/2.63kg to 3.10kg
+            - MP5A4:
+                - Changed weight from 2.63kg to 2.89kg
+            - MP5A5:
+               - Changed weight from 2.95/2.63kg to 3.10kg
+        - MP5K-PDW:
+            - Changed weight from 2.27kg to 2.54kg
+        - MP5N '9mmAR':
+            - Changed weight from 4.31kg to 4.46kg
+        - MP5SD5:
+            - Changed weight from 2.81kg to 3.20kg
+        - MP5SD6:
+            - Changed weight from 3.08kg to 3.40kg
+        - PSG1A1 (RIS):
+            - Changed weight from 6.40kg to 6.49kg
+        - Izhmash AK12:
+            - Changed name to "Izhmash AK-12"
+            - Changed weight from 2.99kg to 3.31kg
+        - Izhmash AK12 (GL):
+            - Changed name to "Izhmash AK-12 (GL)"
+            - Changed weight from 4.26kg to 4.81kg
+        - Izhmash AK12U:
+            - Changed name to "Izhmash AK-12K"
+            - Changed weight from 2.77kg to 3.04kg
+        - Izhmash AK:
+            - Changed name to "Izhmash AK-47"
+            - Changed weight from 3.13kg to 3.47kg
+        - Izhmash AK74M:
+            - Changed name to "Izhmash AK-74M"
+            - Changed weight from 3.08kg to 3.39kg
+        - Izhmash AK74M (GL):
+            - Changed name to "Izhmash AK-74M (GL)"
+            - Changed weight from 3.81kg to 4.89kg
+        - Izhmash AK74M (MTK):
+            - Changed name to "Izhmash AK-74M (MTK)"
+            - Changed weight from 3.27kg to 3.57kg
+        - Izhmash AK74 & (Worn):
+            - Changed name to "Izhmash AK-74N"
+            - Changed weight from 2.72kg to 3.31kg
+        - Izhmash AK74 (MTK):
+            - Changed name to "Izhmash AK-74N (MTK)"
+            - Changed weight from 2.90kg to 3.49kg
+        - Izhmash AKM:
+            - Changed name to "Izhmash AKMN"
+            - Changed weight from 2.81kg to 3.18kg
+        - Izhmash AKM (GL):
+            - Changed name to "Izhmash AKMN (GL)"
+            - Changed weight from 4.17kg to 4.68kg
+        - Izhmash AKM (MTK):
+            - Changed name to "Izhmash AKMN (MTK)"
+            - Changed weight from 2.99kg to 3.36kg
+        - Izhmash AKS74:
+            - Changed name to "Izhmash AKS-74N"
+            - Changed weight from 2.63kg to 2.99kg
+        - Izhmash AKS74 (GL):
+            - Changed name to "Izhmash AKS-74N (GL)"
+            - Changed weight from 3.81kg to 4.49kg
+        - Izhmash AKS74 (MTK):
+            - Changed name to "Izhmash AKS-74N (MTK)"
+            - Changed weight from 2.81kg to 3.18kg
+        - Izhmash AKS74U:
+            - Changed name to "Izhmash AKS-74UN"
+            - Changed weight from 2.36kg to 2.75kg
+        - Izhmash AKS74U (MTK):
+            - Changed name to "Izhmash AKS-74UN (MTK)"
+            - Changed weight from 2.54kg to 2.93kg
+        - Izhmash RPK12:
+            - Changed name to "Izhmash RPK-16"
+        - AEK-971S & (Worn):
+            - Changed weight from 2.99kg to 3.31kg
+        - AEK-971S (MTK):
+            - Changed weight from 3.18kg to 3.49kg
+        - Lithgow SLR:
+            - Added L1A1 scopes (changed rail)
+        - Lithgow SLR "Chopmod":
+            - Changed weight from 3.86kg to 4.17kg
+            - Added L1A1 scopes (changed rail)
+        - M134D "Epilator":
+            - Changed weight from 6.80kg to 26.85kg
+            - Added swappable barrel
+        - M14:
+            - Changed weight from 3.90kg to 4.09kg
+        - M14 (Bipod) & (Rail):
+            - Changed weight from 4.13/4.08kg to 4.18kg
+        - M14 (Bipod/Rail):
+            - Changed weight from 4.31kg to 4.27kg
+        - M14-DMR:
+            - Changed name to "M14-DMR"
+            - Changed weight from 4.94kg to 4.36kg
+        - M14-DMR (Rail):
+            - Changed name to "M14-DMR (Rail)"
+            - Changed weight from 5.26kg to 4.50kg
+        - M16A1:
+            - Changed weight from 2.86kg to 2.95kg
+        - M16A1 (GL):
+            - Changed weight from 2.86kg to 4.45kg
+        - M16A2:
+            - Changed weight from 2.86kg to 3.49kg
+        - M16A2 (GL):
+            - Changed weight from 3.95kg to 4.54kg
+        - M1903A1 {Sniper):
+            - Changed name to "M1903A1 (Sniper)"
+        - M21:
+            - Changed weight from 4.94kg to 5.26kg
+        - M21 (RIS):
+            - Changed name to "M21 (Rail)"
+            - Changed weight from 5.22kg to 5.35kg
+        - M249E1:
+            - Changed weight from 6.21kg to 7.48kg
+        - M249E2:
+            - Changed weight from 6.21kg to 7.53kg
+        - M249E2 (Short/RIS):
+            - Changed name to "M249E2 (Short/Rail"
+            - Changed weight from 6.58kg to 7.42kg
+        - M249E2 Para (Short):
+            - Changed name to "M249E2 (Short/Para)"
+            - Changed weight from 6.21kg to 7.14kg
+        - M249 PIP (Long/RIS):
+            - Changed name to "M249 PIP (Long/Rail)"
+            - Changed weight from 6.58kg to 7.62kg
+        - M249 Squantoon:
+            - Changed name to "M249 PIP (Long/Savit/'Squantoon')"
+            - Changed weight from 6.44kg to 7.60kg
+        - M249 PIP (Long/RIS):
+            - Changed name to "M249 PIP (Long/Savit)"
+            - Changed weight from 6.44kg to 7.60kg
+        - M249 PIP (Short/RIS):
+            - Changed name to "M249 PIP (Short/Savit/Rail)"
+            - Changed weight from 6.58kg to 7.28kg
+        - M27 IAR:
+            - Changed weight from 3.61kg to 3.59kg
+        - M4:
+            - Changed weight from 4.04kg to 3.31kg
+        - Mk 18 Mod 0:
+            - Changed weight from 2.45kg to 2.72kg
+        - Mk 46 Mod 0:
+            - Changed weight from 5.40kg to 7.00kg
+        - Mk 46 Mod 1:
+            - Changed weight from 5.08kg to 6.91kg
+        - Mk 48 Mod 0:
+            - Changed weight from 7.80kg to 8.28kg
+        - Mk 48 Mod 1:
+            - Changed weight from 8.39kg to 8.46kg
+        - Molot RPK74:
+            - Changed name to "Molot RPK-74N"
+            - Changed weight from 4.26kg to 4.58kg
+        - Molot RPK:
+            - Changed name to "Molot RPKN"
+            - Changed weight from 4.35kg to 4.85kg
+        - Remington ACR-E:
+            - Changed all GL names so that "GL" is after size
+            - Changed all "midlength" to "mid"
+            - Nearly all ACR's can now have their barrels changed with a conversion kit (under "all scopes" in the arsenal, like the AUG conversion kits).
+
+            - 5.56:
+                - ACR Carbine:
+                    - Changed weight from 3.99kg to 3.67kg
+                - ACR Carbine GL:
+                    - Changed weight from 5.06kg to 5.16kg
+                - ACR Compact:
+                    - Changed weight from 3.70kg to 3.43kg
+                - ACR Compact GL:
+                    - Changed weight from 5.06kg to 4.93kg
+                - ACR Long:
+                    - Changed weight from 4.49kg to 3.87kg
+                - ACR Mid:
+                    - Changed weight from 4.17kg to 3.75kg
+                - ACR Mid GL:
+                    - Changed weight from 5.06kg to 5.25kg
+            - 6.8:
+                - ACR Carbine:
+                    - Changed weight from 3.99kg to 3.76kg
+                - ACR Carbine GL:
+                    - Changed weight from 5.06kg to 5.25kg
+                - ACR Compact:
+                    - Changed weight from 3.70kg to 3.52kg
+                - ACR Compact GL:
+                    - Changed weight from 5.06kg to 5.02kg
+                - ACR Long:
+                    - Changed weight from 4.49kg to 3.96kg
+                - ACR Mid:
+                    - Changed weight from 4.17kg to 3.84kg
+                - ACR Mid GL:
+                    - Changed weight from 5.06kg to 5.34kg
+        - Mg M/62:
+            - Changed weight from 10.21kg to 11.59kg
+        - MG3:
+            - Changed weight from 9.98kg to 11.50kg
+        - MG3 KWS:
+            - Changed weight from 10.98kg to 11.68kg
+        - MG42 & Bakelite:
+            - Changed weight from 10.98kg to 11.54kg
+        - MG42 KWS:
+            - Changed weight from 8.75kg to 11.73kg
+        - RRA LAR-15:
+            - Changed weight from 4.08kg to 3.95kg
+        - Saiga:
+            - Changed weight from 3.18kg to 3.61kg
+        - SG510-4:
+            - Changed weight from 4.04kg to 4.37kg
+        - SG550-1 SP:
+            - Changed weight from 4.13kg to 7.03kg
+        - SG550-1 SP (RIS):
+            - Changed weight from 4.08kg to 7.12kg
+        - SG550 (GL):
+            - Changed weight from 5.76kg to 5.58kg
+        - SG550 (TAC):
+            - Changed weight from 4.72kg to 4.26kg
+        - SG551-LB:
+            - Changed weight from 3.36kg to 3.76kg
+        - SG551-LB (RIS):
+            - Changed weight from 3.27kg to 3.86kg
+        - SG551-LB (TAC):
+            - Changed weight from 3.99kg to 3.95kg
+        - SG551-LB (TAC/GL):
+            - Changed weight from 5.03kg to 5.44kg
+        - SG551-SB:
+            - Changed weight from 3.36kg to 3.63kg
+        - SG551-SB (RIS):
+            - Changed weight from 3.27kg to 3.72kg
+        - SG551-SB (TAC):
+            - Changed weight from 3.99kg to 3.81kg
+        - SG551-SB (TAC/GL):
+            - Changed weight from 5.03kg to 5.31kg
+        - SG553-LB:
+            - Changed weight from 3.36kg to 3.06kg
+        - SG553-LB (RIS):
+            - Changed weight from 3.27kg to 3.15kg
+        - SG553-LB (TAC):
+            - Changed weight from 3.99kg to 3.24kg
+        - SG553-SB:
+            - Changed weight from 3.18kg to 2.93kg
+        - SG553-SB (RIS):
+            - Changed weight from 3.27kg to 3.02kg
+        - SG553-SB (TAC):
+            - Changed weight from 3.65kg to 3.11kg
+        - SG553R-LB (RIS):
+            - Changed weight from 3.13kg to 3.20kg
+        - SG553R-LB (TAC):
+            - Changed weight from 3.99kg to 3.29kg
+        - SG553R-SB (RIS):
+            - Changed weight from 3.13kg to 3.06kg
+        - SG553R-SB (TAC):
+            - Changed weight from 3.99kg to 3.15kg
+        - Stgw.57 (RIS):
+            - Changed weight from 5.70kg to 5.79kg
+        - AUGA1s:
+            - Fixed black variants being not able to change barrels
+        - AUG-SR:
+            - Changed weight from 3.67kg to 3.58kg
+        - AUG-SR Carbine:
+            - Changed weight from 3.36kg to 3.27kg
+        - AUG-SR HBAR:
+            - Changed weight from 3.76kg to 3.90kg
+        - AUGA1 Para:
+            - Changed weight from 3.08kg to 3.31kg
+        - AUGA2:
+            - Changed weight from 3.67kg to 3.58kg
+        - AUGA2 Carbine:
+            - Changed weight from 3.36kg to 3.27kg
+        - AUGA2 HBAR:
+            - Changed weight from 3.76kg to 3.90kg
+        - AUGA2 Para:
+            - Changed weight from 3.08kg to 3.31kg
+        - AUGA3 (GL):
+            - Changed weight from 3.86kg to 5.17kg
+        - Stgw.58:
+            - Changed weight from 5.08kg to 4.45kg
+        - Valmet Mk.62:
+            - Changed weight from 3.18kg to 3.49kg
+        - XM177E2:
+            - Changed weight from 2.72kg to 2.95kg
+
+    - RHS:
+        - Foldable weapons:
+            - Fixed all folded weapon weights (weigh the same as their unfolded counterparts)
+            - Fixed weapons (M21A/S, Sa vz.58V, M70AB2, M92) whose recoil was the same as the unfolded weapons (set to either AKM or AK-74M folded recoil)
+        - MTZ & NPZ rail adapters:
+            - Changed weight from 0.62kg to 0.18kg
+        - AKs
+            - Weights of base weapons stayed the same
+            - Add all "modifiers" to get final weapon weight:
+                - add 0.4lb/0.18kg for NPZ/B-13 variants
+                - add 0.1lb/0.045kg for Zentico variants
+                - add 0.1lb/0.045kg for B33 variants
+                - add 0.2lb/0.91kg for UUK variants
+                - add 3.3lb/1.50kg for GP-25 variants
+                - add 0.1lb/0.045kg for N variants
+        - AKMN & NPZ:
+            - Added russian side attachments
+        - AS Val:
+            - Changed weight from 2.95kg to 2.49kg
+        - AS Val (GRIP):
+            - Changed weight from 2.95kg to 2.54kg
+        - AS Val (GRIP/NPZ):
+            - Changed weight from 2.95kg to 2.72kg
+        - AS Val (NPZ):
+            - Changed weight from 2.95kg to 2.68kg
+        - PM-63:
+            - Changed weight from 3.72kg to 3.45kg
+        - PP-2000 (folded):
+            - Weight displays wrongly in the arsenal; doesn't need fixing
+        - SVDM & Camo:
+            - Changed weight from 5.29kg to 4.70kg
+        - SVDM NPZ & Camo:
+            - Changed weight from 5.29kg to 4.88kg
+        - SVDS:
+            - Changed weight from 5.29kg to 4.08kg
+        - SVDS (NPZ)
+            - Changed weight from 5.29kg to 4.26kg
+        - VSS Vintorez (GRIP):
+            - Changed weight from 2.59kg to 2.64kg
+        - VSS Vintorez (GRIP/NPZ):
+            - Changed weight from 2.59kg to 2.82kg
+        - VSS Vintorez (NPZ):
+            - Changed weight from 2.59kg to 2.78kg
+
+        - HK416 D10 variants (without M320):
+            - Changed weight from 3.30kg to 3.12kg
+        - HK416 D10 M320:
+            - Changed weight from 4.80kg to 4.62kg
+        - M14 (Rail) variants:
+            - Changed weight from 4.32kg to 4.18kg
+        - M14 (RIS) variants:
+            - Changed weight from 4.32kg to 4.27kg
+        - M16A4 (IMOD Stock/M203):
+            - Changed weight from 4.75kg to 4.89kg
+        - M16A4 (Carryhandle/M203):
+            - Changed weight from 4.75kg to 4.89kg
+        - M240B & G:
+            - Changed icon for DUI to MG
+        - M249:
+            - Changed weight from 5.97kg to 7.48kg
+        - M249 PIP:
+            - Changed weight from 6.74kg to 7.62kg
+        - M249 PIP (Long/Savit & Ltwt):
+            - Changed weight from 6.64/7.32kg to 7.60kg
+        - M249 PIP (Long/Para):
+            -	Changed weight from 7.10kg to 7.55kg
+        - M249 PIP (Short/Savit & Ltwt):
+            - Changed weight from 6.55/6.77kg to 7.37kg
+        - M249 PIP (Short/Para):
+            -	Changed weight from 7.01kg to 7.33kg
+        - M249 PIP (RIS):
+            - Changed name to "M249 PIP (Long/RIS)"
+            - Changed weight from 7.32kg to 7.71kg
+        - M27 IAR (KAC Grip):
+            - Changed weight from 3.59kg to 3.73kg
+            - Removed all grips (left bipods only)
+        - M4 (M203):
+            - Changed weight from 4.67kg to 4.81kg
+        - M4 (Carryhandle/M203):
+            - Changed weight from 4.67kg to 4.81kg
+        - M4 (Carryhandle/M203S):
+            - Changed weight from 4.24kg to 4.67kg
+        - M4A1 (M203) & PIP (M203):
+            - Changed weight from 4.25kg to 4.39kg
+        - M4A1 (M203S):
+            - Changed weight from 4.24kg to 4.25kg
+        - M4A1 Block II M203 variants:
+            - Changed names to "M203S"
+        - M590A1 (Short):
+            - Changed weight from 3.25kg to 3.06kg
+        - M84:
+            - Changed icon for DUI to MG
+        - MG42:
+            - Changed icon for DUI to MG
+        - Mk 18 Mod 1 (all variants except M320):
+            - Changed weight from 2.47kg to 2.77kg
+        - Mk 18 Mod 1 (M320):
+            - Changed weight from 3.97kg to 4.22kg
+        - MP7A2:
+            - Changed weight from 1.10kg to 1.96kg
+        - SOCOM 16 (Rail):
+            - Changed weight from 3.77kg to 3.59kg
+        - M21A (Rail):
+            - Changed weight from 4.14kg to 4.32kg
+        - M21S (Rail):
+            - Changed weight from 4.06kg to 4.24kg
+        - M3A1 (SD):
+            - Changed weight from 3.60kg to 3.81kg
+        - M76:
+            - Changed weight from 4.34kg to 4.60kg
+        - Mosin Nagant M38 (Railed):
+            - Changed weight from 3.39kg to 3.48kg
+        - Mosin SBR:
+            - Changed weight from 3.39kg to 3.03kg
+
+        - FN Minimi Para (RIS):
+            - Changed weight from 6.78kg to 7.23kg
+        - M21A (Rail/PBG):
+            - Changed weight from 5.64kg to 5.82kg
+        - M70B1N:
+            - Changed weight from 4.16kg to 4.20kg
+
+    - UK3CB BAF:
+        - L110A1 5.56:
+            - Changed weight from 7.53kg to 7.44kg
+        - L111A1 & variants:
+            - Added 4x 12.7x99mm ACE CSW belts
+        - L119A1:
+            - Changed weight from 3.81kg to 3.42kg
+        - L119A1 CQB:
+            - Changed weight from 3.63kg to 3.26kg
+        - L119A1 UK UGL:
+            - Changed weight from 3.81kg to 4.91kg
+        - L119A1 with Front Grip:
+            - Changed weight from 3.81kg to 3.63kg
+        - L1A1s:
+            - Changed weight from 3.90kg to 4.31kg
+        - L22 & L22A2:
+            - Changed weight from 3.27kg to 3.54kg
+        - L85A3s:
+            - Changed weight from 4.40kg to 3.72kg
+        - L91A1:
+            - Changed weight from 3.08kg to 2.86kg
+        - L92A1:
+            - Changed weight from 2.81kg to 3.40kg
+
+    - UK3CB Factions:
+        - AK-47:
+            - Changed weight from 3.13kg to 3.47kg
+        - Bren Light Machine Gun:
+            - Added CBA magwell for .303 Bren mags
+            - Changed weight from 10.89kg to 8.69kg
+        - Colt Carbine:
+            - Changed name to "Colt M4 Carbine"
+            - Changed weight from 2.27kg to 3.31kg
+        - FN FAL 50.00:
+            - Changed weight from 4.08kg to 4.26kg
+        - FN FAL 50.61:
+            - Changed name to "FN FAL 50.62"
+            - Changed weight from 3.90kg to 4.31kg
+        - G3 Family:
+            - Added NIArms G3 scopes/remove vanilla rail whenever G3 rail was present
+            - Removed side attachments to weapons that don't have side rails          
+            - G3/SG1:
+                - Changed weight from 4.35kg to 5.13kg
+            - G3/SG1 (RIS):
+                - Changed weight from 4.35kg to 5.22kg
+            - G3A3 & Widegrip (RIS):
+                - Changed weight from 4.40kg to 4.49kg
+            - G3AKA4 (RIS):
+                - Changed name to "G3AKA4 RAS"
+                - Changed weight from 4.63kg to 4.40kg
+            - G3KA4 (RIS/GL):
+                - Changed name to "G3KA4 RAS (GL)""
+                - Changed weight from 5.44kg to 5.89kg
+            - PSG1A1:
+                - Changed weight from 7.17kg to 6.40kg
+            - PSG1A1 (RIS):
+                - Changed weight from 7.17kg to 6.49kg
+        - HK33A2 (RIS):
+            - Changed weight from 3.81kg to 3.88kg
+        - HK33A2 (RIS/GL):
+            - Changed weight from 5.13kg to 5.38kg
+        - HK33KA3:
+            - Changed weight from 3.70kg to 3.90kg
+        - Lee Enfield:
+            - Changed weight from 2.72kg to 3.95kg
+            - Added all bipods (changed rail)
+        - Lee Enfield (Rail):
+            - Changed weight from 2.81kg to 4.08kg
+        - M14:
+            - Added NIArms M14 scopes
+            - Changed weight from 3.90kg to 4.09kg
+        - M14 (RIS):
+            - Changed name to "M14 (Rail)"
+            - Changed weight from 4.08kg to 4.18kg
+        - M14 DMR:
+            - Changed weight from 4.94kg to 4.36kg
+        - M14 DMR (RIS):
+            - Changed name to "M14 DMR (Rail)"
+            - Changed weight from 5.26kg to 4.50kg
+        - M16A1:
+            - Changed weight from 2.72kg to 2.95kg
+        - M16A1 LSW:
+            - Changed weight from 2.72kg to 3.24kg
+        - M16A2:
+            - Changed weight from 3.31kg to 3.49kg
+        - M16A2 (GL):
+            - Changed weight from 4.75kg to 4.99kg
+        - M21:
+            - Changed weight from 4.94kg to 5.26kg
+        - M21 (RIS):
+            - Changed name to "M21 (Rail)"
+            - Changed weight from 5.22kg to 5.35kg
+        - M79:
+            - Fixed inheritance issue that came with update
+        - MG M/62:
+            - Changed weight from 10.21kg to 11.59kg
+        - MG3 KWS:
+            - Changed weight from 10.89kg to 11.68kg
+        - MG3:
+            - Changed weight from 9.98kg to 11.50kg
+        - MP5:
+            - Changed weight from 3.08kg to 3.10kg
+        - MP5 suppressed:
+            - Changed weight from 2.81kg to 3.40kg
+        - RPK:
+            - Changed weight from 4.35kg to 4.81kg
+            - Fixed wrong inheritance that was introduced in the first version of FK balance (can't take picatinny accessories anymore)
+        - RPK-74:
+            - Changed names to "RPK-74N"
+            - Changed weight from 4.26kg to 4.58kg
+        - Sterling:
+            - Changed weight from 2.27kg to 2.72kg
+        - SVD:
+            - Changed weight from 3.49kg to 3.70kg
+        - SVD NPZ:
+            - Changed name to "SVD (NPZ)"
+            - Changed weight from 5.29kg to 3.88kg
+
+    - SFP:
+        - Ak 4B & 4C:
+            - Changed weight from 4.26kg to 4.35kg
+        - Ak 4B M203:
+            - Changed weight from 5.76kg to 5.85kg
+        - Ak 4D:
+            - Changed weight from 4.26kg to 4.45kg
+        - Ak 5 M203:
+            - Changed weight from 5.26kg to 5.40kg
+        - Ak 5B:
+            - Changed weight from 3.80kg to 4.80kg
+        - Ak 5C (Alt) & (Alt/Black)
+            - Changed weight from 3.99kg to 3.86kg
+        - G36C:
+            - Changed weight from 2.27kg to 2.98kg
+        - Ksp 58B:
+            - Changed icon for DUI to MG
+            - Changed weight from 7.48kg to 11.79kg
+        - Ksp 58B2:
+            - Changed weight from 7.48kg to 11.88kg
+        - Ksp 90B:
+            - Changed icon for DUI to MG
+            - Changed weight from 6.35kg to 7.14kg
+        - Ksp 90C:
+            - Changed weight from 6.35kg to 7.33kg
+        - MP5:
+            - Changed weight from 3.08kg to 2.85kg
+        - MP5 (Rail):
+            - Changed weight from 3.08kg to 2.89kg
+        - Psg 90 & Camo:
+            - Changed weight from 5.99kg to 6.89kg
+
+    - PO:
+        - Lee Enfield (Rail):
+            - Changed weight from 3.95kg to 4.04kg
+
+- MagazineWells:
+    - CBA:
+         - 12 Gauge, 8 Rnds:
+             - Added 2x Vanilla/custom rounds
+         - .303 Bren:
+             - Added 9x UK3CB 30Rnd mags
+         - .303 Lee Enfield:
+             - Added 9x UK3CB 10Rnd clips
+         - 5.45x39 RPK:
+             - Added 13x UK3CB 60Rnd mags
+         - 5.56x45 STANAG:
+             - Added 9x UK3CB 20Rnd mags
+             - Added 9x UK3CB 30Rnd mags
+         - 7.62x39 AK:
+             - Added 6x Vanilla 30Rnd mags
+             - Added 9x UK3CB 30Rnd mags
+         - 7.62x39 RPK:
+             - Added 8x Vanilla 75Rnd mags
+             - Added 9x UK3CB 45Rnd mags
+             - Added 13x UK3CB 75Rnd drum mags
+         - 7.62x51 FAL:
+             - Added 9x UK3CB 20Rnd mags
+         - 7.62x51 G3:
+             - Added 9x UK3CB 20Rnd mags
+         - 7.62x51 G3 L:
+             - Added 13x UK3CB 50Rnd mags
+         - 7.62x51 Links:
+             - Added RHS 50Rnd M993AP belt
+             - Added RHS 100Rnd M993AP belt
+             - Added 13x UK3CB 100Rnd belts
+         - 7.62x51 M14:
+             - Added 9x UK3CB 20Rnd mags
+         - 7.62x51 MG3:
+             - Added 13x UK3CB 50Rnd Belts
+             - Added 13x UK3CB 100Rnd Belts
+             - Added 13x UK3CB 250Rnd Belts
+         - 7.62x54R SVD:
+             - Added 9x UK3CB 10Rnd mags
+         - 9x18 Makarov:
+             - Added Vanilla 10Rnd mag
+         - 9x19 MP443:
+             - Added 4x 16Rnd Vanilla mags
+         - 9x19 MP5:
+             - Added 9x UK3CB 30Rnd mags
+         - 9x19 Sten:
+             - Added 9x UK3CB 34Rnd mags
+
+- Weight balancing:
+    - Vanilla:
+        - 10Rnd 7.62x54R from 0.36kg to 0.23kg
+    - RHS:
+        - All RHS VOG grenades from 0.19kg to 0.18kg
+        - Both RHS SMAW rounds from 5.98kg/6.19kg to 4.54kg
+        - 50Rnd 7.62x51mm M993AP to 1.15kg
+        - 10Rnd 7.62x54R 7N14 from 0.27kg to 0.23kg
+    - UK3CB BAF:
+        - All (3x) 10Rnd 7.62x51mm L42A1 mags from 0.27kg to 0.40kg
+        - 100Rnd 12.7x99mm belt from 9.98kg to 4.35kg
+    - UK3CB Factions:
+        - All (9x) 30Rnd 7.62x39mm AK mags from 1.13kg to 0.61kg
+        - All (9x) 45Rnd 7.62x39mm AK mags from 1.59kg to 0.91kg
+        - All (13x) 75Rnd 7.62x39mm RPK drum mags 2.22kg from to 1.53kg
+        - All (9x) 20Rnd 5.56x45mm STANAG mags from 0.42kg to 0.28kg
+        - All (9x) 20Rnd 7.62x51mm FAL mags from 0.91kg to 0.75kg
+        - All (9x) 20Rnd 7.62x51mm G3 mags from 0.91kg to 0.77kg
+        - All (13x) 50Rnd 7.62x51mm G3 drum mags from 2.24kg to 1.36kg
+        - All (9x) 20Rnd 7.62x51mm DMR mags from 0.91kg to 0.77kg
+        - All (9x) 20Rnd 7.62x51mm M14 mags from 0.91kg to 0.74kg
+        - All (13x) 100Rnd 7.62x51mm M60 belts from 2.64kg to 1.54kg
+        - All (13x) 50Rnd 7.62x51mm MG3 belts from 0.91kg to 1.20kg
+        - All (13x) 100Rnd 7.62x51mm MG3 belts from 1.81kg to 1.54kg
+        - All (13x) 250Rnd 7.62x51mm MG3 belts from 4.54kg to 3.27kg
+        - All (13x) 60Rnd 5.45x39mm AK mags from 1.36kg to 0.80kg
+        - All (9x) 10Rnd .303/7.7mm Lee Enfield from 0.07kg to 0.20kg
+    - ACE:
+        - 10Rnd 7.62x54R from 0.36kg to 0.23kg
+
+- Models/Icons/Names:
+    - Vanilla:
+        - Changed count of bullets of 16Rnd 9x21mm mag from 17 to 16
+    - NIArms:
+        - Added magazines to model switch list for M249s & FN Minimis (if it's a magazine it will show as a magazine, else it will show as a belt)
+    - RHS:
+        - Changed model and icon of 100Rnd 7.62x51mm belt
+    - UK3CB BAF:
+        - Changed names of 12 Gauge 8Rnd buckshot and slugs
+        - Unhid 100Rnd 12.7x99mm belt in arsenal
+    - SFP:
+        - Changed names of 12 Gauge 8Rnd buckshot and slugs
+        - Flashlight and Image intensifier now display "PEWPEWPEW" in arsenal
+
+# Changelog for Weapons balance 29.7.2020
+
+- New additions:
+    - 12Rnd NIArms 12 Gauge Saiga magazines
+    - 8Rnd ACE 12 Gauge shells
+    - 5Rnd NIArms .30-06 tracer clip
+    - 200Rnd RHS 5.56 tracer box
+    - RHS 7VM rocket
+    - From "dormant" code in NIArms:
+        - 3x 30Rnd .303 Bren mags
+        - 3x 10Rnd .303 Lee Enfield mags
+        - 3x 5Rnd 7.92 Kar98 mags
+        - 2x 50Rnd 5.7 P90 mags
+        - 4x 100Rnd 7.62x54R PKM belts
+        - 4x 250Rnd 7.62x54R PKM belts
+        - 3x 75Rnd 7.92 MG34/MG42 drum mags
+        - 4x 5Rnd .50 BMG M107 mags
+
+- TO FIX: Ammo changes:
+    - RHS RGP rounds should autodetonate after about 950m
+
+- Weapon changes:
+    - Vanilla:
+        - FN Minimi SPW:
+            - Added swappable barrel
+            - Changed weight from 11.79kg to 6.85kg
+        - AK-15s:
+            - Changed weight from 6.35kg to 3.49kg
+        - AK-15 GLs:
+            - Changed weight from 7.26kg to 4.76kg
+        - AK-15Ks:
+            - Changed weight from 4.99kg to 3.25kg
+        - RPKs:
+            - Changed weight from 7.71kg to 4.99kg
+        - MSBS Grots:
+            - Changed weight from 4.08kg to 3.63kg
+        - MSBS Grot GLs:
+            - Changed weight from 5.22kg to 4.79kg
+        - MSBS Grot MRs:
+            - Changed weight from 4.99kg to 4.13kg
+        - MSBS Grot SGs:
+            - Changed weight from 5.44kg to 4.99kg
+        - M14 (classic):
+            - Changed weight from 6.35kg to 4.17kg
+        - QBU-88s:
+            - Changed weight from 5.44kg to 4.08kg
+        - AKM:
+            - Changed weight from 5.44kg to 3.13kg
+        - AKS-74U:
+            - Changed weight from 3.63kg to 2.70kg
+        - HK416A5 11"s:
+            - Changed weight from 4.08kg to 3.36kg
+        - HK416A5 11" GLs:
+            - Changed weight from 4.99kg to 4.79kg
+        - HK416A5 14.5"s:
+            - Changed weight from 4.99kg to 3.54kg
+        - HK417A2 20"s:
+            - Changed weight from 7.26kg to 4.22kg
+        - QBZ-95-1s:
+            - Changed weight from 3.63kg to 3.27kg
+        - QBZ-95-1 LSWs:
+            - Changed weight from 4.54kg to 3.90kg
+        - Type 115s:
+            - Changed weight from 6.35kg to 4.99kg
+        - Kozlice 12G
+            - Changed weight from 4.99kg to 3.63kg
+
+    - NIArms:
+        - H&K MP5N '9mmAR':
+            - Added weight (3.81kg)
+            - Changed sound to MP5 sound
+        - AUGs:
+            - Added semiautomatic firing mode
+        - FALs:
+            - Added CBA Magwell for large FAL mags (30Rnd-50Rnd)
+        - AI AWMs:
+            - Changed weight from 5.76kg to 6.49kg
+        - Stgw 57s:
+            - Changed weight from 4.04kg to 5.7kg
+        - Stgw 57 Commando:
+            - Changed weight from 3.40kg to 4.99kg
+
+    - RHS:
+        - SVDs:
+            - Added 2 NIArms russian scopes
+        - MG42:
+            - Added CBA Magwells for 7.92 boxes and belts
+        - M590A1 long:
+            - Added CBA Magwell for 8Rnd 12 Gauge shells
+        - M2010 ESR:
+            - Added CBA Magwell for .300WM
+        - M40A5:
+            - Added CBA Magwell for 7.62x51 ACIS mags
+        - G36s:
+            - Added CBA Magwell for 150Rnd 5.56 mags (since 2 were already added)
+        - Mk 11:
+            - Added CBA Magwells for SR-25 and AR10 mags
+        - Type 94 Nambu:
+            - Removed MP-443 9mm mag
+            - Added CBA Magwell for 8x22mm Type 14 mags
+        - RPG7V2:
+            - PG7V and PG7VM rounds should self-destruct after around 750 meters
+
+    - UK3CB BAF:
+        - L110 7.62:
+            - Added CBA Magwells for 7.62 boxes and belts
+            - Added swappable barrel
+        - L110AX 5.56:
+            - Added CBA Magwells for 5.56 boxes, belts and mags
+            - Added swappable barrel
+        - L118A1s:
+            - Added 4x ACE 10 Rnd mags to compatible ammo
+        - L128A1:
+            - Added CBA Magwells for 12 Gauge rounds
+        - L129A1:
+            - Added CBA Magwells for SR-25 and AR10 mags
+        - L1A1s:
+            - Added CBA Magwells for FAL mags
+            - Added CBA Magwell for 30Rnd FAL mags
+        - L7A2:
+            - Added CBA Magwells for 7.62 boxes and belts
+            - Added swappable barrel
+            - Added CBA Magwells for 7.62 boxes and belts for tripod variant
+        - L85A3s:
+            - Added CBA Magwells for 5.56 mags and drums
+        - L86A2 LSW:
+            - Added CBA Magwells for 5.56 drums
+        - L91A1/L92A1:
+            - Added CBA Magwells for 9mm MP5 mags
+        - L105A1/L105A2:
+            - Added CBA Magwell for P226 mags
+        - L107A1:
+            - Added CBA Magwells for P226 and P228 mags
+        - L117A1:
+            - Added CBA Magwells for P226 and P228 mags
+        - L131A1:
+            - Added CBA Magwell for Glock mags
+        - L9A1:
+            - Added 13Rnd BAF mag
+            - Added 15Rnd BAF mag
+
+    - UK3CB Factions:
+        - M16s (Colt Carbine, M16A1 & M16A2):
+            - Added CBA Magwells for 5.56 mags and drums
+            - Changed names of M16s to be capitalized
+        - SVD:
+            - Added 2x NIArms scopes
+        - FALs:
+            - Added CBA Magwells for FAL mags
+            - Added CBA Magwell for 30Rnd FAL mags
+        - Lee Enfield:
+            - Added CBA Magwell for .303 Lee Enfield
+        - M79:
+            - Added CBA Magwells for 40mm UGL rounds
+        - M14s & M21s:
+            - Added CBA Magwells for M14 mags
+            - Added 3x NIArms scopes for M14
+        - M60 (including mounted variant):
+            - Changed weight from 7.62kg to 10.48kg
+            - Added CBA Magwells for 7.62 boxes and belts
+        - RPK:
+            - Changed weight from 3.63kg to 4.35kg
+            - Added CBA Magwells for 7.62 mags and drums
+            - Added semiautomatic firing mode
+
+    - SFP:
+        - Flashlight 3:
+            - Set weight to 0.91kg
+        - Image intensifier:
+            - Set weight to 0.91kg
+        - Ak 4B,B M203, C, D:
+            - Somewhat fixed the issue when aiming down gun if scope isn't present
+            - Ak 4 M203 & Ak 4B M203: Changed weight from 4.26kg to 5.76kg
+        - Pansarskott 68 & 86:
+            - Removed RPG32 rounds
+
+    - PO:
+        - Lee Enfield:
+            - Added CBA Magwell for .303 Lee Enfield clips
+
+- MagazineWells:
+    - CBA:
+        - 12 Gauge, 2 Rnds:
+            - Added 2x vanilla 2Rnd
+        - 12 Gauge, 6 Rnds:
+            - Added 2x vanilla 6Rnd
+            - Added 6x ACE 6Rnd
+        - 12 Gauge, 8 Rnds:
+            - Added UK3CB Slugs and Pellets
+            - Added SFP Slugs and Pellets
+            - Added 5x RHS 8Rnd shells
+            - Added 6x ACE/Custom 8Rnd shells
+        - 12 Gauge SAIGA magazines:
+            - Added 2x NIArms 8Rnd mags
+            - Added 2x NIArms/custom mags: 12Rnd slugs and 12Rnd pellets
+        - 30.06 Springfield:
+            - Added NIArms 5Rnd clip (FMJ)
+            - Added NIArms/custom 5Rnd clip (tracer)
+        - .300WM
+            - Added RHS 5Rnd mag
+        - .303 Bren:
+            - Added 3x NIArms/custom mags
+        - .303 Lee Enfield:
+            - Added UK3CB clip
+            - Added Project Opfor clip
+            - Added 3x NIArms/custom clips
+        - 40mm GP:
+            - Added 14x RHS grenades
+        - 40mm M203:
+            - Added 15x UK3CB grenades
+            - Added 13x RHS grenades
+        - .50cal BMG:
+            - Added SFP Ag90 mag
+            - Added 2x UK3CB mags
+            - Added 4x NIArms/custom mags
+        - 5.56x45 Minimi:
+            - Added RHS 200Rnd M249 Box M856A1 (Tracer)
+            - Added 3x 100Rnd UK3CB belts
+            - Added 3x 200Rnd UK3CB belts
+        - 5.56x45 SG550:
+            - Added EPR tracers every 4 mag
+        - 5.56x45 Stanag:
+            - Added 7x vanilla 30Rnd sand mags
+            - Added 5x UK3CB mags
+        - 5.56x45 XL Stanag:
+            - Added 4x vanilla 150Rnd drum mags
+        - 5.56x45 L Stanag
+            - Added 5x NIArms 50Rnd drum mags
+        - 5.7x28 P90:
+            - Added 2x NIArms/custom 50Rnd mags
+        - 6.5x39 Katiba:
+            - Added ACE 30Rnd Tracer IR-DIM mag
+        - 6.5x39 MX:
+            - Added 3x ACE 30Rnd mags
+        - 6.5x39 MX XL:
+            - Added 100Rnd ACE IR-DIM mag
+        - 7.62x39 RPK:
+            - Added 2x UK3CB 75Rnd drum mags
+        - 7.62x51 AICS: (see Psg 90 for all ammo)
+            - Added 3x RHS 5Rnd mags
+            - Added 3x RHS 10Rnd mags
+            - Added 3x SFP 5Rnd mags
+        - 7.62x51 FAL:
+            - Added 5x UK3CB 20Rnd mags
+        - 7.62x51 FAL L:
+            - Added 5x NIArms 50Rnd mags
+        - 7.62x51 G3:
+            - Added SFP smoke rifle grenade
+        - 7.62x51 G3 L:
+            - Added 5x NIArms 50Rnd mags
+        - 7.62x51 Links:
+            - Added 5x RHS 50Rnd belts
+            - Added 5x RHS 100Rnd belts
+            - Added 5x UK3CB 100Rnd belts
+            - Added 3x UK3CB 200Rnd belts
+        - 7.62x51 M14:
+            - Added vanilla 10Rnd mag
+            - Added vanilla 20Rnd mag
+            - Added 5x UK3CB 20 Rnd mags
+        - 7.62x51 M14 L:
+            - Added 5x 50Rnd mags
+        - 7.62x51 SR25:
+            - Added vanilla 7.62x51 20Rnd mag
+            - Added 4x RHS 20Rnd mags
+            - Added 3x UK3CB 20Rnd mags
+            - Added 7x ACE 20Rnd mags
+        - 7.62x54R Links:
+            - Added 2x vanilla 150Rnd belts
+            - Added 5x RHS 100Rnd boxes
+            - Added RHS 250Rnd box
+            - Added 4x NIArms/custom 100Rnd boxes
+            - Added 4x NIArms/custom 250Rnd boxes
+        - 7.92x57 K98:
+            - Added 3x NIArms/custom 5Rnd clips
+        - 7.92x57 Links:
+            - Added 4x RHS 50Rnd drums
+            - Added 4x RHS 296Rnd belts
+            - Added 3x NIArms/custom 75Rnd drums
+        - 8x22mm Type 14:
+            - Added RHS 6Rnd Type 94 mag
+        - 9mm MP5:
+            - Added 2x UK3CB 30Rnd mags
+            - Added 2x SFP 30Rnd mags
+        - 9mm P226:
+            - Added UK3CB 15Rnd mag
+            - Added SFP 15Rnd mag
+        - 9mm P228:
+            - Added UK3CB 13Rnd mag
+            - Added UK3CB 15Rnd mag
+        - 9mm Glock:
+            - Added UK3CB 17Rnd mag
+    - Vanilla
+        - 7.62x39:
+            - Added 2x UK3CB 75Rnd drum mags
+        - 6.5x39 Katiba:
+            - Added ACE Tracer IR-DIM mag
+        - 7.62x51 M240:
+            - Added 2x vanilla 150Rnd belts
+            - Added 5x NIArms 100Rnd belts
+            - Added 5x NIArms 200Rnd belts
+            - Added 5x UK3CB 100Rnd belts
+            - Added 3x UK3CB 200Rnd belts
+        - 5.56x45 M249:
+            - Added RHS 200Rnd M249 Box M856A1 (Tracer)
+            - Added 3x 100Rnd UK3CB belts
+            - Added 3x 200Rnd UK3CB belts
+        - 6.5x39 MX:
+            - Removed ACE Tracer IR-DIM mag (added to 6.5 Katiba)
+        - 7.62x54R Links:
+            - Added 2x vanilla 150Rnd belts
+            - Added RHS 250Rnd box
+            - Added 4x NIArms/custom 100Rnd boxes
+            - Added 4x NIArms/custom 250Rnd boxes
+        - RPG 7:
+            - Added RHS 7VM round
+        - 5.56x45 Stanag:
+            - Added 7x vanilla sand mags
+            - Added 5x UK3CB mags
+        - 40mm UGL:
+            - Added 15x UK3CB 40mm grenades
+        - VOG 40mm:
+            - Added 8x NIArms 40mm grenades
+
+
+- Weight balancing: (make sure that AI units are compatible if weights are increased!!; might throw up errors when spawning them in; marked with ! at beginning
+This is why I didn't really mess around with RHS weights, seeing as a lot of units rely on RHS)
+    - Vanilla:
+        - Both 2Rnd 12 Gauge shotgun shells from 0.27kg to 0.10kg
+        - Both 6Rnd 12 Gauge shotgun shells from 0.54kg to 0.30kg
+        - ! All (6x) 150 Rnd Vanilla 5.56 drum mag from 1.36kg to 1.91kg
+
+    - NIArms: (no units rely on NIArms, so not worried about units)
+        - All (3x) PVS-4 nightvision scopes from 2.18kg to 1.63kg
+        - All (5x) 50Rnd NIArms Stanag 5.56 drum mags from 1.97kg or 2.02kg to 1.02kg
+        - Both 5Rnd NIArms M1903 clips from 0.36kg to 0.13kg
+        - All (3x) 30Rnd NIArms .300AAC mags from 0.36kg to 0.45kg
+        - 50Rnd NIArms .300AAC TAC-TX drum mag from 0.64kg to 1.13kg
+        - All (5x) 50Rnd 7.62 NIArms FAL drum mags from 0.76kg or 2.24kg to 1.36kg
+        - All (5x) 50Rnd 7.62 NIArms G3 drum mags from 0.76kg or 2.24kg to 1.36kg
+        - All (5x) 50Rnd 7.62 NIArms M14 drum mags from 1.45kg to 1.36kg
+        - All (5x) 50Rnd NIArms MG3 belts from 0.91kg to 1.20kg
+        - All (5x) 100Rnd NIArms MG3 belts from 2.18kg to 1.54kg
+        - All (5x) 250Rnd NIArms MG3 belts from 4.99kg to 3.27kg
+        - All (4x) 50Rnd NIArms MG42 7.92 belts from 1.09kg or 1.81kg to 1.41kg
+        - 3x 100Rnd NIArms MG42 7.92 belts from 3.27kg to 2.18kg
+        - All (4x) 200Rnd NIArms MG42 7.92 belts from 5.44kg to 3.36kg
+        - All (8x) 30Rnd NIArms G36 5.56 mags from 0.50kg - 0.59kg to 0.36kg
+        - All (3x) 100Rnd NIArms G36 5.56 drum mags from 2.09kg to 1.6kg
+        - All (4x) 200Rnd NIArms M249 5.56 belts from 3.13kg to 2.36kg
+        - All (4x) 100Rnd NIArms M60 7.62 belts from 2.64kg to 1.54kg
+        - All (4x) 200Rnd NIArms M60 7.62 belts from 5.28kg to 2.81kg
+        - All (7x) 30Rnd NIArms SIG SG550 mags from 0.32kg to 0.42kg
+        - All (3x) 24Rnd NIArms Stgw 57 7.5 mags from 0.64kg to 0.91kg
+        - 4x 20Rnd NIArms SIG SG510 mags from 0.54kg to 0.74kg
+        - All (6x) 5Rnd NIArms AWM mags from 0.64kg to 0.12kg
+
+    - RHS:
+        - 6B27Ms with both ESS & Balaclava from 1.56kg to 1.81kg
+        - L2A2 FAL scope from 0.80kg to 0.32kg
+        - All (13x) RHS 40mm grenades from 0.23kg to 0.18kg
+        - ! All (6x) 30Rnd RHS G36 5.56 mags from 0.27kg to 0.36kg
+        - All (5x) 100Rnd RHS 7.62 PKM mags from 2.92kg to 1.95kg
+        - 250Rnd RHS 7.62 M84/PKM mag from 5.84kg to 4.13kg
+        - 25Rnd RHS 7.92 MP44 mag from 0.53kg to 0.45kg
+        - 24Rnd RHS Stgw 57 7.5 mag from 0.35kg to 0.91kg
+        - 50Rnd RHS MG42 belts from 0.81kg to 1.41kg
+        - All (4x) 30Rnd RHS 5.45 2x mags from 0.59kg to 0.41kg (it's only cosmetic)
+        - Both 20Rnd RHS 5.56 2x mags from 0.42kg to 0.28kg (it's only cosmetic)
+
+    - UK3CB BAF:
+        - ! All (3x) 20Rnd UK3CB 7.62 FAL mags from 0.54kg to 0.74kg
+        - ! All (3x) 20Rnd UK3CB 7.62 L129A1 mags from 0.54kg to 0.74kg
+        - All (3x) 100Rnd UK3CB 7.62 M60 belts from 2.68kg to 1.45kg
+        - All (3x) 200Rnd UK3CB 7.62 M60 belts from 5.40kg to 2.81kg
+        - All (3x) 100Rnd UK3CB 5.56 M249 belts from 1.59kg to 1.22kg
+        - All (3x) 200Rnd UK3CB 5.56 M249 belts from 3.13kg to 2.36kg
+        - Both 8Rnd 12 Gauge shells from 0.27kg to 0.40kg
+
+    - UK3CB factions:
+        - Both 20Rnd UK3CB 5.56 mags from 0.42kg to 0.28kg
+        - ! Both 20Rnd UK3CB 7.62 FAL mags from 0.54kg to 0.74kg
+        - Both 75Rnd UK3CB 7.62 RPK drum mag from 2.22kg to 1.65kg
+        - Both 100Rnd UK3CB 7.62 M60 belts from 2.64kg to 1.54kg
+        - 10Rnd UK3CB .303 Lee Enfield from 0.07kg to 0.27kg
+
+    - SFP:
+        - ! All (3x) 49Rnd 7.62 belts from 0.73kg to 1.20kg
+        - ! 100Rnd 7.62 belt from 1.13kg to 1.54kg
+        - ! 249Rnd 7.62 belt from 1.81kg to 3.27kg
+        - ! 30Rnd 9mm FMJ mag from 0.36kg to 0.45kg
+        - ! Both 200Rnd 5.56 M249 belts from 1.81kg to 2.36kg
+        - ! All (6x) 30Rnd 5.56 AK5 mags from 0.36kg to 0.42kg
+        - ! All (4x) 20Rnd 7.62 AK4 mags from 0.54kg to 0.74kg
+
+    - ACE:
+        - All (4x) 30Rnd 5.56 Stanag mags from 0.36kg to 0.42kg
+        - All (4x) 10Rnd 7.62 Stanag mags from 0.36kg to 0.40kg
+        - All (7x) 20Rnd 7.62 Stanag mags from 0.54kg to 0.74kg
+        - All (6x) 2Rnd 12 Gauge shells from 0.27kg to 0.10kg
+        - All (6x) 6Rnd 12 Gauge shells from 0.54kg to 0.30kg
+
+    - PO:
+        - 10Rnd PO .303 Lee Enfield from 0.54kg to 0.27kg
+
+- Models/Icons/Names:
+    - Vanilla:
+        - Changed descriptions and names of 25Rnd .45ACP mags
+        - Added models to 30Rnd 9mm mags (ones compatible with MP5 from NIArms)
+        - Added models to 150Rnd 7.62x51 belts
+        - Added models to 200Rnd 5.56x45 boxes
+        - Changed names of AK12 mags to AK-15 mags
+        - Changed names of Promet mags to MSBS mags
+        - Changed names of all MX Khaki weapons (removed the "6.5 mm" in the name)
+
+    - NIArms:
+        - Changed icon of 1 SAW grip
+        - Changed holding animation of both SAW grips
+        - Changed holding animation of AFG and VFG
+        - Changed icon of UTG bipod
+        - Changed model & icon of 30Rnd G36 subsonic mag
+        - Added models to 200Rnd 5.56x45 boxes
+        - Changed name of 100Rnd M60 barrier belts from EPR to SOST
+        - Changed name of 200Rnd M60 barrier belts from EPR to SOST
+        - Added models to 200Rnd M60 7.62x51 belts
+        - Changed description and name of Saiga mags from 5Rnds to 8Rnds
+        - Changed models of SG510 SOST and SBLR mags
+
+    - RHS:
+        - Added model of 24Rnd 7.5 Stgw mag
+        - Changed model of 30Rnd 7.62 FAL mags
+        - Changed icon of Sa vz 58 tracer mag
+
+    - UK3CB BAF:
+        - Added models to 100Rnd 5.56x45 boxes
+        - Added models to 200Rnd 5.56x45 boxes
+        - Added models to 100Rnd M60 7.62x51 belts
+        - Added models to 200Rnd M60 7.62x51 belts
+        - Added model to 30Rnd 9mm MP5 mag  
+
+    - UK3CB factions:
+        - Added models to 20Rnd 5.56 mags
+        - Added models to 20Rnd M14 7.62 mags
+        - Added models to 75Rnd 7.62 drum mags
+        - Added model to 30Rnd 9mm MP5 mag
+        - Changed all "6b27m" helmets to "6B27M"
+        - Changed 2x UN 6B27M helmets to "covered"
+
+    - SFP:
+        - Added models to 30Rnd 9mm MP5 mags
+        - Added models to 8Rnd shotgun shells
+        - Fixed the ZEN-SFP issue for SFP aircraft (specifically: Saab 340 had been set to the unknown side and ZEN does not support that)
+
+    - PO
+        - Changes names of "Flecktarn" uniforms (had a minor typo in them)
+
+    - FIR
+        - Removed protection on both Ground Crew Headsets and Navy Safety Helmet
+        - Changed names on all helmet that had brackets in them for spacing reasons
+        - Changed names of USMC helmets to camo names (MARPAT D, MARPAT WD)
+        - Changed names of US ARMY Helicopter uniforms
+        - Fixes some typos in names
+
+    - WS
+        - Changed "mutlicam" opscore helmets to "multicam"
+        - Changed spacing on opscore helmets with brackets in names
+        - Fixed 6B27M Woodland ESS name
+        - Added an arsenal attribute to all gorka types (including krot and various others)

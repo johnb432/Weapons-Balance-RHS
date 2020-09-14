@@ -1,5 +1,3 @@
-class asdg_SlotInfo;
-
 class UnderBarrelSlot;
 class UnderBarrelSlot_rail: UnderBarrelSlot {
     class compatibleItems {
@@ -32,6 +30,7 @@ class nia_rifle_grips_slot: UnderBarrelSlot {
     };
 };
 
+class asdg_SlotInfo;
 class asdg_UnderSlot: asdg_SlotInfo {
     class compatibleItems {};
 };
@@ -81,7 +80,11 @@ class fk_rifle_grips_slot: asdg_SlotInfo {
     };
 };
 
-class rhs_western_rifle_gripod_slot : rhs_rifle_gripod_slot {
+class rhs_rifle_gripod_slot: UnderBarrelSlot {
+    class compatibleItems {};
+};
+
+class rhs_western_rifle_gripod_slot: rhs_rifle_gripod_slot {
     class compatibleItems: compatibleItems {
         rhsusf_acc_harris_bipod = 1;
         rhs_acc_harris_swivel = 1;
@@ -101,7 +104,6 @@ class rhs_western_m14_underbarrel_slot: UnderBarrelSlot {
         rhs_acc_harris_swivel = 1;
     };
 };
-
 
 class PointerSlot;
 class PointerSlot_rail: PointerSlot {

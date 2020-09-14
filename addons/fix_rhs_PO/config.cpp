@@ -5,8 +5,6 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.96;
         requiredAddons[] = {
-            "cba_main",
-            "ace_ballistics",
             "rhsusf_main",
             "rhs_main",
             "rhsusf_c_weapons",
@@ -27,7 +25,7 @@ class CfgPatches {
 #include "CfgMagazines.hpp"
 #include "CfgMagazineWells.hpp"
 
-class asdg_UnderSlot;
+//class asdg_UnderSlot;
 class rhs_russian_ak_barrel_slot;
 
 class CfgWeapons {

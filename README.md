@@ -126,10 +126,6 @@
         - M70B1N:
             - Changed weight from 4.16kg to 4.20kg
 
-    - PO:
-        - Lee Enfield (Rail):
-            - Changed weight from 3.95kg to 4.04kg
-
 - MagazineWells:
     - CBA:
          - 7.62x51 Links:
@@ -142,10 +138,14 @@
         - Both RHS SMAW rounds from 5.98kg/6.19kg to 4.54kg
         - 50Rnd 7.62x51mm M993AP to 1.15kg
         - 10Rnd 7.62x54R 7N14 from 0.27kg to 0.23kg
+        - Both RHS M21 5.56x45mm mags from 0.47kg to 0.42kg
+        - Both RHS VHS-2 5.56x45 mags from 0.35kg to 0.36kg
 
 - Models/Icons/Names:
     - RHS:
-        - Changed model and icon of 100Rnd 7.62x51mm belt
+        - Changed model and icon of 100Rnd 7.62x51mm M993AP belt
+        - Fixed 100Rnd 5.56x45mm C-mag descriptions
+        - Changed name and description of 3x Laser batteries
 
 # Changelog for Weapons balance 29.7.2020
 
@@ -175,18 +175,12 @@
         - RPG7V2:
             - PG7V and PG7VM rounds should self-destruct after around 750 meters
 
-    - PO:
-        - Lee Enfield:
-            - Added CBA Magwell for .303 Lee Enfield clips
-
 - MagazineWells:
     - CBA:
         - 12 Gauge, 8 Rnds:
             - Added 5x RHS 8Rnd shells
         - .300WM
             - Added RHS 5Rnd mag
-        - .303 Lee Enfield:
-            - Added Project Opfor clip
         - 40mm GP:
             - Added 14x RHS grenades
         - 40mm M203:
@@ -223,7 +217,7 @@
         - 6B27Ms with both ESS & Balaclava from 1.56kg to 1.81kg
         - L2A2 FAL scope from 0.80kg to 0.32kg
         - All (13x) RHS 40mm grenades from 0.23kg to 0.18kg
-        - ! All (6x) 30Rnd RHS G36 5.56 mags from 0.27kg to 0.36kg
+        - All (6x) 30Rnd RHS G36 5.56 mags from 0.27kg to 0.36kg
         - All (5x) 100Rnd RHS 7.62 PKM mags from 2.92kg to 1.95kg
         - 250Rnd RHS 7.62 M84/PKM mag from 5.84kg to 4.13kg
         - 25Rnd RHS 7.92 MP44 mag from 0.53kg to 0.45kg
@@ -231,14 +225,7 @@
         - 50Rnd RHS MG42 belts from 0.81kg to 1.41kg
         - All (4x) 30Rnd RHS 5.45 2x mags from 0.59kg to 0.41kg (it's only cosmetic)
         - Both 20Rnd RHS 5.56 2x mags from 0.42kg to 0.28kg (it's only cosmetic)
-    - PO:
-        - 10Rnd PO .303 Lee Enfield from 0.54kg to 0.27kg
 
 - Models/Icons/Names:
     - RHS:
-        - Added model of 24Rnd 7.5 Stgw mag
-        - Changed model of 30Rnd 7.62 FAL mags
         - Changed icon of Sa vz 58 tracer mag
-
-    - PO
-        - Changes names of "Flecktarn" uniforms (had a minor typo in them)

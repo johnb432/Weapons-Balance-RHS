@@ -55,7 +55,7 @@ class nia_rifle_bipodsgrips_slot: asdg_UnderSlot {
         rhsusf_acc_kac_grip = 1;
     };
 };
-class fk_rifle_grips_slot: asdg_SlotInfo {
+class WB_rifle_grips_slot: asdg_SlotInfo {
     iconPicture = "\a3\weapons_f_mark\Data\UI\attachment_under";
     iconPinpoint = "Bottom";
     linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";

@@ -1,4 +1,3 @@
-//RHS
 class rhs_weap_m14ebrri;
 class rhs_weap_pya;
 class InventoryOpticsItem_Base_F;
@@ -223,29 +222,4 @@ class rhs_acc_npz: rhs_acc_ekp1 {
     class ItemInfo: InventoryOpticsItem_Base_F {
         mass = 4;
     };
-};
-
-//PO
-class EBR_base_F: Rifle_Long_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class LOP_Weap_LeeEnfield: EBR_base_F {
-    scope = 2;
-    magazineWell[] = {"CBA_303B_LeeEn"};
-    class WeaponSlotsInfo: WeaponSlotsInfo {
-        mass = 87;
-    };
-};
-class LOP_Weap_LeeEnfield_railed: LOP_Weap_LeeEnfield {
-    displayName = "Lee Enfield (Rail)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {
-        mass = 89;
-    };
-};
-
-class LOP_U_Fatigue_BDU_FLEC_01: Uniform_Base {
-    displayName = "Battle Dress Uniform (Flecktarn/Dark)";
-};
-class LOP_U_Fatigue_BDU_FLEC_02: Uniform_Base {
-    displayName = "Battle Dress Uniform (Flecktarn/Light)";
 };

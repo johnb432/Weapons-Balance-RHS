@@ -24,7 +24,6 @@ class rhs_weap_m84: Rifle_Long_Base_F {
 };
 
 class rhs_weap_mg42_base: Rifle_Base_F {
-    magazineWell[] = {"CBA_792x57_LINKS"};
     UiPicture = "\a3\weapons_f\data\ui\icon_mg_ca.paa";
 };
 
@@ -34,25 +33,13 @@ class rhs_weap_M590_5RD: Rifle_Base_F {
     };
 };
 class rhs_weap_M590_8RD: rhs_weap_M590_5RD {
-    magazineWell[] = {"CBA_12g_8rnds"};
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 71.7;
     };
 };
 
-class rhs_weap_XM2010_Base_F: Rifle_Base_F {
-    magazineWell[] = {"CBA_300WM_AI"};
-};
-class rhs_weap_m24sws: rhs_weap_XM2010_Base_F {
-    magazineWell[] = {};
-};
-class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
-    magazineWell[] = {"CBA_762x51_AICS"};
-};
-
 class rhs_weap_g36_base: Rifle_Base_F {
     magazineWell[] += {"CBA_556x45_STANAG_2D_XL"};
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 
 class rhs_weap_sr25: rhs_weap_m14ebrri {
@@ -72,7 +59,6 @@ class rhs_weap_m70ab2: rhs_weap_m70_base {
 class rhs_weap_m70ab2_fold: rhs_weap_m70ab2 {
     displayName = "M70AB2 (Folded)";
     recoil = "rhs_recoil_akms_folded";
-    scopeArsenal = 1;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 87.3;
     };
@@ -93,7 +79,6 @@ class rhs_weap_m92: rhs_weap_m70_base {
 class rhs_weap_m92_fold: rhs_weap_m92 {
     displayName = "M92 (Folded)";
     recoil = "rhs_recoil_akms_folded";
-    scopeArsenal = 1;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 78.5;
     };
@@ -187,17 +172,14 @@ class rhs_weap_mosin_sbr: rhs_weap_m38_rail {
 class rhs_weap_savz58v;
 class rhs_weap_savz58v_fold: rhs_weap_savz58v {
     recoil = "rhs_recoil_akms_folded";
-    scopeArsenal = 1;
 };
 class rhs_weap_savz58v_rail;
 class rhs_weap_savz58v_rail_fold: rhs_weap_savz58v_rail {
     recoil = "rhs_recoil_akms_folded";
-    scopeArsenal = 1;
 };
 class rhs_weap_savz58v_ris;
 class rhs_weap_savz58v_ris_fold: rhs_weap_savz58v_ris {
     recoil = "rhs_recoil_akms_folded";
-    scopeArsenal = 1;
 };
 
 class rhsgref_acc_l2a2: rhs_acc_scope_base {
@@ -213,6 +195,7 @@ class rhs_acc_mtz: rhs_acc_scope_base {
     descriptionShort = "Dovetail to Picatinny rail adapter";
     class ItemInfo: InventoryOpticsItem_Base_F {
         mass = 4;
+        modelOptics = "\A3\Weapons_F\empty";
     };
 };
 
@@ -221,5 +204,6 @@ class rhs_acc_npz: rhs_acc_ekp1 {
     descriptionShort = "Dovetail to Picatinny rail adapter";
     class ItemInfo: InventoryOpticsItem_Base_F {
         mass = 4;
+        modelOptics = "\A3\Weapons_F\empty";
     };
 };

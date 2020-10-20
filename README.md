@@ -1,3 +1,39 @@
+# Changelog for magazine_compatibility 18.10.2020
+
+Mostly cleanup for the stuff RHS fixed.
+
+- Weapon changes:
+    - RHS:
+        - AKs
+            - AK-103:
+                - Changed weight from 3.38kg to 3.61kg
+            - AK-104:
+                - Changed weight from 2.59kg to 3.20kg
+            - AK-105:
+                - Changed weight from 2.59kg to 3.20kg
+            - AK-74:
+                - Changed weight from 3.63/3.69kg to 3.27kg
+            - AKS-74:
+                - Changed weight from 2.96kg to 2.95kg
+            - AK-74M:
+                - Changed weight from 3.38kg to 3.61kg
+
+            - Add all "modifiers" to get final weapon weight:
+                - add 0.4lb/0.18kg for NPZ/B-13 variants
+                - add 0.1lb/0.045kg for Zentico variants
+                - add 0.1lb/0.045kg for B33 variants
+                - add 0.2lb/0.91kg for UUK variants
+                - add 3.3lb/1.50kg for GP-25 variants
+                - add 0.1lb/0.045kg for N variants
+        - SVDM/(Camo):
+            - Changed weight from 3.70kg to 3.90kg
+        - SVDM/(Camo) (NPZ):
+            - Changed weight from 4.10kg to 4.08kg
+        - SVDS:
+            - Changed weight from 3.88kg to 4.08kg
+        - SVDS (NPZ):
+            - Changed weight from 4.28kg to 4.26kg
+
 # Changelog for Weapons balance 23.8.2020
 
 - New additions:

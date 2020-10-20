@@ -135,7 +135,6 @@ class rhs_weap_m16a4_imod_M203: rhs_weap_m16a4_carryhandle_M203 {
 class rhs_weap_m27iar_grip: rhs_weap_m4a1 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 82.2;
-        class GripodSlot: asdg_UnderSlot {};
     };
 };
 class rhs_weap_hk416d10: rhs_weap_m4a1 {

@@ -57,7 +57,7 @@ class CfgMagazines {
     };
 
     class rhsgref_30rnd_556x45_vhs2: CA_Magazine {
-        mass = 8
+        mass = 8;
     };
 
     class rhs_200rnd_556x45_T_SAW: rhs_200rnd_556x45_M_SAW {
@@ -78,6 +78,7 @@ class CfgMagazines {
 
     class rhs_100Rnd_762x54mmR: rhs_30Rnd_545x39_7N6_AK {
         mass = 43;
+        modelSpecial = "";
     };
     class rhssaf_250Rnd_762x54R: rhs_100Rnd_762x54mmR {
         mass = 91;

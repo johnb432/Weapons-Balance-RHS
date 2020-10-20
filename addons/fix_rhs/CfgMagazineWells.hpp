@@ -1,14 +1,4 @@
 class CfgMagazineWells {
-    class CBA_12g_8rnds {
-        WB_Magazines[] += {
-            "rhsusf_8Rnd_00Buck",
-            "rhsusf_8Rnd_Slug",
-            "rhsusf_8Rnd_FRAG",
-            "rhsusf_8Rnd_HE",
-            "rhsusf_8rnd_doomsday_buck"
-        };
-    };
-
     class CBA_300WM_AI {
         WB_Magazines[] += {
             "rhsusf_5Rnd_300winmag_xm2010"
@@ -34,38 +24,9 @@ class CfgMagazineWells {
         };
     };
 
-    class CBA_40mm_M203 {
-        WB_Magazines[] += {
-            "rhs_mag_M441_HE",
-            "rhs_mag_M433_HEDP",
-            "rhs_mag_M781_Practice",
-            "rhs_mag_M397_HET",
-            "rhs_mag_M4009",
-            "rhs_mag_m576",
-            "rhs_mag_M585_white",
-            "rhs_mag_M661_green",
-            "rhs_mag_M662_red",
-            "rhs_mag_M713_red",
-            "rhs_mag_M714_white",
-            "rhs_mag_M715_green",
-            "rhs_mag_M716_yellow"
-        };
-    };
-
     class CBA_556x45_MINIMI {
         WB_Magazines[] += {
             "rhs_200rnd_556x45_T_SAW"
-        };
-    };
-
-    class CBA_762x51_AICS {
-        WB_Magazines[] += {
-            "rhsusf_10Rnd_762x51_m118_special_Mag",
-            "rhsusf_10Rnd_762x51_m62_Mag",
-            "rhsusf_10Rnd_762x51_m993_Mag",
-            "rhsusf_5Rnd_762x51_AICS_m118_special_Mag",
-            "rhsusf_5Rnd_762x51_AICS_m62_Mag",
-            "rhsusf_5Rnd_762x51_AICS_m993_Mag"
         };
     };
 
@@ -106,19 +67,6 @@ class CfgMagazineWells {
         };
     };
 
-    class CBA_792x57_LINKS {
-        WB_Magazines[] += {
-            "rhsgref_50Rnd_792x57_SmE_drum",
-            "rhsgref_50Rnd_792x57_SmE_notracers_drum",
-            "rhsgref_50Rnd_792x57_SmK_drum",
-            "rhsgref_50Rnd_792x57_SmK_alltracers_drum",
-            "rhsgref_296Rnd_792x57_SmE_belt",
-            "rhsgref_296Rnd_792x57_SmE_notracers_belt",
-            "rhsgref_296Rnd_792x57_SmK_belt",
-            "rhsgref_296Rnd_792x57_SmK_alltracers_belt"
-        };
-    };
-
     class CBA_8x22_Type14 {
         WB_Magazines[] += {
             "rhs_mag_6x8mm_mhp"
@@ -141,12 +89,6 @@ class CfgMagazineWells {
     class PK_762x54R {
         WB_Magazines[] += {
             "rhssaf_250Rnd_762x54R"
-        };
-    };
-
-    class RPG7 {
-        WB_Magazines[] += {
-            "rhs_rpg7_PG7VM_mag"
         };
     };
 };

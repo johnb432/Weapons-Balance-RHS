@@ -200,6 +200,17 @@ class CowsSlot_Rail: CowsSlot {
     };
 };
 
+class asdg_OpticRail;
+class asdg_OpticSideMount: asdg_OpticRail {
+    class compatibleItems {};
+};
+class asdg_OpticSideRail_AK: asdg_OpticSideMount {
+    class compatibleItems: compatibleItems {
+        rhs_acc_pso1m2 = 1;
+        rhs_acc_pso1m21 = 1;
+    };
+};
+
 class asdg_MuzzleSlot: asdg_SlotInfo {
     class compatibleItems {};
 };

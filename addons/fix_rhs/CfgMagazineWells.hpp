@@ -30,6 +30,12 @@ class CfgMagazineWells {
         };
     };
 
+    class CBA_762x39_AK {
+        WB_Magazines[] += {
+            "rhssaf_30Rnd_762x39_M82_api_green"
+        };
+    };
+
     class CBA_762x51_LINKS {
         WB_Magazines[] += {
             "rhsusf_50Rnd_762x51",
@@ -70,6 +76,12 @@ class CfgMagazineWells {
     class CBA_8x22_Type14 {
         WB_Magazines[] += {
             "rhs_mag_6x8mm_mhp"
+        };
+    };
+
+    class AK_762x39 {
+        WB_Magazines[] += {
+            "rhssaf_30Rnd_762x39_M82_api_green"
         };
     };
 

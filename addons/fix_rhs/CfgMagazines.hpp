@@ -2,7 +2,6 @@ class CfgMagazines {
     class CA_Magazine;
     class 30Rnd_556x45_Stanag;
     class 1Rnd_HE_Grenade_shell;
-    class rhs_10Rnd_762x54mmR_7N1;
     class rhs_mag_20Rnd_556x45_M193_Stanag;
     class rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red;
     class rhs_mag_30Rnd_556x45_M855A1_Stanag;
@@ -21,6 +20,9 @@ class CfgMagazines {
         displayname = "30rnd M70 7.62x39mm M82 API (Green Tracers)";
     };
 
+    class rhs_10Rnd_762x54mmR_7N1: rhs_30Rnd_545x39_7N6_AK {
+        modelSpecial = "";
+    };
     class rhs_10Rnd_762x54mmR_7N14: rhs_10Rnd_762x54mmR_7N1 {
         mass = 5.1;
     };

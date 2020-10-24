@@ -2,6 +2,9 @@
 
 Mostly cleanup for the stuff RHS fixed.
 
+- New additions:
+    - 30Rnd RHS/custom 7.62x39mm AK M82 API Mag
+
 - Weapon changes:
     - RHS:
         - AKs

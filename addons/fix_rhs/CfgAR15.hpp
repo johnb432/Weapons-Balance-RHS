@@ -132,6 +132,42 @@ class rhs_weap_m16a4_imod_M203: rhs_weap_m16a4_carryhandle_M203 {
     };
 };
 
+class rhs_weap_m16a3_carryhandle: rhs_weap_m16a4_carryhandle {
+    baseWeapon = "rhs_weap_m16a3_carryhandle";
+    displayName = "M16A3 (Carryhandle/RAS)";
+    modes[] = {"Single","Single_AI","FullAuto","single_medium_optics1","single_far_optics2"};
+    rhs_grip1_change = "rhs_weap_m16a3_carryhandle_grip";
+    rhs_grip2_change = "rhs_weap_m16a3_carryhandle_grip2";
+    rhs_grip3_change = "rhs_weap_m16a3_carryhandle_grip3";
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 79;
+    };
+};
+class rhs_weap_m16a3_carryhandle_grip: rhs_weap_m16a3_carryhandle {
+    displayName = "M16A3 (Carryhandle/RAS/Grip)";
+    handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m16a4.rtm"};
+    picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m16a4_carryhandle_grip_ca.paa";
+};
+class rhs_weap_m16a3_carryhandle_grip2: rhs_weap_m16a3_carryhandle {
+    displayName = "M16A3 (Carryhandle/RAS/TD Grip)";
+    handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m16a4.rtm"};
+    picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m16a4_carryhandle_grip2_ca.paa";
+};
+class rhs_weap_m16a3_carryhandle_grip3: rhs_weap_m16a3_carryhandle {
+    displayName = "M16A3 (Carryhandle/RAS/TD Grip)";
+    handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m4a1_afg.rtm"};
+    picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m16a4_carryhandle_grip3_ca.paa";
+};
+
+class rhs_weap_m16a3_carryhandle_M203: rhs_weap_m16a4_carryhandle_M203 {
+    baseWeapon = "rhs_weap_m16a3_carryhandle_M203";
+    displayName = "M16A3 (Carryhandle/RAS/M203)";
+    modes[] = {"Single","Single_AI","FullAuto","single_medium_optics1","single_far_optics2"};
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 112;
+    };
+};
+
 class rhs_weap_m27iar_grip: rhs_weap_m4a1 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 82.2;

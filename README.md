@@ -1,3 +1,13 @@
+# Changelog for magazine_compatibility 05.12.2020
+
+- Added M16A3s
+- Unhid 6x RHS 5.56x45mm 30Rnd M856 & M856A1 mags, with Green, Orange and Yellow tracer
+
+- Backpack changes:
+    - RHS:
+        - Medic Bag, Sidor and RPG Carrier:
+            - Increased capacity to assault pack level, increased weight if necessary to assault pack level
+
 # Changelog for magazine_compatibility 18.10.2020
 
 Mostly cleanup for the stuff RHS fixed.

@@ -4,8 +4,10 @@ class CfgMagazines {
     class 1Rnd_HE_Grenade_shell;
     class rhs_mag_20Rnd_556x45_M193_Stanag;
     class rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red;
+    class rhs_mag_30Rnd_556x45_M855_Stanag;
     class rhs_mag_30Rnd_556x45_M855A1_Stanag;
     class rhs_200rnd_556x45_M_SAW;
+    class rhsusf_200rnd_556x45_M855_box;
     class rhsusf_50Rnd_762x51;
     class rhs_30Rnd_545x39_7N6_AK;
     class rhs_30Rnd_545x39_7N10_AK;
@@ -33,6 +35,26 @@ class CfgMagazines {
 
     class rhs_VOG25: 1Rnd_HE_Grenade_shell {
         mass = 4;
+    };
+
+    class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Orange: rhs_mag_30Rnd_556x45_M855_Stanag {
+        scope = 2;
+    };
+    class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green: rhs_mag_30Rnd_556x45_M855_Stanag {
+        scope = 2;
+    };
+    class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Yellow: rhs_mag_30Rnd_556x45_M855_Stanag {
+        scope = 2;
+    };
+
+    class rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green: rhs_mag_30Rnd_556x45_M855A1_Stanag {
+        scope = 2;
+    };
+    class rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Orange: rhs_mag_30Rnd_556x45_M855A1_Stanag {
+        scope = 2;
+    };
+    class rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow: rhs_mag_30Rnd_556x45_M855A1_Stanag {
+        scope = 2;
     };
 
     class rhssaf_30rnd_556x45_EPR_G36: 30Rnd_556x45_Stanag {
@@ -123,9 +145,16 @@ class CfgMagazines {
     class rhs_mag_smaw_HEDP: CA_LauncherMagazine {
         mass = 100;
     };
+    class rhs_mag_smaw_SR: CA_LauncherMagazine {
+        allowedSlots[] = {701,801,901};
+    };
 
     class rhs_mag_100Rnd_556x45_M855A1_cmag: rhs_mag_30Rnd_556x45_M855A1_Stanag {
         descriptionShort = "Caliber: 5.56x45mm NATO<br/>Rounds: 100<br/>Used in: M4, M16, M27, M249";
+    };
+
+    class rhsusf_200rnd_556x45_M855_mixed_box: rhsusf_200rnd_556x45_M855_box {
+        ammo = "rhs_ammo_556x45_M855_Ball_Red";
     };
 
     class Laserbatteries;

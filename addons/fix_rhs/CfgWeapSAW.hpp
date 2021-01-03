@@ -9,6 +9,10 @@ class rhs_weap_minimi_para_railed: rhs_weap_lmg_minimipara {
         mass = 159.5;
     };
 };
+class rhs_weap_minimi_para_railed_folded: rhs_weap_minimi_para_railed {
+    baseWeapon = "rhs_weap_minimi_para_railed_folded";
+    displayName = "FN Minimi Para (RIS/Folded)";
+};
 
 class rhs_weap_lmg_minimi_railed: rhs_weap_lmg_minimipara {
     displayName = "FN Minimi Para (Short/RIS)";
@@ -47,6 +51,12 @@ class rhs_weap_m249_pip_L_para: rhs_weap_m249_pip_L {
         mass = 166.5;
     };
 };
+class rhs_weap_m249_pip_L_para_folded: rhs_weap_m249_pip_L_para {
+    baseWeapon = "rhs_weap_m249_pip_L_para_folded";
+    displayName = "M249 PIP (Long/Para/Folded)";
+    scope = 1;
+    scopeArsenal = 0;
+};
 
 class rhs_weap_m249_pip_S: rhs_weap_lmg_minimi_railed {
     class WeaponSlotsInfo {
@@ -62,6 +72,11 @@ class rhs_weap_m249_pip_S_para: rhs_weap_m249_pip_S {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 161.5;
     };
+};
+class rhs_weap_m249_pip_S_para_folded: rhs_weap_m249_pip_S_para {
+    baseWeapon = "rhs_weap_m249_pip_S_para_folded";
+    displayName = "M249 PIP (Short/Para/Folded)";
+    scopeArsenal = 0;
 };
 
 class rhs_weap_M249_base;

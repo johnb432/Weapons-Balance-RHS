@@ -1,3 +1,50 @@
+# Changelog for magazine_compatibility 03.01.2021
+
+- Addition of AK-101 and AK-102 variants
+- Addition of 15x RHS/custom AK-101 5.56x45mm mags: M855, M855A1, M856, M856A1, Mk262, Mk318, IR-DIM
+- Addition of 3x RHS M249 200Rnd 5.56x45mm M993AP belts
+- Added ACE ammo stats
+- Fixed more RHS Folded AK weights & configs
+- Changed RHS AK scopes configs on weapons to better fit the individual weapons
+- Unhid 2x RHS Dovetail to Picatinny rail adapters
+
+- Weapon changes:
+    - RHS:
+        - Made all RHS LAT Launchers drop automatically after being fired
+
+        - MG42:
+            - Changed name to "MG 42"
+        - MP44:
+            - Changed name to "MP 44"
+        - FIM-92F:
+            - Changed weight from 4.19kg to 5.19kg
+        - Panzerfaust 60:
+            - Changed weight from 0.00kg to 6.26kg
+
+- MagazineWells:
+    - CBA:
+        - 5.56 AK:
+            - Added 15x RHS/custom 30Rnd mags
+        - RPG-7
+            - Added 8x RHS RPG rounds
+
+- Vehicles:
+    - RHS:
+        - BMPs/BMDs:
+            - Added TFAR intercom channels
+
+- Weight balancing:
+    - RHS:
+        - 1x RHS MP 44 7.92x33 25Rnd mag from 0.45kg to 0.52kg
+        - 1x RHS MP 44 7.92x33 30Rnd mag from 0.52kg to 0.62kg
+        - 1x RHS Mosin 7.62x54 5Rnd clip from to 0.12kg
+        - 1x RHS Kar98k 7.92x57 5Rnd clip from to 0.13kg
+        - Both RHS M1 Garand .30-06 8Rnd clips from 0.24kg to 0.20kg
+        - All (4x) RHS M3 .45ACP 30Rnd mags from 0.79kg to 0.72kg
+        - Both RHS M76 7.92x57 10Rnd mags from kg to 0.27kg
+        - 1x RHS vz.61 .32ACP 20Rnd mag from kg to 0.23kg
+        - 1x RHS FIM-92F round from 5.44kg to 4.54kg
+
 # Changelog for magazine_compatibility 05.12.2020
 
 - Added M16A3s

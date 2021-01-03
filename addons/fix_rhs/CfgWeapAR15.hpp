@@ -1,6 +1,3 @@
-class arifle_MX_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
 class rhs_weap_m4_Base: arifle_MX_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
@@ -133,6 +130,7 @@ class rhs_weap_m16a4_imod_M203: rhs_weap_m16a4_carryhandle_M203 {
 };
 
 class rhs_weap_m16a3_carryhandle: rhs_weap_m16a4_carryhandle {
+    author = "Red Hammer Studios & johnb43";
     baseWeapon = "rhs_weap_m16a3_carryhandle";
     displayName = "M16A3 (Carryhandle/RAS)";
     modes[] = {"Single","Single_AI","FullAuto","single_medium_optics1","single_far_optics2"};
@@ -160,6 +158,7 @@ class rhs_weap_m16a3_carryhandle_grip3: rhs_weap_m16a3_carryhandle {
 };
 
 class rhs_weap_m16a3_carryhandle_M203: rhs_weap_m16a4_carryhandle_M203 {
+    author = "Red Hammer Studios & johnb43";
     baseWeapon = "rhs_weap_m16a3_carryhandle_M203";
     displayName = "M16A3 (Carryhandle/RAS/M203)";
     modes[] = {"Single","Single_AI","FullAuto","single_medium_optics1","single_far_optics2"};
@@ -168,9 +167,13 @@ class rhs_weap_m16a3_carryhandle_M203: rhs_weap_m16a4_carryhandle_M203 {
     };
 };
 
-class rhs_weap_m27iar_grip: rhs_weap_m4a1 {
+class rhs_weap_m27iar: rhs_weap_m4a1 {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_m27iar_grip: rhs_weap_m27iar {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 82.2;
+        class GripodSlot: asdg_UnderSlot {};
     };
 };
 class rhs_weap_hk416d10: rhs_weap_m4a1 {

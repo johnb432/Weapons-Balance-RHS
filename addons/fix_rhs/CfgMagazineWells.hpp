@@ -1,4 +1,10 @@
 class CfgMagazineWells {
+    class AK_762x39 {
+        WB_Magazines[] += {
+            "rhssaf_30Rnd_762x39_M82_api_green"
+        };
+    };
+
     class CBA_300WM_AI {
         WB_Magazines[] += {
             "rhsusf_5Rnd_300winmag_xm2010"
@@ -24,9 +30,32 @@ class CfgMagazineWells {
         };
     };
 
+    class CBA_556x45_AK {
+        FK_Magazines[] = {
+            "rhs_30Rnd_556x45_M855_AK",
+            "rhs_30Rnd_556x45_M856_AK_Red",
+            "rhs_30Rnd_556x45_M856_AK_Green",
+            "rhs_30Rnd_556x45_M856_AK_Orange",
+            "rhs_30Rnd_556x45_M856_AK_White",
+            "rhs_30Rnd_556x45_M856_AK_Yellow",
+            "rhs_30Rnd_556x45_M855A1_AK",
+            "rhs_30Rnd_556x45_M856A1_AK_Red",
+            "rhs_30Rnd_556x45_M856A1_AK_Green",
+            "rhs_30Rnd_556x45_M856A1_AK_Orange",
+            "rhs_30Rnd_556x45_M856A1_AK_White",
+            "rhs_30Rnd_556x45_M856A1_AK_Yellow",
+            "rhs_30Rnd_556x45_Mk262_AK",
+            "rhs_30Rnd_556x45_Mk318_AK",
+            "rhs_30Rnd_556x45_IR_DIM_AK"
+        };
+    };
+
     class CBA_556x45_MINIMI {
         WB_Magazines[] += {
-            "rhs_200rnd_556x45_T_SAW"
+            "rhs_200rnd_556x45_T_SAW",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch_coyote",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch_ucp"
         };
     };
 
@@ -79,9 +108,16 @@ class CfgMagazineWells {
         };
     };
 
-    class AK_762x39 {
-        WB_Magazines[] += {
-            "rhssaf_30Rnd_762x39_M82_api_green"
+    class CBA_RPG7 {
+         WB_Magazines[] += {
+            "rhs_rpg7_OG7V_mag",
+            "rhs_rpg7_PG7V_mag",
+            "rhs_rpg7_PG7VL_mag",
+            "rhs_rpg7_PG7VM_mag",
+            "rhs_rpg7_PG7VR_mag",
+            "rhs_rpg7_PG7VS_mag",
+            "rhs_rpg7_TBG7V_mag",
+            "rhs_rpg7_type69_airburst_mag"
         };
     };
 
@@ -94,7 +130,10 @@ class CfgMagazineWells {
 
     class M249_556x45 {
         WB_Magazines[] += {
-            "rhs_200rnd_556x45_T_SAW"
+            "rhs_200rnd_556x45_T_SAW",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch_coyote",
+            "rhsusf_200Rnd_556x45_M995_soft_pouch_ucp"
         };
     };
 

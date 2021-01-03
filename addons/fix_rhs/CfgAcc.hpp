@@ -221,6 +221,7 @@ class asdg_MuzzleSlot_762: asdg_MuzzleSlot {
         rhsusf_acc_aac_m14dcqd_silencer_d = 1;
         rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
         rhsusf_acc_m14_flashsuppresor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
     };
 };
 
@@ -252,6 +253,7 @@ class asdg_MuzzleSlot_762_3CB_G3: asdg_MuzzleSlot {
         rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
         rhsusf_acc_m14_flashsuppresor = 1;
         rhsgref_sdn6_suppressor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
     };
 };
 class asdg_MuzzleSlot_762_3CB_M14: asdg_MuzzleSlot {
@@ -264,5 +266,6 @@ class asdg_MuzzleSlot_762_3CB_M14: asdg_MuzzleSlot {
         rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
         rhsusf_acc_m14_flashsuppresor = 1;
         rhsgref_sdn6_suppressor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
     };
 };

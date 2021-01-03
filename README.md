@@ -36,13 +36,11 @@
 - Weight balancing:
     - RHS:
         - 1x RHS MP 44 7.92x33 25Rnd mag from 0.45kg to 0.52kg
-        - 1x RHS MP 44 7.92x33 30Rnd mag from 0.52kg to 0.62kg
-        - 1x RHS Mosin 7.62x54 5Rnd clip from to 0.12kg
-        - 1x RHS Kar98k 7.92x57 5Rnd clip from to 0.13kg
+        - 1x RHS MP 44 7.92x33 30Rnd mag from 0.53kg to 0.62kg
         - Both RHS M1 Garand .30-06 8Rnd clips from 0.24kg to 0.20kg
         - All (4x) RHS M3 .45ACP 30Rnd mags from 0.79kg to 0.72kg
-        - Both RHS M76 7.92x57 10Rnd mags from kg to 0.27kg
-        - 1x RHS vz.61 .32ACP 20Rnd mag from kg to 0.23kg
+        - Both RHS M76 7.92x57 10Rnd mags from 0.31kg to 0.27kg
+        - 1x RHS vz.61 .32ACP 20Rnd mag from 0.25kg to 0.23kg
         - 1x RHS FIM-92F round from 5.44kg to 4.54kg
 
 # Changelog for magazine_compatibility 05.12.2020

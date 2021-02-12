@@ -1,5 +1,13 @@
 # Changelog for magazine_compatibility 03.01.2021
 
+- Updated to comply with 3CB Faction update
+
+- Models/Icons/Names:
+    - RHS:
+        - All (12x) VOG25 Grenades renamed to show what they are
+
+# Changelog for magazine_compatibility 03.01.2021
+
 - Addition of AK-101 and AK-102 variants
 - Addition of 15x RHS/custom AK-101 5.56x45mm mags: M855, M855A1, M856, M856A1, Mk262, Mk318, IR-DIM
 - Addition of 3x RHS M249 200Rnd 5.56x45mm M993AP belts

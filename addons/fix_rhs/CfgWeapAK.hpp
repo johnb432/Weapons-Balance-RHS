@@ -82,7 +82,7 @@ class rhs_weap_ak74mr: rhs_weap_ak74m {
     };
 };
 class rhs_weap_ak74mr_folded: rhs_weap_ak74mr {
-    displayName = "AK-74MR (UUK/Folded)"
+    displayName = "AK-74MR (UUK/Folded)";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 81.5;
     };

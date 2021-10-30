@@ -6,10 +6,7 @@ class rhs_weap_g36c: rhs_weap_g36_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_g36c_Folded: rhs_weap_g36c {
-    baseweapon = "rhs_weap_g36c_Folded";
     displayName = "HK G36C (Folded)";
-    scope = 1;
-    scopeArsenal = 0;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 65.7;
     };
@@ -56,10 +53,9 @@ class rhs_weap_m21a: rhs_weap_m21_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_m21a_fold: rhs_weap_m21a {
-    baseWeapon = "rhs_weap_m21a_fold";
     displayName = "M21A (Folded)";
-    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     recoil = "rhs_recoil_ak74m_folded";
+    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 91.3;
     };
@@ -68,10 +64,9 @@ class rhs_weap_m21a_pbg40: rhs_weap_m21a {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_m21a_pbg40_fold: rhs_weap_m21a_pbg40 {
-    baseWeapon = "rhs_weap_m21a_pbg40_fold";
     displayName = "M21A (PBG/Folded)";
-    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     recoil = "rhs_recoil_ak74m_folded";
+    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 124.3;
     };
@@ -80,10 +75,9 @@ class rhs_weap_m21s: rhs_weap_m21_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_m21s_fold: rhs_weap_m21s {
-    baseWeapon = "rhs_weap_m21s_fold";
     displayName = "M21S (Folded)";
-    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     recoil = "rhs_recoil_ak74m_folded";
+    rhs_fold_anim = "RHS_GestureUnfoldSCAR";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 89.5;
     };

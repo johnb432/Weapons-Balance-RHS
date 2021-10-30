@@ -23,6 +23,7 @@ class rhs_weap_ak74m_desert_npz: rhs_weap_ak74m_npz {
 };
 
 class rhs_weap_ak74m_gp25: rhs_weap_ak74m {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 112.5;
     };
@@ -44,23 +45,20 @@ class rhs_weap_ak74m_folded: rhs_weap_ak74m {
     };
 };
 class rhs_weap_ak74m_fullplum_folded: rhs_weap_ak74m_folded {
-    baseWeapon = "rhs_weap_ak74m_fullplum_folded";
     displayName = "AK-74M (Plum/Folded)";
-    rhs_npz = "rhs_weap_ak74m_fullplum_npz";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 79.5;
     };
 };
 class rhs_weap_ak74m_camo_folded: rhs_weap_ak74m_folded {
     displayName = "AK-74M (Camo/Folded)";
-    rhs_npz = "rhs_weap_ak74m_camo_npz";
 };
 class rhs_weap_ak74m_desert_folded: rhs_weap_ak74m_folded {
     displayName = "AK-74M (Desert/Folded)";
-    rhs_npz = "rhs_weap_ak74m_desert_npz";
 };
 
 class rhs_weap_ak74m_zenitco01: rhs_weap_ak74m {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 80.5;
     };
@@ -88,12 +86,14 @@ class rhs_weap_ak74mr_folded: rhs_weap_ak74mr {
     };
 };
 class rhs_weap_ak74mr_gp25: rhs_weap_ak74mr {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 114.5;
     };
 };
 
 class rhs_weap_ak74: rhs_weap_ak74m {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 72;
     };
@@ -199,8 +199,8 @@ class rhs_weap_aks74n: rhs_weap_aks74 {
     };
 };
 class rhs_weap_aks74n_folded: rhs_weap_aks74n {
-    rhs_npz = "rhs_weap_aks74n_npz";
     recoil = "rhs_recoil_ak74m_folded";
+    rhs_npz = "rhs_weap_aks74n_npz";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 66;
     };
@@ -245,6 +245,7 @@ class rhs_weap_aks74un_folded: rhs_weap_aks74un {
 };
 
 class rhs_weap_akm: rhs_weap_ak74m {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_ak103_base: rhs_weap_akm {
@@ -315,6 +316,7 @@ class rhs_weap_ak103_zenitco01: rhs_weap_ak103 {
     };
 };
 class rhs_weap_ak103_zenitco01_folded: rhs_weap_ak103_zenitco01 {
+    displayName = "AK-103 (Zenitco/Folded)";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 80.5;
     };
@@ -325,6 +327,7 @@ class rhs_weap_ak103_zenitco01_npz: rhs_weap_ak103_zenitco01 {
     };
 };
 class rhs_weap_ak103_zenitco01_b33: rhs_weap_ak103_zenitco01 {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 81.5;
     };
@@ -404,13 +407,11 @@ class rhs_weap_akms_folded: rhs_weap_akms {
 class rhs_weap_akmn: rhs_weap_akm {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 70.1;
-        class PointerSlot: rhs_russian_ak_barrel_slot {};
     };
 };
 class rhs_weap_akmn_npz: rhs_weap_akmn {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 74.1;
-        class PointerSlot: rhs_russian_ak_barrel_slot {};
     };
 };
 class rhs_weap_akm_zenitco01_b33: rhs_weap_akmn {

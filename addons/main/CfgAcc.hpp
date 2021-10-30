@@ -207,12 +207,53 @@ class asdg_OpticSideMount: asdg_OpticRail {
 class asdg_OpticSideRail_AK: asdg_OpticSideMount {
     class compatibleItems: compatibleItems {
         rhs_acc_pso1m2 = 1;
+        rhs_acc_pso1m2_ads = 1;
+        rhs_acc_pso1m2_ads_night = 1;
+        rhs_acc_pso1m2_ak = 1;
+        rhs_acc_pso1m2_ak_ironsight = 1;
+        rhs_acc_pso1m2_asval = 1;
+        rhs_acc_pso1m2_asval_ironsight = 1;
+        rhs_acc_pso1m2_ironsight = 1;
+        rhs_acc_pso1m2_pkp = 1;
+        rhs_acc_pso1m2_pkp_ironsight = 1;
         rhs_acc_pso1m21 = 1;
+        rhs_acc_pso1m21_ads = 1;
+        rhs_acc_pso1m21_ads_night = 1;
+        rhs_acc_pso1m21_ak = 1;
+        rhs_acc_pso1m21_ak_ironsight = 1;
+        rhs_acc_pso1m21_ironsight = 1;
+        rhs_acc_pso1m21_pkp = 1;
+        rhs_acc_pso1m21_pkp_ironsight = 1;
+        rhs_acc_pso1m21_svd = 1;
+        rhs_acc_pso1m21_svd_ironsight = 1;
+    };
+};
+
+class asdg_OpticSideRail_SVD;
+class rhs_russian_svd_scopes_slot: asdg_OpticSideRail_SVD {
+    class compatibleItems {
+        hlc_optic_pso1 = 1;
+        hlc_optic_goshawk = 1;
     };
 };
 
 class asdg_MuzzleSlot: asdg_SlotInfo {
     class compatibleItems {};
+};
+class asdg_MuzzleSlot_545R: asdg_MuzzleSlot {
+    class compatibleItems {
+        rhs_acc_pbs4 = 1;
+        rhs_acc_pgs64_74u = 1;
+        rhs_acc_pgs64_74un = 1;
+        rhs_acc_dtkrpk = 1;
+        rhs_acc_pgs64 = 1;
+    };
+};
+
+class asdg_MuzzleSlot_556: asdg_MuzzleSlot {
+    class compatibleItems {
+        rhssaf_acc_g36_rotex = 1;
+    };
 };
 
 class asdg_MuzzleSlot_762: asdg_MuzzleSlot {
@@ -227,8 +268,16 @@ class asdg_MuzzleSlot_762: asdg_MuzzleSlot {
 
 class asdg_MuzzleSlot_762R: asdg_MuzzleSlot {
     class compatibleItems {
-        rhs_acc_dtkakm = 1;
+        rhs_acc_ak5 = 1;
+        rhs_acc_dtk = 1;
+        rhs_acc_dtk1 = 1;
         rhs_acc_dtk1l = 1;
+        rhs_acc_dtk2 = 1;
+        rhs_acc_dtk3 = 1;
+        rhs_acc_dtk4long = 1;
+        rhs_acc_dtk4screws = 1;
+        rhs_acc_dtkakm = 1;
+        rhs_acc_pgs64 = 1;
     };
 };
 
@@ -240,6 +289,7 @@ class UK3CB_MuzzleSlot_556_HK33: asdg_MuzzleSlot {
         rhsusf_acc_rotex5_tan = 1;
         rhsusf_acc_sf3p556 = 1;
         rhsusf_acc_sfmb556 = 1;
+        rhssaf_acc_g36_rotex = 1;
     };
 };
 
@@ -267,5 +317,48 @@ class UK3CB_MuzzleSlot_762_M14: asdg_MuzzleSlot {
         rhsusf_acc_m14_flashsuppresor = 1;
         rhsgref_sdn6_suppressor = 1;
         rhsgref_acc_falmuzzle_l1a1 = 1;
+    };
+};
+
+class MuzzleSlot;
+class MuzzleSlot_545R: MuzzleSlot {
+    class compatibleItems {
+        rhs_acc_pbs4 = 1;
+        rhs_acc_pgs64 = 1;
+        rhs_acc_pgs64_74u = 1;
+        rhs_acc_pgs64_74un = 1;
+        rhs_acc_dtkrpk = 1;
+    };
+};
+
+class MuzzleSlot_556: MuzzleSlot {
+    class compatibleItems {
+        rhssaf_acc_g36_rotex = 1;
+    };
+};
+
+class MuzzleSlot_762: MuzzleSlot {
+    class compatibleItems {
+        rhsusf_acc_aac_m14dcqd_silencer = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_d = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
+        rhsusf_acc_m14_flashsuppresor = 1;
+        rhsgref_sdn6_suppressor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
+    };
+};
+
+class MuzzleSlot_762R: MuzzleSlot {
+    class compatibleItems {
+        rhs_acc_ak5 = 1;
+        rhs_acc_dtk = 1;
+        rhs_acc_dtk1 = 1;
+        rhs_acc_dtk1l = 1;
+        rhs_acc_dtk2 = 1;
+        rhs_acc_dtk3 = 1;
+        rhs_acc_dtk4long = 1;
+        rhs_acc_dtk4screws = 1;
+        rhs_acc_dtkakm = 1;
+        rhs_acc_pgs64 = 1;
     };
 };

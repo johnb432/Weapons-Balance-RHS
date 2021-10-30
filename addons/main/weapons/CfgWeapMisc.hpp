@@ -23,6 +23,44 @@ class rhs_weap_m84: Rifle_Long_Base_F {
     UiPicture = "\a3\weapons_f\data\ui\icon_mg_ca.paa";
 };
 
+class rhs_weap_rpk_base: Rifle_Long_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_rpk74_base: rhs_weap_rpk_base {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_rpk74: rhs_weap_rpk74_base {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_rpk74n: rhs_weap_rpk74 {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_rpk74m: rhs_weap_rpk74n {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_rpk74m_npz: rhs_weap_rpk74m {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 108.4;
+    };
+};
+class rhs_weap_rpk74m_folded: rhs_weap_rpk74m {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 104.4;
+    };
+};
+
+class GM6_base_F: Rifle_Long_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_M107_Base_F: GM6_base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_M107: rhs_weap_M107_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 327;
+    };
+};
+
 class rhs_weap_mg42_base: Rifle_Base_F {
     UiPicture = "\a3\weapons_f\data\ui\icon_mg_ca.paa";
 };
@@ -30,9 +68,27 @@ class rhs_weap_mg42: rhs_weap_mg42_base {
     displayName = "MG 42";
 };
 
+class rhs_weap_orsis_Base_F: Rifle_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_t5000: rhs_weap_orsis_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        class CowsSlot: asdg_OpticRail1913_long {};
+    };
+};
+
+class rhs_weap_XM2010_Base_F: Rifle_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        class CowsSlot: asdg_OpticRail1913_long {};
+    };
+};
+
 class rhs_weap_MP44_base;
 class rhs_weap_MP44: rhs_weap_MP44_base {
-    displayName = "MP 44";
+    displayName = "StG 44";
 };
 
 class rhs_weap_m38_Base_F: Rifle_Base_F {
@@ -49,6 +105,16 @@ class rhs_weap_mosin_sbr: rhs_weap_m38_rail {
     };
 };
 
+class rhs_weap_kar98k_Base_F: Rifle_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_kar98k: rhs_weap_kar98k_Base_F {
+    displayName = "Kar98k";
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 86;
+    };
+};
+
 class rhs_weap_sr25: rhs_weap_m14ebrri {
     magazineWell[] += {"CBA_762x51_SR25"};
 };
@@ -62,6 +128,17 @@ class rhs_weap_m3a1_specops: rhs_weap_m3a1_base {
     };
 };
 
+class hgun_PDW2000_F;
+class rhs_weap_pp2000: hgun_PDW2000_F {
+    rhs_fold_checkOptic = 0;
+    rhs_pistol_conversion = 1;
+};
+
+class SMG_01_F;
+class rhs_weap_savz61: SMG_01_F {
+    rhs_pistol_conversion = 1;
+};
+
 class Rifle_Short_Base_F: Rifle_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
@@ -72,6 +149,8 @@ class rhsusf_weap_MP7A1_base_f: SMG_02_base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhsusf_weap_MP7A2: rhsusf_weap_MP7A1_base_f {
+    rhs_fold_checkOptic = 0;
+    rhs_pistol_conversion = 1;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 43.2;
     };
@@ -90,6 +169,21 @@ class rhsusf_weap_MP7A2_winter: rhsusf_weap_MP7A2 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 43.2;
     };
+};
+
+class rhsusf_weap_MP7A2_folded: rhsusf_weap_MP7A2 {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        mass = 43.2;
+    };
+};
+class rhsusf_weap_MP7A2_folded_aor1: rhsusf_weap_MP7A2_folded {
+    displayName = "MP7A2 (AOR1/Folded)";
+};
+class rhsusf_weap_MP7A2_folded_desert: rhsusf_weap_MP7A2_folded {
+    displayName = "MP7A2 (Desert/Folded)";
+};
+class rhsusf_weap_MP7A2_folded_winter: rhsusf_weap_MP7A2_folded {
+    displayName = "MP7A2 (Winter/Folded)";
 };
 
 class rhs_weap_M590_5RD: Rifle_Base_F {

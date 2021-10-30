@@ -1,5 +1,4 @@
 class 1Rnd_HE_Grenade_shell;
-class rhs_mag_20Rnd_762x51_m80_fnfal;
 class rhsusf_50Rnd_762x51;
 class Laserbatteries;
 class CA_LauncherMagazine;
@@ -14,6 +13,13 @@ class rhs_VOG25: 1Rnd_HE_Grenade_shell {
 };
 class rhs_VOG25P: rhs_VOG25 {
     displayName = "VOG25P (HE)";
+};
+
+class rhs_mag_M433_HEDP;
+class rhs_VOG25_HEDP: rhs_mag_M433_HEDP {
+    descriptionshort = "Type: High Explosive Dual Purpose Grenade<br />Caliber: 40 mm<br />Rounds: 1<br />Used in: GP-25";
+    displayName = "VOG25 (HEDP)";
+    initspeed = 76.5;
 };
 
 class rhs_GRD40_White: rhs_VOG25 {
@@ -50,6 +56,9 @@ class rhs_VG40TB: rhs_VOG25 {
     displayName = "VG-40TB (Thermobaric)";
 };
 
+class rhs_mag_20Rnd_762x51_m80_fnfal: CA_Magazine {
+    mass = 16.24;
+};
 class rhs_mag_30Rnd_762x51_m80_fnfal: rhs_mag_20Rnd_762x51_m80_fnfal {
     modelSpecial = "rhsgref\addons\rhsgref_weapons3\mag_proxies\rhs_mag_762x51_fnfal_20rnd";
     scope = 2;
@@ -67,11 +76,16 @@ class rhsusf_100Rnd_762x51_m993: rhsusf_50Rnd_762x51_m993 {
 };
 
 class rhsgref_30rnd_1143x23_M1911B_SMG: CA_Magazine {
-   mass = 15.8;
+    mass = 15.8;
 };
 
 class rhsgref_20rnd_765x17_vz61: CA_Magazine {
-   mass = 5.1;
+    mass = 5.1;
+};
+
+class 10Rnd_RHS_50BMG_Box;
+class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box {
+    mass = 28;
 };
 
 class rhs_LaserFCSMag: Laserbatteries {

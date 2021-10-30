@@ -1,4 +1,5 @@
 class rhs_weap_svd: rhs_weap_ak74m {
+    rhs_fold = "";
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_svdp: rhs_weap_svd {
@@ -53,7 +54,7 @@ class rhs_weap_asval_grip: rhs_weap_asval {
     };
 };
 class rhs_weap_asval_grip_folded: rhs_weap_asval_grip {
-    displayName = "AS Val (GRIP/Folded)";
+    displayName = "AS Val (Grip/Folded)";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 56;
     };

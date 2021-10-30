@@ -162,9 +162,16 @@ class rhs_weap_m16a3_carryhandle_M203: rhs_weap_m16a4_carryhandle_M203 {
     baseWeapon = "rhs_weap_m16a3_carryhandle_M203";
     displayName = "M16A3 (Carryhandle/RAS/M203)";
     modes[] = {"Single","Single_AI","FullAuto","single_medium_optics1","single_far_optics2"};
+    rhs_grip1_change = "rhs_weap_m16a3_carryhandle_M203_grip";
+    rhs_grip1_change = "rhs_weap_m16a3_carryhandle_M203_grip";
+    rhs_grip1_change = "rhs_weap_m16a3_carryhandle_M203_grip";
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 112;
     };
+};
+
+class rhs_weap_m16a3_carryhandle_M203_grip: rhs_weap_m16a3_carryhandle_M203 {
+    handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m203gripod.rtm"};
 };
 
 class rhs_weap_m27iar: rhs_weap_m4a1 {

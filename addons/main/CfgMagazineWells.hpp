@@ -108,6 +108,12 @@ class CfgMagazineWells {
         };
     };
 
+    class CBA_FIM {
+        WB_Magazines[] += {
+            "rhs_fim92_mag"
+        };
+    };
+
     class CBA_RPG7 {
          WB_Magazines[] += {
             "rhs_rpg7_OG7V_mag",
@@ -118,6 +124,12 @@ class CfgMagazineWells {
             "rhs_rpg7_PG7VS_mag",
             "rhs_rpg7_TBG7V_mag",
             "rhs_rpg7_type69_airburst_mag"
+        };
+    };
+
+    class CBA_STRELA {
+        WB_Magazines[] += {
+            "rhs_mag_9k38_rocket"
         };
     };
 
@@ -140,6 +152,12 @@ class CfgMagazineWells {
     class PK_762x54R {
         WB_Magazines[] += {
             "rhssaf_250Rnd_762x54R"
+        };
+    };
+
+    class VOG_40mm {
+        WB_Magazines[] += {
+            "rhs_VOG25_HEDP"
         };
     };
 };

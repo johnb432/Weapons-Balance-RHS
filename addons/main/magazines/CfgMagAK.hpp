@@ -1,15 +1,31 @@
 class rhs_30Rnd_545x39_7N6_AK;
 class rhs_30Rnd_545x39_7N10_AK;
+class rhs_30Rnd_545x39_7N22_AK;
+class rhs_30Rnd_545x39_7U1_AK;
+class rhs_30Rnd_545x39_AK_green;
 class rhs_30Rnd_762x39mm_tracer;
 class rhssaf_30Rnd_762x39_M82_api;
 class rhssaf_30Rnd_762x39_M82_api_green: rhssaf_30Rnd_762x39_M82_api {
     ammo = "rhssaf_ammo_762x39_m82_api_green";
     author = "Red Hammer Studios & johnb43";
-    displayname = "30rnd M70 7.62x39mm M82 API (Green Tracers)";
+    displayname = "30rnd M70 7.62x39mm M82 API (Green Tracer)";
 };
 
 class rhs_30Rnd_545x39_7N10_2mag_AK: rhs_30Rnd_545x39_7N10_AK {
     mass = 9.1;
+};
+
+class rhs_60Rnd_545X39_7N10_AK: rhs_30Rnd_545x39_7N10_AK {
+    mass = 18;
+};
+class rhs_60Rnd_545X39_7N22_AK: rhs_30Rnd_545x39_7N22_AK {
+    mass = 18;
+};
+class rhs_60Rnd_545X39_7U1_AK: rhs_30Rnd_545x39_7U1_AK {
+    mass = 18;
+};
+class rhs_60Rnd_545X39_AK_Green: rhs_30Rnd_545x39_AK_green {
+    mass = 18;
 };
 
 class rhs_10Rnd_762x54mmR_7N1: rhs_30Rnd_545x39_7N6_AK {

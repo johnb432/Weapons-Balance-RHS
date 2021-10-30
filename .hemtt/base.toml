@@ -1,0 +1,13 @@
+name = "Weapons-Balance-RHS"
+prefix = "wb_rhs"
+author = "johnb43"
+template = "cba"
+mainprefix = "z"
+files = [
+    "CHANGELOG.md",
+    "mod.cpp",
+    "LICENSE",
+    "README.md"
+]
+folder_optionals = false
+sig_version = 3

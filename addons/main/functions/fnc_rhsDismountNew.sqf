@@ -27,13 +27,13 @@ if (_items select 2 isNotEqualTo "") exitWith {false};
 GVAR(interactionWeaponInProgress) = true;
 
 // Need to check if UGL ammo is empty, otherwise it will give extra one
-private _magazineUGL = (primaryWeaponMagazine _unit) select 1;
-private _muzzleUGL = ((_weapon call CBA_fnc_getMuzzles) select {_x isNotEqualTo _weapon && {_x isNotEqualTo "SAFE"} && {_x isNotEqualTo "FOLD"}}) select 0;
+private _magazineUGL = (primaryWeaponMagazine _unit) param [1, ""];
+private _muzzleUGL = ((_weapon call CBA_fnc_getMuzzles) select {_x != _weapon && {_x != "SAFE"} && {_x != "FOLD"}}) select 0;
 
 private _weaponState = weaponState _unit;
 
 // If the UGL is currently selected, get information on the main muzzle
-if (toLower currentMuzzle _unit isEqualTo toLower _muzzleUGL) then {
+if (!isNil "_muzzleUGL" && {currentMuzzle _unit == _muzzleUGL}) then {
     // This syntax does not get the firemode correctly
     _weaponState = _unit weaponState _weapon;
 };
@@ -41,7 +41,7 @@ if (toLower currentMuzzle _unit isEqualTo toLower _muzzleUGL) then {
 // variable time length; need to do waitUntil animation finished
 _unit playMoveNow "MountOptic";
 
-_unit setVariable [QGVAR(dismountDovetailRailAdapter), [_weaponState, getText (configFile >> "CfgWeapons" >> _weapon >> ["rhs_mtz", "rhs_npz"] select _isNPZ), _muzzleUGL, _magazineUGL, [_unit ammo _muzzleUGL, 0] select (isNil "_magazineUGL" || {_magazineUGL isEqualTo ""}), _items, ["rhs_acc_mtz", "rhs_acc_npz"] select _isNPZ]];
+_unit setVariable [QGVAR(dismountDovetailRailAdapter), [_weaponState, getText (configFile >> "CfgWeapons" >> _weapon >> ["rhs_mtz", "rhs_npz"] select _isNPZ), _muzzleUGL, _magazineUGL, [_unit ammo _muzzleUGL, 0] select (_magazineUGL isEqualTo ""), _items, ["rhs_acc_mtz", "rhs_acc_npz"] select _isNPZ]];
 
 _unit addEventHandler ["AnimDone", {
     params ["_unit", "_anim"];
@@ -64,10 +64,19 @@ _unit addEventHandler ["AnimDone", {
     // Apply saved firemode
     [_unit, _newWeapon, _weaponState select 2] call CBA_fnc_selectWeapon;
 
-    // Give old mags back
-    _unit addWeaponItem [_newWeapon, [_weaponState select 3, _weaponState select 4], true];
+    /*
+    2.08
+    _unit selectWeapon [_newWeapon, _newWeapon, _weaponState select 2];
+    */
 
-    if (!isNil "_muzzleUGL") then {
+    // Give old mags back if possible
+    private _magazine = _weaponState select 3;
+
+    if (_magazine isNotEqualTo "") then {
+        _unit addWeaponItem [_newWeapon, [_magazine, _weaponState select 4], true];
+    };
+
+    if (!isNil "_muzzleUGL" && {_magazineUGL isNotEqualTo ""}) then {
         _unit addWeaponItem [_newWeapon, [_magazineUGL, _ammoCountUGL], true];
     };
 

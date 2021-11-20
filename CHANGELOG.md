@@ -1,5 +1,12 @@
+# Changelog for Weapons balance 20.11.2021
+
+1.1.0.1
+- Minor fixes.
+
 # Changelog for Weapons balance 30.10.2021
 
+1.1.0.0
+- Added hemtt support
 - Added HEDP Grenade for VOG-25
 - Added some more BettIR compatbility
 - Added new keybind for RHS weapon interactions (folding and removing NPZ adapters)

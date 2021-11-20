@@ -31,7 +31,7 @@ class CfgMagazineWells {
     };
 
     class CBA_556x45_AK {
-        FK_Magazines[] = {
+        WB_Magazines[] += {
             "rhs_30Rnd_556x45_M855_AK",
             "rhs_30Rnd_556x45_M856_AK_Red",
             "rhs_30Rnd_556x45_M856_AK_Green",

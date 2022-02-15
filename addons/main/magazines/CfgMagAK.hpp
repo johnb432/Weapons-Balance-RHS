@@ -8,7 +8,9 @@ class rhssaf_30Rnd_762x39_M82_api;
 class rhssaf_30Rnd_762x39_M82_api_green: rhssaf_30Rnd_762x39_M82_api {
     ammo = "rhssaf_ammo_762x39_m82_api_green";
     author = "Red Hammer Studios & johnb43";
-    displayname = "30rnd M70 7.62x39mm M82 API (Green Tracer)";
+    descriptionShort = "Caliber: 7.62x39mm M82<br/>Type: API<br/>Rounds: 30<br/>Used in: AK-47, RPK";
+    displayName = "30Rnd 7.62x39 M82 Mag (Green Tracer)";
+    displayNameShort = "API";
 };
 
 class rhs_30Rnd_545x39_7N10_2mag_AK: rhs_30Rnd_545x39_7N10_AK {

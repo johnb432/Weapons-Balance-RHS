@@ -1,2 +1,1 @@
-PREP(rhsDismountNew);
-PREP(rhsFoldNew);
+PREP(switchWeaponVariant);

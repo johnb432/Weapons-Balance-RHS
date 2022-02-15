@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 /*
  * Author: RHS, johnb43
  * MTZ mounting handler: Switches out non-MTZ variant for MTZ variant.
@@ -11,69 +13,41 @@
  * Public: No
  */
 
-private _unit = call rhs_fnc_findPlayer;
-private _weapon = primaryWeapon _unit;
-private _newWeapon = getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_mtz");
+private _unit = call CBA_fnc_currentUnit;
+private _weapon = currentWeapon _unit;
 
-if (_newWeapon isEqualTo "") exitWith {
-    diag_log format ["[ERROR] RHS: No MTZ compatible weapon was found for %1", getText (configFile >> "CfgWeapons" >> _weapon >> "displayName")];
-};
+[_unit, [_weapon, getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_mtz")], {
+    params ["_unit", "_weaponInfo", "", "", "_isSuccess"];
 
-// Only do if player is on foot
-if (isNull objectParent _unit) then {
-    _unit removePrimaryWeaponItem "rhs_acc_mtz";
-
-    primaryWeaponItems _unit params ["_silencer", "_laserpointer", "", "_bipod"];
-    private _magazineUGL = (primaryWeaponMagazine _unit) select 1;
-
-    // Need to check if UGL ammo is empty, otherwise it will give extra one
-    private _muzzleUGL = ((_weapon call CBA_fnc_getMuzzles) select {_x isNotEqualTo _weapon && {_x isNotEqualTo "SAFE"} && {_x isNotEqualTo "FOLD"}}) select 0;
-    private _ammoCountUGL = [_unit ammo _muzzleUGL, 0] select (isNil "_magazineUGL" || {_magazineUGL isEqualTo ""});
-
-    private _weaponState = weaponState _unit;
-
-    // If the UGL is currently selected, get information on the main muzzle
-    if (toLower currentMuzzle _unit isEqualTo toLower _muzzleUGL) then {
-        // This syntax does not get the firemode correctly
-        _weaponState = _unit weaponState _weapon;
+    // Remove MTZ
+    switch (toLower (_weaponInfo select 0)) do {
+        case (toLower primaryWeapon _unit): {
+            _unit removePrimaryWeaponItem "rhs_acc_mtz";
+        };
+        case (toLower handgunWeapon _unit): {
+            _unit removeHandgunItem "rhs_acc_mtz";
+        };
+        case (toLower secondaryWeapon _unit): {
+            _unit removeSecondaryWeaponItem "rhs_acc_mtz";
+        };
     };
 
-    // Add new weapon with nothing, so it avoids eating mags
-    [_unit, _newWeapon] call CBA_fnc_addWeaponWithoutItems;
-
-    // Apply saved firemode
-    [_unit, _newWeapon, _weaponState select 2] call CBA_fnc_selectWeapon;
-
-    // Give old mags back
-    _unit addWeaponItem [_newWeapon, [_weaponState select 3, _weaponState select 4], true];
-
-    if (!isNil "_muzzleUGL") then {
-        _unit addWeaponItem [_newWeapon, [_magazineUGL, _ammoCountUGL], true];
+    // If successful, don't execute code below
+    if (_isSuccess) exitWith {
+        _unit playActionNow "MountOptic";
+        true;
     };
-
-    _unit playMoveNow "MountOptic";
-
-    // Add attachments back if any were present
-    if (_silencer isNotEqualTo "") then {
-        _unit addPrimaryWeaponItem _silencer;
-    };
-
-    if (_laserpointer isNotEqualTo "") then {
-        _unit addPrimaryWeaponItem _laserpointer;
-    };
-
-    // Add bipod back if present; will change model again
-    _unit addPrimaryWeaponItem _bipod;
-} else {
-    hint "Mounting of NPZ rails is not available in vehicles!";
-    _unit removePrimaryWeaponItem "rhs_acc_mtz";
 
     // Add item to ground if player is outside
     private _outside = isNull objectParent _unit;
     [_unit, "rhs_acc_mtz", _outside] call CBA_fnc_addItem;
 
     // In case player takes item from vehicle and doesn't have space inside his inventory we assign item back to vehicle
-    if (!_outside && {!("rhs_acc_mtz" in (items _unit))}) then {
-        (objectParent _unit) addItemCargo "rhs_acc_mtz";
-    };
-};
+    if (_outside) exitWith {};
+
+    hint "Mounting of MTZ rails is not available in vehicles!";
+
+    if ("rhs_acc_mtz" in (items _unit)) exitWith {};
+
+    (objectParent _unit) addItemCargo "rhs_acc_mtz";
+}, [true, false]] call FUNC(switchWeaponVariant);

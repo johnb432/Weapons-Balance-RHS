@@ -1,5 +1,6 @@
 name = "Weapons Balance - RHS";
 author = "johnb43";
+tooltip = "Weapons Balance - RHS";
 tooltipOwned = "Weapons Balance - RHS";
 hideName = 0;
 hidePicture = 0;
@@ -9,4 +10,6 @@ description = "A collection of balancing mods made by johnb43.";
 overview = "A collection of balancing mods made by johnb43.";
 picture = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa"; // http://getdrawings.com/get-drawing#gun-drawing-in-pencil-27.jpg, http://getdrawings.com/get-drawing#gun-drawing-in-pencil-17.png
 logo = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";
+logoOver = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";
+logoSmall = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";
 overviewPicture = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";

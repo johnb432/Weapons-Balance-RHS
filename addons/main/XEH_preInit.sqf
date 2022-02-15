@@ -1,32 +1,92 @@
 #include "script_component.hpp"
 
-if (!hasInterface) exitWith {};
-
 ADDON = false;
 
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-[COMPONENT_NAME, QGVAR(weaponInteraction), "Interact with Weapon", {
-    if (GVAR(interactionWeaponInProgress)) exitWith {};
+if (hasInterface) then {
+    GVAR(interactionWeaponInProgress) = false;
 
-    private _player = call rhs_fnc_findPlayer;
-    private _weapon	= currentWeapon _player;
+    [COMPONENT_NAME, QGVAR(weaponInteraction), "Interact with Weapon", {
+        if (GVAR(interactionWeaponInProgress)) exitWith {};
 
-    if (
-        (if (getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_mtz") isNotEqualTo "" && {"_mtz" in (toLower _weapon) || "_pr" in (toLower _weapon)}) then {
-            [_player, _weapon, false] call FUNC(rhsDismountNew);
-        } else {
-            if !(getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_npz") isNotEqualTo "" && {"_npz" in (toLower _weapon)}) exitWith {false};
-            [_player, _weapon, true] call FUNC(rhsDismountNew);
-        })
-    || {getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_fold") isEqualTo ""}) exitWith {
-        true;
-    };
+        private _unit = call CBA_fnc_currentUnit;
+        private _weapon	= currentWeapon _unit;
 
-    [_player, _weapon] call FUNC(rhsFoldNew);
-    true
-}, {}] call CBA_fnc_addKeybind;
+        if (_weapon isEqualTo "") exitWith {};
+
+        private _weaponConfig = configFile >> "CfgWeapons" >> _weapon;
+
+        private _items = _unit weaponAccessories _weapon;
+
+        // MTZ rail handler
+        private _rhsMTZ = getText (_weaponConfig >> "rhs_mtz");
+
+        if (_rhsMTZ isNotEqualTo "" && {"_mtz" in (toLower _weapon) || "_pr" in (toLower _weapon)}) exitWith {
+            // If weapon has an optic, don't do action
+            if ((_items select 2) isNotEqualTo "") exitWith {false};
+
+            [_unit, [_weapon, _rhsMTZ], {
+                params ["_unit", "", "", "", "_isSuccess"];
+
+                if (!_isSuccess) exitWith {};
+
+                // Variable time length
+                _unit playActionNow "MountOptic";
+
+                // Add rail converter to player's inventory; drop on ground if inventory is full
+                [_unit, "rhs_acc_mtz", true] call CBA_fnc_addItem;
+            }] call FUNC(switchWeaponVariant);
+        };
+
+        // NPZ rail handler
+        private _rhsNPZ = getText (_weaponConfig >> "rhs_npz");
+
+        if (_rhsNPZ isNotEqualTo "" && {"_npz" in (toLower _weapon)}) exitWith {
+            // If weapon has an optic, don't do action
+            if ((_items select 2) isNotEqualTo "") exitWith {false};
+
+            [_unit, [_weapon, _rhsNPZ], {
+                params ["_unit", "", "", "", "_isSuccess"];
+
+                if (!_isSuccess) exitWith {};
+
+                // Variable time length
+                _unit playActionNow "MountOptic";
+
+                // Add rail converter to player's inventory; drop on ground if inventory is full
+                [_unit, "rhs_acc_npz", true] call CBA_fnc_addItem;
+            }] call FUNC(switchWeaponVariant);
+        };
+
+        private _weaponFold = getText (_weaponConfig >> "rhs_fold");
+
+        if (_weaponFold isEqualTo "") exitWith {
+            false;
+        };
+
+        [_unit, [_weapon, _weaponFold, 2], {
+            params ["_unit", "_weaponInfo", "", "", "_isSuccess"];
+            _weaponInfo params ["_weapon"];
+
+            if (!_isSuccess) exitWith {};
+
+            private _weaponConfig = configFile >> "CfgWeapons" >> _weapon;
+
+            // Do fold animation and play folding sound
+            _unit addWeaponItem [_weapon, ["rhs_mag_fold_stock", 1, "FOLD"]];
+            _unit playActionNow ([_weaponConfig, "rhs_fold_anim", "MountOptic"] call BIS_fnc_returnConfigEntry);
+            _unit selectWeapon "fold";
+
+            private _weaponSound = [_weaponConfig, "rhs_fold_sound", []] call BIS_fnc_returnConfigEntry;
+
+            if (_weaponSound isNotEqualTo []) then {
+                playSound3D [_weaponSound select 0, _unit, false, ATLToASL (_unit modelToWorldVisual (_unit selectionPosition "leftHand")), _weaponSound select 1, _weaponSound select 2, _weaponSound select 3];
+            };
+        }] call FUNC(switchWeaponVariant);
+    }, {}] call CBA_fnc_addKeybind;
+};
 
 ADDON = true;

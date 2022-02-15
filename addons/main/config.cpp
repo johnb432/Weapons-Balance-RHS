@@ -19,6 +19,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cba_main",
+            "cba_xeh",
             "rhs_main_loadorder",
             "rhsgref_main_loadorder",
             "rhssaf_main_loadorder",
@@ -27,23 +28,6 @@ class CfgPatches {
         author = "johnb43";
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
         VERSION_CONFIG;
-    };
-};
-
-class CfgMods {
-    class PREFIX {
-        name = "Weapons Balance - RHS";
-        author = "johnb43";
-        tooltipOwned = "Weapons Balance - RHS";
-        hideName = 0;
-        hidePicture = 0;
-        actionName = "Github";
-        action = "https://github.com/johnb432/Weapons-Balance-RHS";
-        description = "A collection of balancing mods made by johnb43.";
-        overview = "A collection of balancing mods made by johnb43.";
-        picture = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa"; // http://getdrawings.com/get-drawing#gun-drawing-in-pencil-27.jpg, http://getdrawings.com/get-drawing#gun-drawing-in-pencil-17.png
-        logo = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";
-        overviewPicture = "\z\wb_rhs\addons\main\ui\logo_weapons_balance.paa";
     };
 };
 
@@ -74,6 +58,9 @@ class CfgFunctions {
             class fold_ak {
                 file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
             };
+            class fold_PP {
+                file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
+            };
             class fold_weapon {
                 file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
             };
@@ -81,9 +68,6 @@ class CfgFunctions {
     };
 };
 
-class asdg_OpticRail1913;
-class asdg_OpticRail1913_long;
-class asdg_UnderSlot;
 class rhs_russian_ak_barrel_slot;
 
 class CfgWeapons {

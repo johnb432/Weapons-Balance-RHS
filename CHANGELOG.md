@@ -1,9 +1,16 @@
-# Changelog for Weapons balance 20.11.2021
+# Changelog for Weapons Balance 15.2.2022
+
+1.1.0.2
+- Moved White Tracer 5.56 AK magazines from RHS to 3CB Factions Weapons Balance.
+- Renames some magazines & weapons to fit more accurately.
+- Cleanup.
+
+# Changelog for Weapons Balance 20.11.2021
 
 1.1.0.1
 - Minor fixes.
 
-# Changelog for Weapons balance 30.10.2021
+# Changelog for Weapons Balance 30.10.2021
 
 1.1.0.0
 - Added hemtt support
@@ -36,7 +43,7 @@
         - Strela
             - Added 1x Igla AA rocket
 
-# Changelog for Weapons balance 12.2.2021
+# Changelog for Weapons Balance 12.2.2021
 
 - Updated to comply with 3CB Faction update
 
@@ -44,7 +51,7 @@
     - RHS:
         - All (12x) VOG25 Grenades renamed to show what they are
 
-# Changelog for Weapons balance 3.1.2021
+# Changelog for Weapons Balance 3.1.2021
 
 - Addition of AK-101 and AK-102 variants
 - Addition of 15x RHS/custom AK-101 5.56x45mm mags: M855, M855A1, M856, M856A1, Mk262, Mk318, IR-DIM
@@ -89,7 +96,7 @@
         - 1x RHS vz.61 .32ACP 20Rnd mag from 0.25kg to 0.23kg
         - 1x RHS FIM-92F round from 5.44kg to 4.54kg
 
-# Changelog for Weapons balance 5.12.2020
+# Changelog for Weapons Balance 5.12.2020
 
 - Added M16A3s
 - Unhid 6x RHS 5.56x45mm 30Rnd M856 & M856A1 mags, with Green, Orange and Yellow tracer
@@ -99,7 +106,7 @@
         - Medic Bag, Sidor and RPG Carrier:
             - Increased capacity to assault pack level, increased weight if necessary to assault pack level
 
-# Changelog for Weapons balance 18.10.2020
+# Changelog for Weapons Balance 18.10.2020
 
 Mostly cleanup for the stuff RHS fixed.
 
@@ -138,7 +145,7 @@ Mostly cleanup for the stuff RHS fixed.
         - SVDS (NPZ):
             - Changed weight from 4.28kg to 4.26kg
 
-# Changelog for Weapons balance 23.8.2020
+# Changelog for Weapons Balance 23.8.2020
 
 - New additions:
     - 50 & 100Rnd RHS 7.62x51mm NATO M993 AP Belts
@@ -287,7 +294,7 @@ Mostly cleanup for the stuff RHS fixed.
         - Fixed 100Rnd 5.56x45mm C-mag descriptions
         - Changed name and description of 3x Laser batteries
 
-# Changelog for Weapons balance 29.7.2020
+# Changelog for Weapons Balance 29.7.2020
 
 - New additions:
     - 200Rnd RHS 5.56 tracer box

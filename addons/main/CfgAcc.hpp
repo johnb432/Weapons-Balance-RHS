@@ -32,7 +32,7 @@ class nia_rifle_grips_slot: UnderBarrelSlot {
 
 class asdg_SlotInfo;
 class asdg_UnderSlot: asdg_SlotInfo {
-    class compatibleItems {};
+    class compatibleItems;
 };
 class nia_rifle_bipodsgrips_slot: asdg_UnderSlot {
     class compatibleItems: compatibleItems {
@@ -81,7 +81,7 @@ class WB_rifle_grips_slot: asdg_SlotInfo {
 };
 
 class rhs_rifle_gripod_slot: UnderBarrelSlot {
-    class compatibleItems {};
+    class compatibleItems;
 };
 
 class rhs_western_rifle_gripod_slot: rhs_rifle_gripod_slot {
@@ -201,8 +201,22 @@ class CowsSlot_Rail: CowsSlot {
 };
 
 class asdg_OpticRail;
+class asdg_OpticRail1913: asdg_OpticRail {
+    class compatibleItems;
+};
+class asdg_OpticRail1913_long: asdg_OpticRail1913 {
+    class compatibleItems: compatibleItems {
+        rhsusf_acc_M8541_low = 1;
+        rhsusf_acc_m8541_low_d = 1;
+        rhsusf_acc_m8541_low_wd = 1;
+        rhsusf_acc_leupoldmk4 = 1;
+        rhsusf_acc_leupoldmk4_d = 1;
+        rhsusf_acc_leupoldmk4_wd = 1;
+    };
+};
+
 class asdg_OpticSideMount: asdg_OpticRail {
-    class compatibleItems {};
+    class compatibleItems;
 };
 class asdg_OpticSideRail_AK: asdg_OpticSideMount {
     class compatibleItems: compatibleItems {
@@ -226,14 +240,6 @@ class asdg_OpticSideRail_AK: asdg_OpticSideMount {
         rhs_acc_pso1m21_pkp_ironsight = 1;
         rhs_acc_pso1m21_svd = 1;
         rhs_acc_pso1m21_svd_ironsight = 1;
-    };
-};
-
-class asdg_OpticSideRail_SVD;
-class rhs_russian_svd_scopes_slot: asdg_OpticSideRail_SVD {
-    class compatibleItems {
-        hlc_optic_pso1 = 1;
-        hlc_optic_goshawk = 1;
     };
 };
 

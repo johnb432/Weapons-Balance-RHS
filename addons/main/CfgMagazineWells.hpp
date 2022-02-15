@@ -36,13 +36,11 @@ class CfgMagazineWells {
             "rhs_30Rnd_556x45_M856_AK_Red",
             "rhs_30Rnd_556x45_M856_AK_Green",
             "rhs_30Rnd_556x45_M856_AK_Orange",
-            "rhs_30Rnd_556x45_M856_AK_White",
             "rhs_30Rnd_556x45_M856_AK_Yellow",
             "rhs_30Rnd_556x45_M855A1_AK",
             "rhs_30Rnd_556x45_M856A1_AK_Red",
             "rhs_30Rnd_556x45_M856A1_AK_Green",
             "rhs_30Rnd_556x45_M856A1_AK_Orange",
-            "rhs_30Rnd_556x45_M856A1_AK_White",
             "rhs_30Rnd_556x45_M856A1_AK_Yellow",
             "rhs_30Rnd_556x45_Mk262_AK",
             "rhs_30Rnd_556x45_Mk318_AK",
@@ -152,6 +150,13 @@ class CfgMagazineWells {
     class PK_762x54R {
         WB_Magazines[] += {
             "rhssaf_250Rnd_762x54R"
+        };
+    };
+
+    class SVD_762x54R {
+        WB_Magazines[] += {
+            "rhs_10Rnd_762x54mmR_7N1",
+            "rhs_10Rnd_762x54mmR_7N14"
         };
     };
 

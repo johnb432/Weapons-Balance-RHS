@@ -23,10 +23,12 @@ class CfgMagazineWells {
             "rhs_GRD40_white",
             "rhs_GRD40_green",
             "rhs_GRD40_red",
+            "rhs_VG40MD",
             "rhs_VG40MD_White",
             "rhs_VG40MD_Green",
             "rhs_VG40MD_Red",
-            "rhs_GDM40"
+            "rhs_GDM40",
+            "rhs_VOG25_HEDP"
         };
     };
 

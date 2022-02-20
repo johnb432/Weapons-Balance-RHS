@@ -1,3 +1,11 @@
+# Changelog for Weapons Balance 20.2.2022
+
+1.1.0.3
+- MagazineWells:
+    - CBA:
+        - 40mm GP:
+            - Added 2x RHS grenades
+
 # Changelog for Weapons Balance 15.2.2022
 
 1.1.0.2

@@ -26,6 +26,7 @@ class CfgPatches {
             "rhsusf_main_loadorder"
         };
         author = "johnb43";
+        authors[] = {"johnb43"};
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
         VERSION_CONFIG;
     };
@@ -42,27 +43,27 @@ class CfgFunctions {
     class RHS {
         class functions {
             class acc_mtz {
-                file = "z\wb_rhs\addons\main\functions\rhs_mtz.sqf";
+                file = PATH_TO_FUNC(rhs_mtz);
             };
             class acc_mtz_handler {
-                file = "z\wb_rhs\addons\main\functions\rhs_mtz_dismount.sqf";
+                file = PATH_TO_FUNC(rhs_mtz_dismount);
             };
 
             class acc_npz {
-                file = "z\wb_rhs\addons\main\functions\rhs_npz.sqf";
+                file = PATH_TO_FUNC(rhs_npz);
             };
             class acc_npz_handler {
-                file = "z\wb_rhs\addons\main\functions\rhs_npz_dismount.sqf";
+                file = PATH_TO_FUNC(rhs_npz_dismount);
             };
 
             class fold_ak {
-                file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
+                file = PATH_TO_FUNC(rhs_fold);
             };
             class fold_PP {
-                file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
+                file = PATH_TO_FUNC(rhs_fold);
             };
             class fold_weapon {
-                file = "z\wb_rhs\addons\main\functions\rhs_fold.sqf";
+                file = PATH_TO_FUNC(rhs_fold);
             };
         };
     };
@@ -73,7 +74,7 @@ class rhs_russian_ak_barrel_slot;
 class CfgWeapons {
     class Rifle;
     class Rifle_Base_F: Rifle {
-        class WeaponSlotsInfo {};
+        class WeaponSlotsInfo;
     };
     class arifle_MX_Base_F: Rifle_Base_F {
        class WeaponSlotsInfo: WeaponSlotsInfo {};

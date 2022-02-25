@@ -17,10 +17,10 @@ private _unit = call CBA_fnc_currentUnit;
 private _weapon = currentWeapon _unit;
 
 [_unit, [_weapon, getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_npz")], {
-    params ["_unit", "_weaponInfo", "", "", "_isSuccess"];
+    (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
 
     // Remove NPZ
-    switch (toLower (_weaponInfo select 0)) do {
+    switch (toLower (_this select 1)) do {
         case (toLower primaryWeapon _unit): {
             _unit removePrimaryWeaponItem "rhs_acc_npz";
         };
@@ -50,4 +50,4 @@ private _weapon = currentWeapon _unit;
     if ("rhs_acc_npz" in (items _unit)) exitWith {};
 
     (objectParent _unit) addItemCargo "rhs_acc_npz";
-}, [true, false]] call FUNC(switchWeaponVariant);
+}, _weapon, [true, false]] call FUNC(switchWeaponVariant);

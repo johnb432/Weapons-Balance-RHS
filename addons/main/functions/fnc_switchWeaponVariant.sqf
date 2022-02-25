@@ -7,12 +7,13 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Args <ARRAY>
- *      0: Current Weapon <STRING>
+ *      0: Old Weapon <STRING>
  *      1: New Weapon <STRING>
- *      2: Delay until switch happens <NUMBER> (optional)
+ *      2: Delay until switch happens <NUMBER> (optional) Minimum is 0.1s
  *      3: Select weapon after change has happened <BOOL> (optional)
  * 4: Function to execute <CODE> (optional)
- * 5: Condition <ARRAY> (optional)
+ * 5: Arguments to pass to functon <ARRAY> (optional)
+ * 6: Condition <ARRAY> (optional)
  *      0: Check if in vehicle <BOOLEAN> Action isn't exectuted by default if unit is in a vehicle
  *      1: Check if rhs_fold_checkOptic should be checked <BOOLEAN> Action isn't exectuted by default if unit has optic mounted
  *
@@ -25,7 +26,7 @@
  * [player, ["rhs_weap_ak74m", "rhs_weap_ak74m_npz", 3], {hint _this}] call wb_rhs_main_fnc_switchWeaponVariant;
  */
 
-params [["_unit", objNull, [objNull]], ["_args", ["", "", "", true], [[]], [0, 1, 2, 3, 4]], ["_function", {}, [{}]], ["_condition", [true, true], [[], true], [0, 1, 2]]];
+params [["_unit", objNull, [objNull]], ["_args", ["", "", "", true], [[]], [0, 1, 2, 3, 4]], ["_function", {}, [{}]], ["_params", []], ["_condition", [true, true], [[], true], [0, 1, 2]]];
 _args params [["_weapon", "", [""]], ["_newWeapon", "", [""]], ["_delay", 0, [0]], ["_selectWeapon", true, [true]]];
 
 // If invalid, exit
@@ -33,7 +34,7 @@ if (isNull _unit || _weapon isEqualTo "" || _newWeapon isEqualTo "" || _weapon =
 
 // Check if local
 if (!local _unit) exitWith {
-    _this remoteExecCall ["wb_rhs_main_fnc_switchWeaponVariant", _unit];
+    _this remoteExecCall [QFUNC(switchWeaponVariant), _unit];
     false;
 };
 
@@ -53,7 +54,7 @@ private _cfgWeapons = configFile >> "CfgWeapons";
 if (_weaponType isEqualTo -1 || _newWeaponType isEqualTo -1) exitWith {
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
-        [_unit, _loadout select 0, _newWeapon, _weaponState, false] call _function;
+        [[_unit, _loadout select 0, _newWeapon, _weaponState, false], _params] call _function;
     };
 
     false;
@@ -68,7 +69,7 @@ _condition params [["_checkVehicle", true, [true]], ["_checkOptic", true, [true]
 if ((_checkVehicle && {!isNull objectParent _unit}) || (_checkOptic && {([_cfgWeapons >> _weapon, "rhs_fold_checkOptic", 1] call BIS_fnc_returnConfigEntry) isEqualTo 1} && {(_weaponInfo select 3) isNotEqualTo ""})) exitWith {
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
-        [_unit, _weaponInfo, _newWeapon, _weaponState, false] call _function;
+        [[_unit, _weaponInfo, _newWeapon, _weaponState, false], _params] call _function;
     };
 
     false;
@@ -80,7 +81,7 @@ if (_weaponType isNotEqualTo _newWeaponType && {(_loadout select _newWeaponType)
 
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
-        [_unit, _weaponInfo, _newWeapon, _weaponState, false] call _function;
+        [[_unit, _weaponInfo, _newWeapon, _weaponState, false], _params] call _function;
     };
 
     false;
@@ -88,7 +89,7 @@ if (_weaponType isNotEqualTo _newWeaponType && {(_loadout select _newWeaponType)
 
 // Call function that is added as a parameter
 if (_function isNotEqualTo {}) then {
-    private _return = [_unit, _weaponInfo, _newWeapon, _weaponState, true] call _function;
+    private _return = [[_unit, _weaponInfo, _newWeapon, _weaponState, true], _params] call _function;
 
     if (isNil "_return" || {!(_return isEqualType true)} || {!_return}) exitWith {};
 
@@ -97,7 +98,7 @@ if (_function isNotEqualTo {}) then {
 };
 
 // Lock any further input, until action is finished
-GVAR(interactionWeaponInProgress) = true;
+wb_interactionWeaponInProgress = true;
 
 [{
     params ["_unit", "_weaponInfo", "_newWeapon", "_weaponState", "_selectWeapon"];
@@ -155,7 +156,7 @@ GVAR(interactionWeaponInProgress) = true;
     };
     */
 
-    GVAR(interactionWeaponInProgress) = false;
-}, [_unit, _weaponInfo, _newWeapon, _weaponState, _weaponType isEqualTo _newWeaponType], _delay + 0.1] call CBA_fnc_waitAndExecute;
+    wb_interactionWeaponInProgress = false;
+}, [_unit, _weaponInfo, _newWeapon, _weaponState, _weaponType isEqualTo _newWeaponType], _delay max 0.1] call CBA_fnc_waitAndExecute;
 
 true;

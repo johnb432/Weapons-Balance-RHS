@@ -9,3 +9,5 @@
     #undef PREP
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
+
+#define PATH_TO_FUNC(func) QUOTE(MAINPREFIX\PREFIX\SUBPREFIX\COMPONENT\functions\func.sqf)

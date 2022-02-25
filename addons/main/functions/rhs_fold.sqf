@@ -48,11 +48,11 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
         private _weapon	= _unit getVariable ["rhs_fold_weapon_mode", ""];
 
         [_unit, [_weapon, getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_fold"), 2.5], {
-            params ["_unit", "_weaponInfo", "", "", "_isSuccess"];
-            _weaponInfo params ["_weapon"];
+            (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
 
             if (!_isSuccess) exitWith {};
 
+            private _weapon = _this select 1;
             private _weaponConfig = configFile >> "CfgWeapons" >> _weapon;
 
             // Do fold animation and play folding sound
@@ -63,9 +63,9 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
             private _weaponSound = [_weaponConfig, "rhs_fold_sound", []] call BIS_fnc_returnConfigEntry;
 
             if (_weaponSound isNotEqualTo []) then {
-                playSound3D [_weaponSound select 0, _unit, false, ATLToASL (_unit modelToWorldVisual (_unit selectionPosition "leftHand")), _weaponSound select 1, _weaponSound select 2, _weaponSound select 3];
+                playSound3D [_weaponSound select 0, _unit, false, _unit modelToWorldVisualWorld (_unit selectionPosition "leftHand"), _weaponSound select 1, _weaponSound select 2, _weaponSound select 3];
             };
-        }] call FUNC(switchWeaponVariant);
+        }, _weapon] call FUNC(switchWeaponVariant);
     };
 }];
 

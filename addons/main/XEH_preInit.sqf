@@ -7,10 +7,10 @@ PREP_RECOMPILE_START;
 PREP_RECOMPILE_END;
 
 if (hasInterface) then {
-    GVAR(interactionWeaponInProgress) = false;
+    wb_interactionWeaponInProgress = false;
 
     [COMPONENT_NAME, QGVAR(weaponInteraction), "Interact with Weapon", {
-        if (GVAR(interactionWeaponInProgress)) exitWith {};
+        if (wb_interactionWeaponInProgress) exitWith {};
 
         private _unit = call CBA_fnc_currentUnit;
         private _weapon	= currentWeapon _unit;
@@ -29,7 +29,7 @@ if (hasInterface) then {
             if ((_items select 2) isNotEqualTo "") exitWith {false};
 
             [_unit, [_weapon, _rhsMTZ], {
-                params ["_unit", "", "", "", "_isSuccess"];
+                (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
 
                 if (!_isSuccess) exitWith {};
 
@@ -49,7 +49,7 @@ if (hasInterface) then {
             if ((_items select 2) isNotEqualTo "") exitWith {false};
 
             [_unit, [_weapon, _rhsNPZ], {
-                params ["_unit", "", "", "", "_isSuccess"];
+                (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
 
                 if (!_isSuccess) exitWith {};
 
@@ -68,12 +68,10 @@ if (hasInterface) then {
         };
 
         [_unit, [_weapon, _weaponFold, 2], {
-            params ["_unit", "_weaponInfo", "", "", "_isSuccess"];
-            _weaponInfo params ["_weapon"];
+            (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
+            (_this select 1) params ["_weapon", "_weaponConfig"];
 
             if (!_isSuccess) exitWith {};
-
-            private _weaponConfig = configFile >> "CfgWeapons" >> _weapon;
 
             // Do fold animation and play folding sound
             _unit addWeaponItem [_weapon, ["rhs_mag_fold_stock", 1, "FOLD"]];
@@ -83,9 +81,9 @@ if (hasInterface) then {
             private _weaponSound = [_weaponConfig, "rhs_fold_sound", []] call BIS_fnc_returnConfigEntry;
 
             if (_weaponSound isNotEqualTo []) then {
-                playSound3D [_weaponSound select 0, _unit, false, ATLToASL (_unit modelToWorldVisual (_unit selectionPosition "leftHand")), _weaponSound select 1, _weaponSound select 2, _weaponSound select 3];
+                playSound3D [_weaponSound select 0, _unit, false, _unit modelToWorldVisualWorld (_unit selectionPosition "leftHand"), _weaponSound select 1, _weaponSound select 2, _weaponSound select 3];
             };
-        }] call FUNC(switchWeaponVariant);
+        }, [_weapon, _weaponConfig]] call FUNC(switchWeaponVariant);
     }, {}] call CBA_fnc_addKeybind;
 };
 

@@ -47,7 +47,7 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
         private _weapon = _unit getVariable ["rhs_npz_ak_mode", ""];
 
         [_unit, [_weapon, getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_npz")], {
-            params ["_unit", "", "", "", "_isSuccess"];
+            (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
 
             if (!_isSuccess) exitWith {};
 

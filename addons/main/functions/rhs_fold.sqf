@@ -45,7 +45,7 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
 
     // Proper key detected
     if (inputAction rhs_key_wpn_int_glb > 0) then {
-        private _weapon	= _unit getVariable ["rhs_fold_weapon_mode", ""];
+        private _weapon = _unit getVariable ["rhs_fold_weapon_mode", ""];
 
         [_unit, [_weapon, getText (configFile >> "CfgWeapons" >> _weapon >> "rhs_fold"), 2.5], {
             (_this select 0) params ["_unit", "", "", "", "_isSuccess"];

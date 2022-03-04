@@ -2,10 +2,7 @@ class srifle_EBR_F;
 class rhs_weap_m14_base: srifle_EBR_F {
     class WeaponSlotsInfo {};
 };
-class rhs_weap_m14: rhs_weap_m14_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_m14_socom_base: rhs_weap_m14 {
+class rhs_weap_m14_socom_base: rhs_weap_m14_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_m14_socom_rail_base: rhs_weap_m14_socom_base {

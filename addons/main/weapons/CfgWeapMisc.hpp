@@ -94,7 +94,10 @@ class rhs_weap_MP44: rhs_weap_MP44_base {
 class rhs_weap_m38_Base_F: Rifle_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
-class rhs_weap_m38_rail: rhs_weap_m38_Base_F {
+class rhs_weap_m38: rhs_weap_m38_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {};
+};
+class rhs_weap_m38_rail: rhs_weap_m38 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 76.8;
     };

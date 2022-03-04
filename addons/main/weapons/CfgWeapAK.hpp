@@ -198,7 +198,7 @@ class rhs_weap_aks74n: rhs_weap_aks74 {
         mass = 66;
     };
 };
-class rhs_weap_aks74n_folded: rhs_weap_aks74n {
+class rhs_weap_aks74n_folded: rhs_weap_aks74 {
     recoil = "rhs_recoil_ak74m_folded";
     rhs_npz = "rhs_weap_aks74n_npz";
     class WeaponSlotsInfo: WeaponSlotsInfo {

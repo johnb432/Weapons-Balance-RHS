@@ -13,7 +13,7 @@ if (hasInterface) then {
         if (wb_interactionWeaponInProgress) exitWith {};
 
         private _unit = call CBA_fnc_currentUnit;
-        private _weapon	= currentWeapon _unit;
+        private _weapon = currentWeapon _unit;
 
         if (_weapon isEqualTo "") exitWith {};
 

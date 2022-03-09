@@ -10,7 +10,6 @@
  *      0: Old Weapon <STRING>
  *      1: New Weapon <STRING>
  *      2: Delay until switch happens <NUMBER> (optional) Minimum is 0.1s
- *      3: Select weapon after change has happened <BOOL> (optional)
  * 4: Function to execute <CODE> (optional)
  * 5: Arguments to pass to functon <ARRAY> (optional)
  * 6: Condition <ARRAY> (optional)
@@ -27,7 +26,7 @@
  */
 
 params [["_unit", objNull, [objNull]], ["_args", ["", "", "", true], [[]], [0, 1, 2, 3, 4]], ["_function", {}, [{}]], ["_params", []], ["_condition", [true, true], [[], true], [0, 1, 2]]];
-_args params [["_weapon", "", [""]], ["_newWeapon", "", [""]], ["_delay", 0, [0]], ["_selectWeapon", true, [true]]];
+_args params [["_weapon", "", [""]], ["_newWeapon", "", [""]], ["_delay", 0, [0]]];
 
 // If invalid, exit
 if (isNull _unit || _weapon isEqualTo "" || _newWeapon isEqualTo "" || _weapon == _newWeapon) exitWith {false};
@@ -75,8 +74,10 @@ if ((_checkVehicle && {!isNull objectParent _unit}) || (_checkOptic && {([_cfgWe
     false;
 };
 
+private _removeWeapon = _weaponType isNotEqualTo _newWeaponType;
+
 // Check if weapon can be swapped out properly
-if (_weaponType isNotEqualTo _newWeaponType && {(_loadout select _newWeaponType) isNotEqualTo []}) exitWith {
+if (_removeWeapon && {(_loadout select _newWeaponType) isNotEqualTo []}) exitWith {
     hint format ["Your %1 slot must be empty to do this action.", ["rifle", "launcher", "pistol"] select _newWeaponType];
 
     // Call function that is added as a parameter
@@ -101,8 +102,12 @@ if (_function isNotEqualTo {}) then {
 wb_interactionWeaponInProgress = true;
 
 [{
-    params ["_unit", "_weaponInfo", "_newWeapon", "_weaponState", "_selectWeapon"];
+    params ["_unit", "_weaponInfo", "_newWeapon", "_weaponState", "_zeroingIndex", "_removeWeapon"];
     _weaponInfo params ["_weapon", "_muzzle", "_siderail", "_scope", "_primaryMuzzleMagInfo", "_secondaryMuzzleMagInfo", "_underbarrel"];
+
+    if (_removeWeapon) then {
+        _unit removeWeapon (_weaponState select 0);
+    };
 
     // Add new weapon with nothing, so it avoids eating mags
     [_unit, _newWeapon] call CBA_fnc_addWeaponWithoutItems;
@@ -140,23 +145,20 @@ wb_interactionWeaponInProgress = true;
         };
     } foreach [_muzzle, _siderail, _scope, _underbarrel];
 
-    // Apply saved firemode
-    if (_selectWeapon) then {
-        if !([_unit, _weaponState select 1, _weaponState select 2] call CBA_fnc_selectWeapon) then {
-            [_unit, _newWeapon, _weaponState select 2] call CBA_fnc_selectWeapon;
-        };
-    } else {
-        [_unit, _newWeapon, _weaponState select 2] call CBA_fnc_selectWeapon;
+    private _oldMuzzle = _weaponState select 1;
+    private _firemode = _weaponState select 2;
+
+    // Apply saved firemode; Try secondary muzzle first, then try normal muzzle
+    if !(_unit selectWeapon [_newWeapon, _oldMuzzle, _firemode]) then {
+        _unit selectWeapon [_newWeapon, _newWeapon, _firemode];
     };
 
-    /*
-    2.08
-    if !(_unit selectWeapon [_newWeapon, _weaponState select 1, _weaponState select 2]) then {
-        _unit selectWeapon [_newWeapon, _newWeapon, _weaponState select 2];
+    // Set weapon zeroing; Try secondary muzzle first, then try normal muzzle
+    if !(_unit setWeaponZeroing [_newWeapon, _oldMuzzle, _zeroingIndex]) then {
+        _unit setWeaponZeroing [_newWeapon, _newWeapon, _zeroingIndex];
     };
-    */
 
     wb_interactionWeaponInProgress = false;
-}, [_unit, _weaponInfo, _newWeapon, _weaponState, _weaponType isEqualTo _newWeaponType], _delay max 0.1] call CBA_fnc_waitAndExecute;
+}, [_unit, _weaponInfo, _newWeapon, _weaponState, (_unit currentZeroing [_weaponState select 0, _weaponState select 1]) select 1, _removeWeapon], _delay max 0.1] call CBA_fnc_waitAndExecute;
 
 true;

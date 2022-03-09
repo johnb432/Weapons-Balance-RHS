@@ -20,6 +20,7 @@ class rhs_weap_ak101: rhs_weap_ak74m {
 };
 
 class rhs_weap_ak101_folded: rhs_weap_ak74m_folded {
+    author = "Red Hammer Studios & johnb43";
     baseWeapon = "rhs_weap_ak101_folded";
     descriptionShort = "Assault Rifle<br />Caliber: 5.56x45mm";
     displayName = "AK-101 (Folded)";
@@ -103,6 +104,7 @@ class rhs_weap_ak102: rhs_weap_ak105 {
 };
 
 class rhs_weap_ak102_folded: rhs_weap_ak105_folded {
+    author = "Red Hammer Studios & johnb43";
     baseWeapon = "rhs_weap_ak102_folded";
     descriptionShort = "Assault Rifle<br />Caliber: 5.56x45mm";
     displayName = "AK-102 (Folded)";

@@ -26,7 +26,9 @@ class rhs_weap_g36kv_Folded: rhs_weap_g36kv {
 };
 
 class rhs_weap_g36kv_ag36: rhs_weap_g36kv {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        class MuzzleSlot: asdg_MuzzleSlot_556 {};
+    };
 };
 class rhs_weap_g36kv_ag36_Folded: rhs_weap_g36kv_ag36 {
     baseweapon = "rhs_weap_g36kv_ag36_Folded";

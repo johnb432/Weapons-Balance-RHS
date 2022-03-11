@@ -83,6 +83,14 @@ class rhs_weap_XM2010_Base_F: Rifle_Base_F {
 class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         class CowsSlot: asdg_OpticRail1913_long {};
+        delete UnderBarrelSlot;
+        class UnderBarrelSlot: UnderBarrelSlot_rail {};
+    };
+};
+class rhs_weap_m24sws: rhs_weap_XM2010_Base_F {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
+        delete UnderBarrelSlot;
+        class UnderBarrelSlot: UnderBarrelSlot_rail {};
     };
 };
 

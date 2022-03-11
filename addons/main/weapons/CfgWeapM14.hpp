@@ -1,6 +1,8 @@
 class srifle_EBR_F;
 class rhs_weap_m14_base: srifle_EBR_F {
-    class WeaponSlotsInfo {};
+    class WeaponSlotsInfo {
+        class UnderBarrelSlot: UnderBarrelSlot_rail {};
+    };
 };
 class rhs_weap_m14_socom_base: rhs_weap_m14_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {};

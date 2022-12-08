@@ -8,10 +8,10 @@ class rhs_weap_m70_base: Rifle_Base_F {
     rhs_pso1m21_type = "rhs_acc_pso1m21_ak";
     rhs_fold_anim = "RHS_GestureFoldAKMS";
     rhs_fold_sound[] = {"rhsafrf\addons\rhs_c_weapons\sounds\stock_folding.wss",1.42,1,20};
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m70ab2: rhs_weap_m70_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m70ab2_fold: rhs_weap_m70ab2 {
     baseWeapon = "rhs_weap_m70ab2_fold";
@@ -21,6 +21,9 @@ class rhs_weap_m70ab2_fold: rhs_weap_m70ab2 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 87.3;
     };
+};
+class rhs_weap_m70b1: rhs_weap_m70ab2 {
+    rhs_fold = "";
 };
 class rhs_weap_m70b1n: rhs_weap_m70ab2 {
     rhs_fold = "";
@@ -41,7 +44,7 @@ class rhs_weap_m76: rhs_weap_m70_base {
     };
 };
 class rhs_weap_m92: rhs_weap_m70_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m92_fold: rhs_weap_m92 {
     baseWeapon = "rhs_weap_m92_fold";

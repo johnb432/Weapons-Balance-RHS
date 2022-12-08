@@ -1,6 +1,6 @@
 class rhs_weap_svd: rhs_weap_ak74m {
     rhs_fold = "";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_svdp: rhs_weap_svd {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -34,7 +34,7 @@ class rhs_weap_svds_npz: rhs_weap_svds {
 };
 
 class rhs_weap_asval: rhs_weap_ak74m {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_asval_folded: rhs_weap_asval {
     displayName = "AS Val (Folded)";
@@ -73,7 +73,7 @@ class rhs_weap_pm63: rhs_weap_akm {
 };
 
 class rhs_weap_vss: rhs_weap_asval {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_vss_grip: rhs_weap_vss {
     class WeaponSlotsInfo: WeaponSlotsInfo {

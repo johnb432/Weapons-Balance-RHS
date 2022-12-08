@@ -1,9 +1,8 @@
 class rhs_weap_g36_base: Rifle_Base_F {
     magazineWell[] += {"CBA_556x45_STANAG_2D_XL"};
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_g36c: rhs_weap_g36_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_g36c_Folded: rhs_weap_g36c {
     displayName = "HK G36C (Folded)";
@@ -13,7 +12,7 @@ class rhs_weap_g36c_Folded: rhs_weap_g36c {
 };
 
 class rhs_weap_g36kv: rhs_weap_g36_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_g36kv_Folded: rhs_weap_g36kv {
     baseweapon = "rhs_weap_g36kv_Folded";
@@ -49,10 +48,10 @@ class rhs_weap_m21_base: rhs_weap_m70_base {
     rhs_pso1m2_type = "rhs_acc_pso1m2_ak";
     rhs_pso1m21_type = "rhs_acc_pso1m21_ak";
     rhs_fold_anim = "RHS_GestureFoldSCAR";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m21a: rhs_weap_m21_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m21a_fold: rhs_weap_m21a {
     displayName = "M21A (Folded)";
@@ -63,7 +62,7 @@ class rhs_weap_m21a_fold: rhs_weap_m21a {
     };
 };
 class rhs_weap_m21a_pbg40: rhs_weap_m21a {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m21a_pbg40_fold: rhs_weap_m21a_pbg40 {
     displayName = "M21A (PBG/Folded)";
@@ -74,7 +73,7 @@ class rhs_weap_m21a_pbg40_fold: rhs_weap_m21a_pbg40 {
     };
 };
 class rhs_weap_m21s: rhs_weap_m21_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m21s_fold: rhs_weap_m21s {
     displayName = "M21S (Folded)";

@@ -29,12 +29,13 @@ params [["_unit", objNull, [objNull]], ["_args", ["", "", "", true], [[]], [0, 1
 _args params [["_weapon", "", [""]], ["_newWeapon", "", [""]], ["_delay", 0, [0]]];
 
 // If invalid, exit
-if (isNull _unit || _weapon isEqualTo "" || _newWeapon isEqualTo "" || _weapon == _newWeapon) exitWith {false};
+if (isNull _unit || {_weapon isEqualTo ""} || {_newWeapon isEqualTo ""} || {_weapon == _newWeapon}) exitWith {false};
 
 // Check if local
 if (!local _unit) exitWith {
     _this remoteExecCall [QFUNC(switchWeaponVariant), _unit];
-    false;
+
+    false
 };
 
 // Get weapon info
@@ -50,13 +51,13 @@ private _cfgWeapons = configFile >> "CfgWeapons";
     };
 }) params ["_weaponType", "_newWeaponType"];
 
-if (_weaponType isEqualTo -1 || _newWeaponType isEqualTo -1) exitWith {
+if (_weaponType == -1 || {_newWeaponType == -1}) exitWith {
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
         [[_unit, _loadout select 0, _newWeapon, _weaponState, false], _params] call _function;
     };
 
-    false;
+    false
 };
 
 // Current weapon
@@ -65,13 +66,13 @@ private _weaponInfo = _loadout select _weaponType;
 _condition params [["_checkVehicle", true, [true]], ["_checkOptic", true, [true]]];
 
 // If in vehicle, don't do action; Check if weapon can be folded when optic is attached to weapon. Default value: 1
-if ((_checkVehicle && {!isNull objectParent _unit}) || (_checkOptic && {([_cfgWeapons >> _weapon, "rhs_fold_checkOptic", 1] call BIS_fnc_returnConfigEntry) isEqualTo 1} && {(_weaponInfo select 3) isNotEqualTo ""})) exitWith {
+if ((_checkVehicle && {!isNull objectParent _unit}) || {_checkOptic && {([_cfgWeapons >> _weapon, "rhs_fold_checkOptic", 1] call BIS_fnc_returnConfigEntry) == 1} && {(_weaponInfo select 3) isNotEqualTo ""}}) exitWith {
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
         [[_unit, _weaponInfo, _newWeapon, _weaponState, false], _params] call _function;
     };
 
-    false;
+    false
 };
 
 private _removeWeapon = _weaponType isNotEqualTo _newWeaponType;
@@ -85,7 +86,7 @@ if (_removeWeapon && {(_loadout select _newWeaponType) isNotEqualTo []}) exitWit
         [[_unit, _weaponInfo, _newWeapon, _weaponState, false], _params] call _function;
     };
 
-    false;
+    false
 };
 
 // Call function that is added as a parameter
@@ -112,41 +113,31 @@ wb_interactionWeaponInProgress = true;
     // Add new weapon with nothing, so it avoids eating mags
     [_unit, _newWeapon] call CBA_fnc_addWeaponWithoutItems;
 
-    private _compatibleMags = [_newWeapon, true] call CBA_fnc_compatibleMagazines;
-    private _compatibleItems = _newWeapon call CBA_fnc_compatibleItems;
-
-    // Give old mags back if possible
+    // Give old mags & attachments back if possible
     {
-        if (_x isEqualTo []) then {
+        if (_x isEqualTo [] || {_x isEqualTo ""}) then {
             continue;
         };
 
-        _x params ["_magazine", "_ammoCount"];
-
-        if (_magazine in _compatibleMags) then {
+        if (
+            if (_x isEqualType []) then {
+                _newWeapon canAdd (_x select 0)
+            } else {
+                _newWeapon canAdd _x
+            }
+        ) then {
             _unit addWeaponItem [_newWeapon, _x, true];
         } else {
             // Drop on ground if no space in player's inventory
-            [_unit, _magazine, _ammoCount, true] call CBA_fnc_addMagazine;
+            if (_x isEqualType []) then {
+                [_unit, _x select 0, _x select 1, true] call CBA_fnc_addMagazine;
+            } else {
+                [_unit, _x, true] call CBA_fnc_addItem;
+            };
         };
-    } forEach [_primaryMuzzleMagInfo, _secondaryMuzzleMagInfo];
+    } forEach [_primaryMuzzleMagInfo, _secondaryMuzzleMagInfo, _muzzle, _siderail, _scope, _underbarrel];
 
-    // Give old attachments back if possible
-    {
-        if (_x isEqualTo "") then {
-            continue;
-        };
-
-        if (_x in _compatibleItems) then {
-            _unit addWeaponItem [_newWeapon, _x, true];
-        } else {
-            // Drop on ground if no space in player's inventory
-            [_unit, _x, true] call CBA_fnc_addItem;
-        };
-    } foreach [_muzzle, _siderail, _scope, _underbarrel];
-
-    private _oldMuzzle = _weaponState select 1;
-    private _firemode = _weaponState select 2;
+    _weaponState params ["", "_oldMuzzle", "_firemode"];
 
     // Apply saved firemode; Try secondary muzzle first, then try normal muzzle
     if !(_unit selectWeapon [_newWeapon, _oldMuzzle, _firemode]) then {
@@ -161,4 +152,4 @@ wb_interactionWeaponInProgress = true;
     wb_interactionWeaponInProgress = false;
 }, [_unit, _weaponInfo, _newWeapon, _weaponState, (_unit currentZeroing [_weaponState select 0, _weaponState select 1]) select 1, _removeWeapon], _delay max 0.1] call CBA_fnc_waitAndExecute;
 
-true;
+true

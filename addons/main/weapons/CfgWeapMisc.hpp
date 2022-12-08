@@ -1,13 +1,9 @@
-class rhs_weap_m14ebrri;
-class rhs_weap_pya;
 class InventoryOpticsItem_Base_F;
 class rhs_acc_scope_base;
-class HeadgearItem;
-class H_HelmetB;
-class Uniform_Base;
 
+class H_HelmetB;
 class rhs_6b27m: H_HelmetB {
-    class ItemInfo: HeadgearItem {};
+    class ItemInfo;
 };
 class rhs_6b27m_ess_bala: rhs_6b27m {
     class ItemInfo: ItemInfo {
@@ -15,28 +11,14 @@ class rhs_6b27m_ess_bala: rhs_6b27m {
     };
 };
 
-class Rifle_Long_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-
+class Rifle_Long_Base_F;
 class rhs_weap_m84: Rifle_Long_Base_F {
     UiPicture = "\a3\weapons_f\data\ui\icon_mg_ca.paa";
 };
 
-class rhs_weap_rpk_base: Rifle_Long_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_rpk74_base: rhs_weap_rpk_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_rpk74: rhs_weap_rpk74_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_rpk74n: rhs_weap_rpk74 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_rpk74n;
 class rhs_weap_rpk74m: rhs_weap_rpk74n {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_rpk74m_npz: rhs_weap_rpk74m {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -49,11 +31,9 @@ class rhs_weap_rpk74m_folded: rhs_weap_rpk74m {
     };
 };
 
-class GM6_base_F: Rifle_Long_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class GM6_base_F;
 class rhs_weap_M107_Base_F: GM6_base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_M107: rhs_weap_M107_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -69,7 +49,7 @@ class rhs_weap_mg42: rhs_weap_mg42_base {
 };
 
 class rhs_weap_orsis_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_t5000: rhs_weap_orsis_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -78,7 +58,7 @@ class rhs_weap_t5000: rhs_weap_orsis_Base_F {
 };
 
 class rhs_weap_XM2010_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -99,11 +79,9 @@ class rhs_weap_MP44: rhs_weap_MP44_base {
     displayName = "StG 44";
 };
 
-class rhs_weap_m38_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_m38_Base_F;
 class rhs_weap_m38: rhs_weap_m38_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m38_rail: rhs_weap_m38 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -117,7 +95,7 @@ class rhs_weap_mosin_sbr: rhs_weap_m38_rail {
 };
 
 class rhs_weap_kar98k_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_kar98k: rhs_weap_kar98k_Base_F {
     displayName = "Kar98k";
@@ -126,12 +104,13 @@ class rhs_weap_kar98k: rhs_weap_kar98k_Base_F {
     };
 };
 
+class rhs_weap_m14ebrri;
 class rhs_weap_sr25: rhs_weap_m14ebrri {
     magazineWell[] += {"CBA_762x51_SR25"};
 };
 
 class rhs_weap_m3a1_base: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m3a1_specops: rhs_weap_m3a1_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -150,14 +129,9 @@ class rhs_weap_savz61: SMG_01_F {
     rhs_pistol_conversion = 1;
 };
 
-class Rifle_Short_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class SMG_02_base_F: Rifle_Short_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class SMG_02_base_F;
 class rhsusf_weap_MP7A1_base_f: SMG_02_base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhsusf_weap_MP7A2: rhsusf_weap_MP7A1_base_f {
     rhs_fold_checkOptic = 0;
@@ -208,12 +182,13 @@ class rhs_weap_M590_8RD: rhs_weap_M590_5RD {
     };
 };
 
+class rhs_weap_pya;
 class rhs_weap_type94_new: rhs_weap_pya {
     magazineWell[] = {"CBA_8x22_Type14"};
 };
 
 class rhsgref_acc_l2a2: rhs_acc_scope_base {
-    class ItemInfo: InventoryOpticsItem_Base_F {};
+    class ItemInfo;
 };
 class rhsgref_acc_l1a1_l2a2: rhsgref_acc_l2a2 {
     class ItemInfo: ItemInfo {

@@ -1,5 +1,5 @@
 class rhs_weap_ak74m_Base_F: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_ak74m: rhs_weap_ak74m_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -226,7 +226,7 @@ class rhs_weap_aks74n_2_npz: rhs_weap_aks74n {
 };
 
 class rhs_weap_aks74u: rhs_weap_aks74 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_aks74u_folded: rhs_weap_aks74u {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -246,10 +246,9 @@ class rhs_weap_aks74un_folded: rhs_weap_aks74un {
 
 class rhs_weap_akm: rhs_weap_ak74m {
     rhs_fold = "";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
 };
 class rhs_weap_ak103_base: rhs_weap_akm {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_ak103: rhs_weap_ak103_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -396,7 +395,7 @@ class rhs_weap_ak105_zenitco01_b33: rhs_weap_ak105_zenitco01 {
 };
 
 class rhs_weap_akms: rhs_weap_akm {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_akms_folded: rhs_weap_akms {
     class WeaponSlotsInfo: WeaponSlotsInfo {

@@ -1,15 +1,7 @@
-class rhs_weap_SCAR_Base: arifle_MX_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_SCAR_H_Base: rhs_weap_SCAR_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_SCAR_H_CQC_Base: rhs_weap_SCAR_H_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_SCAR_H_CQC_Base;
 class rhs_weap_SCARH_CQC: rhs_weap_SCAR_H_CQC_Base {
     displayName = "SCAR-H CQC (Black)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_CQC_Folded: rhs_weap_SCARH_CQC {
     displayName = "SCAR-H CQC (Black/Folded)";
@@ -19,7 +11,7 @@ class rhs_weap_SCARH_CQC_Folded: rhs_weap_SCARH_CQC {
 };
 class rhs_weap_SCARH_FDE_CQC: rhs_weap_SCARH_CQC {
     displayName = "SCAR-H CQC (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_FDE_CQC_Folded: rhs_weap_SCARH_FDE_CQC {
     displayName = "SCAR-H CQC (FDE/Folded)";
@@ -28,12 +20,10 @@ class rhs_weap_SCARH_FDE_CQC_Folded: rhs_weap_SCARH_FDE_CQC {
     };
 };
 
-class rhs_weap_SCAR_H_LB_Base: rhs_weap_SCAR_H_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_SCAR_H_LB_Base;
 class rhs_weap_SCARH_LB: rhs_weap_SCAR_H_LB_Base {
     displayName = "SCAR-H LB (Black)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_LB_Folded: rhs_weap_SCARH_LB {
     displayName = "SCAR-H LB (Black/Folded)";
@@ -43,7 +33,7 @@ class rhs_weap_SCARH_LB_Folded: rhs_weap_SCARH_LB {
 };
 class rhs_weap_SCARH_FDE_LB: rhs_weap_SCARH_LB {
     displayName = "SCAR-H LB (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_FDE_LB_Folded: rhs_weap_SCARH_FDE_LB {
     displayName = "SCAR-H LB (FDE/Folded)";
@@ -52,12 +42,10 @@ class rhs_weap_SCARH_FDE_LB_Folded: rhs_weap_SCARH_FDE_LB {
     };
 };
 
-class rhs_weap_SCAR_H_STD_Base: rhs_weap_SCAR_H_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_SCAR_H_STD_Base;
 class rhs_weap_SCARH_STD: rhs_weap_SCAR_H_STD_Base {
     displayName = "SCAR-H STD (Black)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_STD_Folded: rhs_weap_SCARH_STD {
     displayName = "SCAR-H STD (Black/Folded)";
@@ -67,7 +55,7 @@ class rhs_weap_SCARH_STD_Folded: rhs_weap_SCARH_STD {
 };
 class rhs_weap_SCARH_FDE_STD: rhs_weap_SCARH_STD {
     displayName = "SCAR-H STD (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_FDE_STD_Folded: rhs_weap_SCARH_FDE_STD {
     displayName = "SCAR-H STD (FDE/Folded)";
@@ -78,7 +66,7 @@ class rhs_weap_SCARH_FDE_STD_Folded: rhs_weap_SCARH_FDE_STD {
 
 class rhs_weap_mk17_CQC: rhs_weap_SCAR_H_CQC_Base {
     displayName = "Mk 17 Mod 0 CQC (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_mk17_CQC_Folded: rhs_weap_mk17_CQC {
     baseWeapon = "rhs_weap_mk17_CQC_Folded";
@@ -90,7 +78,7 @@ class rhs_weap_mk17_CQC_Folded: rhs_weap_mk17_CQC {
 };
 class rhs_weap_SCARH_USA_CQC: rhs_weap_mk17_CQC {
     displayName = "SCAR-H CQC (USA)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_USA_CQC_Folded: rhs_weap_SCARH_USA_CQC {
     baseWeapon = "rhs_weap_SCARH_USA_CQC_Folded";
@@ -104,7 +92,7 @@ class rhs_weap_SCARH_USA_CQC_Folded: rhs_weap_SCARH_USA_CQC {
 
 class rhs_weap_mk17_LB: rhs_weap_SCAR_H_LB_Base {
     displayName = "Mk 17 Mod 0 LB (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_mk17_LB_Folded: rhs_weap_mk17_LB {
     baseWeapon = "rhs_weap_mk17_LB_Folded";
@@ -116,7 +104,7 @@ class rhs_weap_mk17_LB_Folded: rhs_weap_mk17_LB {
 };
 class rhs_weap_SCARH_USA_LB: rhs_weap_mk17_LB {
     displayName = "SCAR-H LB (USA)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_USA_LB_Folded: rhs_weap_SCARH_USA_LB {
     baseWeapon = "rhs_weap_SCARH_USA_LB_Folded";
@@ -130,7 +118,7 @@ class rhs_weap_SCARH_USA_LB_Folded: rhs_weap_SCARH_USA_LB {
 
 class rhs_weap_mk17_STD: rhs_weap_SCAR_H_STD_Base {
     displayName = "Mk 17 Mod 0 STD (FDE)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_mk17_STD_Folded: rhs_weap_mk17_STD {
     baseWeapon = "rhs_weap_mk17_STD_Folded";
@@ -142,7 +130,7 @@ class rhs_weap_mk17_STD_Folded: rhs_weap_mk17_STD {
 };
 class rhs_weap_SCARH_USA_STD: rhs_weap_mk17_STD {
     displayName = "SCAR-H STD (USA)";
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_SCARH_USA_STD_Folded: rhs_weap_SCARH_USA_STD {
     baseWeapon = "rhs_weap_SCARH_USA_STD_Folded";

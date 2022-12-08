@@ -244,7 +244,7 @@ class asdg_OpticSideRail_AK: asdg_OpticSideMount {
 };
 
 class asdg_MuzzleSlot: asdg_SlotInfo {
-    class compatibleItems {};
+    class compatibleItems;
 };
 class asdg_MuzzleSlot_545R: asdg_MuzzleSlot {
     class compatibleItems {
@@ -260,6 +260,9 @@ class asdg_MuzzleSlot_556: asdg_MuzzleSlot {
     class compatibleItems {
         rhssaf_acc_g36_rotex = 1;
     };
+};
+class rhs_western_rifle_muzzle_slot: asdg_MuzzleSlot_556 {
+    class compatibleItems: compatibleItems {};
 };
 
 class asdg_MuzzleSlot_762: asdg_MuzzleSlot {

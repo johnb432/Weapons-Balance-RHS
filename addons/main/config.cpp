@@ -76,9 +76,6 @@ class CfgWeapons {
     class Rifle_Base_F: Rifle {
         class WeaponSlotsInfo;
     };
-    class arifle_MX_Base_F: Rifle_Base_F {
-       class WeaponSlotsInfo: WeaponSlotsInfo {};
-    };
 
     #include "weapons\CfgWeapAK.hpp"
     #include "weapons\CfgWeapAK556.hpp"

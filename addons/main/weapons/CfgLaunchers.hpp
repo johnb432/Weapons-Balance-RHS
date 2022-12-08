@@ -6,7 +6,7 @@ class Launcher_Base_F: Launcher {
 class rhs_weap_m80: Launcher_Base_F {
     baseWeapon = "rhs_weap_m80";
     magazineReloadTime = 0;
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m80_used: rhs_weap_m80 {
     baseWeapon = "rhs_weap_m80_used";
@@ -24,11 +24,9 @@ class rhs_weap_panzerfaust60: Launcher_Base_F {
     };
 };
 
-class launch_Titan_base: Launcher_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class launch_Titan_base;
 class launch_O_Titan_F: launch_Titan_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_fim92: launch_O_Titan_F {
     magazineWell[] += {"CBA_FIM"};

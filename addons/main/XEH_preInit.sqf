@@ -63,9 +63,7 @@ if (hasInterface) then {
 
         private _weaponFold = getText (_weaponConfig >> "rhs_fold");
 
-        if (_weaponFold isEqualTo "") exitWith {
-            false;
-        };
+        if (_weaponFold isEqualTo "") exitWith {false};
 
         [_unit, [_weapon, _weaponFold, 2], {
             (_this select 0) params ["_unit", "", "", "", "_isSuccess"];

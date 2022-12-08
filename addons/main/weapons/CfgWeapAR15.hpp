@@ -1,11 +1,6 @@
-class rhs_weap_m4_Base: arifle_MX_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
-class rhs_weap_m4: rhs_weap_m4_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_m4;
 class rhs_weap_m4_m320: rhs_weap_m4 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m4_m203: rhs_weap_m4_m320 {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -23,8 +18,12 @@ class rhs_weap_m4_carryhandle_m203S: rhs_weap_m4_carryhandle_m203 {
     };
 };
 
+class arifle_MX_Base_F;
+class rhs_weap_m4_Base: arifle_MX_Base_F {
+    class WeaponSlotsInfo;
+};
 class rhs_weap_m4a1: rhs_weap_m4_Base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 
 class rhs_weap_m4a1_m203: rhs_weap_m4a1 {
@@ -44,7 +43,7 @@ class rhs_weap_m4a1_carryhandle_m203S: rhs_weap_m4a1_carryhandle_m203 {
 };
 
 class rhs_weap_m4a1_blockII: rhs_weap_m4a1 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 
 class rhs_weap_m4a1_blockII_M203: rhs_weap_m4a1_blockII {
@@ -175,7 +174,7 @@ class rhs_weap_m16a3_carryhandle_M203_grip: rhs_weap_m16a3_carryhandle_M203 {
 };
 
 class rhs_weap_m27iar: rhs_weap_m4a1 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m27iar_grip: rhs_weap_m27iar {
     class WeaponSlotsInfo: WeaponSlotsInfo {

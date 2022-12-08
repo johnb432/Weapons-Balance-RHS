@@ -4,11 +4,9 @@ class rhs_weap_m14_base: srifle_EBR_F {
         class UnderBarrelSlot: UnderBarrelSlot_rail {};
     };
 };
-class rhs_weap_m14_socom_base: rhs_weap_m14_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
-};
+class rhs_weap_m14_socom_base;
 class rhs_weap_m14_socom_rail_base: rhs_weap_m14_socom_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m14_socom_rail: rhs_weap_m14_socom_rail_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -16,7 +14,7 @@ class rhs_weap_m14_socom_rail: rhs_weap_m14_socom_rail_base {
     };
 };
 class rhs_weap_m14_rail_base: rhs_weap_m14_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m14_rail: rhs_weap_m14_rail_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -40,7 +38,7 @@ class rhs_weap_m14_rail_wd: rhs_weap_m14_rail {
 };
 
 class rhs_weap_m14_ris_base: rhs_weap_m14_rail_base {
-    class WeaponSlotsInfo: WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 class rhs_weap_m14_ris: rhs_weap_m14_ris_base {
     class WeaponSlotsInfo: WeaponSlotsInfo {

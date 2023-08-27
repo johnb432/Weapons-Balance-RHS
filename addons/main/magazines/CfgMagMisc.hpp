@@ -89,15 +89,15 @@ class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box {
 };
 
 class rhs_LaserFCSMag: Laserbatteries {
-    descriptionShort = "Batteries for Laser Designator<br/>Does not fit into NVG<br/>Recycle after use.";
+    descriptionShort = "$STR_a3_cfgmagazines_laserbatteries1";
     displayName = "Designator Batteries (RHS)";
 };
 class rhs_LaserMag: Laserbatteries {
-    descriptionShort = "Batteries for Laser Designator<br/>Does not fit into NVG<br/>Recycle after use.";
+    descriptionShort = "$STR_a3_cfgmagazines_laserbatteries1";
     displayName = "Designator Batteries (RHS)";
 };
 class rhs_LaserMag_ai: Laserbatteries {
-    descriptionShort = "Batteries for Laser Designator<br >Does not fit into NVG<br/>Recycle after use.";
+    descriptionShort = "$STR_a3_cfgmagazines_laserbatteries1";
     displayName = "Designator Batteries (RHS)";
 };
 
@@ -119,3 +119,18 @@ class rhs_rpg26_mag;
 class rhs_m80_mag: rhs_rpg26_mag {
     mass = 0;
 };
+
+#if __has_include("\bwa3_common\config.bin")
+    class rhsusf_mag_40Rnd_46x30_AP: CA_Magazine {
+        modelSpecial = "\bwa3_mp7\bwa3_mp7_40rnd.p3d";
+        modelSpecialIsProxy = 1;
+    };
+    class rhsusf_mag_40Rnd_46x30_FMJ: CA_Magazine {
+        modelSpecial = "\bwa3_mp7\bwa3_mp7_40rnd.p3d";
+        modelSpecialIsProxy = 1;
+    };
+    class rhsusf_mag_40Rnd_46x30_JHP: CA_Magazine {
+        modelSpecial = "\bwa3_mp7\bwa3_mp7_40rnd.p3d";
+        modelSpecialIsProxy = 1;
+    };
+#endif

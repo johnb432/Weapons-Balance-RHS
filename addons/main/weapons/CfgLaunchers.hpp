@@ -5,7 +5,6 @@ class Launcher_Base_F: Launcher {
 
 class rhs_weap_m80: Launcher_Base_F {
     baseWeapon = "rhs_weap_m80";
-    magazineReloadTime = 0;
     class WeaponSlotsInfo;
 };
 class rhs_weap_m80_used: rhs_weap_m80 {
@@ -17,7 +16,6 @@ class rhs_weap_m80_used: rhs_weap_m80 {
 };
 
 class rhs_weap_panzerfaust60: Launcher_Base_F {
-    magazineReloadTime = 0;
     class WeaponSlotsInfo {
         allowedSlots[] = {901};
         mass = 138;
@@ -34,11 +32,7 @@ class rhs_weap_fim92: launch_O_Titan_F {
         mass = 114.4;
     };
 };
-class rhs_weap_fgm148: launch_O_Titan_F {
-    magazineReloadTime = 0;
-};
 
 class rhs_weap_strela: launch_O_Titan_F {
-    magazineReloadTime = 0;
     magazineWell[] += {"CBA_STRELA"};
 };

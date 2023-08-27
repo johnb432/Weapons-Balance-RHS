@@ -1,13 +1,18 @@
 name = "Weapons-Balance-RHS"
 prefix = "wb_rhs"
-author = "johnb43"
-template = "cba"
 mainprefix = "z"
-files = [
+
+[properties]
+author = "johnb43"
+url = "https://github.com/johnb432"
+
+[files]
+include = [
     "CHANGELOG.md",
     "mod.cpp",
     "LICENSE",
     "README.md"
 ]
-folder_optionals = false
-sig_version = 3
+
+[asc]
+enabled = true

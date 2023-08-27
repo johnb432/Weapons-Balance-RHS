@@ -18,12 +18,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main",
-            "cba_xeh",
-            "rhs_main_loadorder",
-            "rhsgref_main_loadorder",
-            "rhssaf_main_loadorder",
-            "rhsusf_main_loadorder"
+            "wb_rhs_prep"
         };
         author = "johnb43";
         authors[] = {"johnb43"};

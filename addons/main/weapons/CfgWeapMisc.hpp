@@ -63,13 +63,11 @@ class rhs_weap_XM2010_Base_F: Rifle_Base_F {
 class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         class CowsSlot: asdg_OpticRail1913_long {};
-        delete UnderBarrelSlot;
         class UnderBarrelSlot: UnderBarrelSlot_rail {};
     };
 };
 class rhs_weap_m24sws: rhs_weap_XM2010_Base_F {
     class WeaponSlotsInfo: WeaponSlotsInfo {
-        delete UnderBarrelSlot;
         class UnderBarrelSlot: UnderBarrelSlot_rail {};
     };
 };
@@ -184,7 +182,7 @@ class rhs_weap_M590_8RD: rhs_weap_M590_5RD {
 
 class rhs_weap_pya;
 class rhs_weap_type94_new: rhs_weap_pya {
-    magazineWell[] = {"CBA_8x22_Type14"};
+    magazineWell[] += {"CBA_8x22_Type14"};
 };
 
 class rhsgref_acc_l2a2: rhs_acc_scope_base {

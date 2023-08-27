@@ -87,10 +87,6 @@ class rhs_weap_savz58v_rail_black: rhs_weap_savz58v_rail {
 class rhs_weap_savz58_ris_base: rhs_weap_savz58_base {
     rhs_fold_checkOptic = 0;
 };
-class rhs_weap_savz58v_rail;
-class rhs_weap_savz58v_rail_black: rhs_weap_savz58v_rail {
-    displayName = "Sa vz. 58 V (Rail/Black)";
-};
 class rhs_weap_savz58v_rail_fold: rhs_weap_savz58v_rail {
     displayName = "Sa vz. 58 V (Rail/Folded)";
     recoil = "rhs_recoil_akms_folded";

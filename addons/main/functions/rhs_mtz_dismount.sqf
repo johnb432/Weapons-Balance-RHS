@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-
 /*
  * Author: reyhard, johnb43
  * MTZ dismounting handler: Switches out MTZ variant for non-MTZ variant.

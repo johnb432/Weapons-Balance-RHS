@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-
 /*
  * Author: RHS, johnb43
  * MTZ mounting handler: Switches out non-MTZ variant for MTZ variant.

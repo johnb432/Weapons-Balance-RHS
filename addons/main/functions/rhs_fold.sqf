@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-
 /*
  * Author: reyhard, johnb43
  * Folding & unfolding stock handler. Allows RHS weapons to fold and unfold.

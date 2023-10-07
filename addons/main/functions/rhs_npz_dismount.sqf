@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-
 /*
  * Author: reyhard, johnb43
  * NPZ dismounting handler: Switches out NPZ variant for non-NPZ variant.

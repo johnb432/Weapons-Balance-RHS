@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-
 /*
  * Author: RHS, johnb43
  * NPZ mounting handler: Switches out non-NPZ variant for NPZ variant.

@@ -15,7 +15,7 @@ if (hasInterface) then {
         private _unit = call CBA_fnc_currentUnit;
         private _weapon = currentWeapon _unit;
 
-        if (_weapon isEqualTo "") exitWith {};
+        if (_weapon == "") exitWith {};
 
         private _weaponConfig = configFile >> "CfgWeapons" >> _weapon;
 
@@ -24,9 +24,9 @@ if (hasInterface) then {
         // MTZ rail handler
         private _rhsMTZ = getText (_weaponConfig >> "rhs_mtz");
 
-        if (_rhsMTZ isNotEqualTo "" && {"_mtz" in (toLower _weapon) || "_pr" in (toLower _weapon)}) exitWith {
+        if (_rhsMTZ != "" && {"_mtz" in (toLower _weapon) || "_pr" in (toLower _weapon)}) exitWith {
             // If weapon has an optic, don't do action
-            if ((_items select 2) isNotEqualTo "") exitWith {false};
+            if ((_items select 2) != "") exitWith {false};
 
             [_unit, [_weapon, _rhsMTZ], {
                 (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
@@ -44,9 +44,9 @@ if (hasInterface) then {
         // NPZ rail handler
         private _rhsNPZ = getText (_weaponConfig >> "rhs_npz");
 
-        if (_rhsNPZ isNotEqualTo "" && {"_npz" in (toLower _weapon)}) exitWith {
+        if (_rhsNPZ != "" && {"_npz" in (toLower _weapon)}) exitWith {
             // If weapon has an optic, don't do action
-            if ((_items select 2) isNotEqualTo "") exitWith {false};
+            if ((_items select 2) != "") exitWith {false};
 
             [_unit, [_weapon, _rhsNPZ], {
                 (_this select 0) params ["_unit", "", "", "", "_isSuccess"];
@@ -63,7 +63,7 @@ if (hasInterface) then {
 
         private _weaponFold = getText (_weaponConfig >> "rhs_fold");
 
-        if (_weaponFold isEqualTo "") exitWith {false};
+        if (_weaponFold == "") exitWith {false};
 
         [_unit, [_weapon, _weaponFold, 2], {
             (_this select 0) params ["_unit", "", "", "", "_isSuccess"];

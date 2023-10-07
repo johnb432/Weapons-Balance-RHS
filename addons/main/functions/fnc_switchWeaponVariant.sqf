@@ -29,7 +29,7 @@ params [["_unit", objNull, [objNull]], ["_args", ["", "", "", true], [[]], [0, 1
 _args params [["_weapon", "", [""]], ["_newWeapon", "", [""]], ["_delay", 0, [0]]];
 
 // If invalid, exit
-if (isNull _unit || {_weapon isEqualTo ""} || {_newWeapon isEqualTo ""} || {_weapon == _newWeapon}) exitWith {false};
+if (isNull _unit || {_weapon == ""} || {_newWeapon == ""} || {_weapon == _newWeapon}) exitWith {false};
 
 // Check if local
 if (!local _unit) exitWith {
@@ -66,7 +66,7 @@ private _weaponInfo = _loadout select _weaponType;
 _condition params [["_checkVehicle", true, [true]], ["_checkOptic", true, [true]]];
 
 // If in vehicle, don't do action; Check if weapon can be folded when optic is attached to weapon. Default value: 1
-if ((_checkVehicle && {!isNull objectParent _unit}) || {_checkOptic && {([_cfgWeapons >> _weapon, "rhs_fold_checkOptic", 1] call BIS_fnc_returnConfigEntry) == 1} && {(_weaponInfo select 3) isNotEqualTo ""}}) exitWith {
+if ((_checkVehicle && {!isNull objectParent _unit}) || {_checkOptic && {([_cfgWeapons >> _weapon, "rhs_fold_checkOptic", 1] call BIS_fnc_returnConfigEntry) == 1} && {(_weaponInfo select 3) != ""}}) exitWith {
     // Call function that is added as a parameter
     if (_function isNotEqualTo {}) then {
         [[_unit, _weaponInfo, _newWeapon, _weaponState, false], _params] call _function;
@@ -115,7 +115,7 @@ wb_interactionWeaponInProgress = true;
 
     // Give old mags & attachments back if possible
     {
-        if (_x isEqualTo [] || {_x isEqualTo ""}) then {
+        if (_x isEqualTo [] || {_x == ""}) then {
             continue;
         };
 

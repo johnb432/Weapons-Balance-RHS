@@ -15,7 +15,9 @@ class CfgPatches {
             "rhsusf_main_loadorder"
         };
         author = "johnb43";
-        authors[] = {"johnb43"};
+        authors[] = {
+            "johnb43"
+        };
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
         VERSION_CONFIG;
     };

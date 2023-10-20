@@ -21,7 +21,11 @@ class CfgPatches {
             "wb_rhs_prep"
         };
         author = "johnb43";
-        authors[] = {"johnb43"};
+        authors[] = {
+            "johnb43",
+            "ThePointForward",
+            "NeilZar"
+        };
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
         VERSION_CONFIG;
     };
@@ -83,6 +87,16 @@ class CfgWeapons {
     #include "weapons\CfgWeapSAW.hpp"
     #include "weapons\CfgWeapSCAR.hpp"
     #include "weapons\CfgLaunchers.hpp"
+
+    class Vest_Camo_Base;
+    class VestItem;
+    class rhs_6b43 : Vest_Camo_Base {
+        scope = 2;
+        class ItemInfo: VestItem {
+            containerClass = "Supply140";
+            mass = 100;
+        };
+    };
 };
 
 class CfgMagazines {
@@ -104,17 +118,17 @@ class CfgMagazines {
 
 class BettIR_Config {
     class CompatibleAttachments {
-        class rhs_acc_perst1ik {
-            offset[] = {0.15, 0.22, 0.25};
-        };
-        class rhs_acc_perst1ik_ris {
-            offset[] = {0.15, 0.22, 0.25};
-        };
-        class rhs_acc_perst3_2dp {
-            offset[] = {0.15, 0.22, 0.25};
-        };
-        class rhs_acc_perst3_2dp_h {
-            offset[] = {0.15, 0.22, 0.25};
-        };
+        delete rhs_acc_perst3_2dp_light_h;
+
+        class __base_rightSiderailPointer;
+        class rhs_acc_perst1ik: __base_rightSiderailPointer {};
+        class rhs_acc_perst1ik_ris: __base_rightSiderailPointer {};
+        class rhs_acc_perst3_2dp_h: __base_rightSiderailPointer {};
+    };
+
+    class CompatibleNightvisionGoggles {
+        class NVGoggles;
+        class rhsusf_ANVIS: NVGoggles {};
+        class rhsusf_anvis_nvg_bc_caps: NVGoggles {};
     };
 };

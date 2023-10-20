@@ -1,9 +1,10 @@
 #define COMPONENT main
+#define COMPONENT_BEAUTIFIED RHS
 #include "script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
-// #define CBA_DEBUG_SYNCHRONOUS
+// #define DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_WB_RHS

@@ -9,9 +9,9 @@
  * - 0: Old Weapon <STRING>
  * - 1: New Weapon <STRING>
  * - 2: Delay until switch happens (default: 0.1) <NUMBER> Minimum is 0.1s
- * 4: Function to execute (default: {}) <CODE> (optional)
- * 5: Arguments to pass to functon (default: []) <ARRAY>
- * 6: Condition (default: [true, true]) <ARRAY>
+ * 2: Function to execute (default: {}) <CODE> (optional)
+ * 3: Arguments to pass to functon (default: []) <ARRAY>
+ * 4: Condition (default: [true, true]) <ARRAY>
  * - 0: Check if in vehicle <BOOLEAN> Action isn't exectuted by default if unit is in a vehicle
  * - 1: Check if rhs_fold_checkOptic should be checked <BOOLEAN> Action isn't exectuted by default if unit has optic mounted
  *
@@ -114,7 +114,7 @@ wb_interactionWeaponInProgress = true;
 
     // Give old mags & attachments back if possible
     {
-        if (_x isEqualTo [] || {_x == ""}) then {
+        if (_x isEqualTo [] || {_x isEqualTo ""}) then {
             continue;
         };
 

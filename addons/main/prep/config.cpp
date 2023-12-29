@@ -1,14 +1,14 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class SUBADDON {
+        addonRootClass = QUOTE(ADDON);
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cba_main",
-            "cba_xeh",
             "rhs_main_loadorder",
             "rhsgref_main_loadorder",
             "rhssaf_main_loadorder",
@@ -19,6 +19,7 @@ class CfgPatches {
             "johnb43"
         };
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };

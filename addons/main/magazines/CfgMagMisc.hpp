@@ -1,3 +1,5 @@
+#pragma hemtt flag pe23_ignore_has_include
+
 class 1Rnd_HE_Grenade_shell;
 class rhsusf_50Rnd_762x51;
 class Laserbatteries;

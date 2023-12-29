@@ -1,3 +1,5 @@
+#pragma hemtt flag pe23_ignore_has_include
+
 class rhsgref_25Rnd_792x33_SmE_StG: CA_Magazine {
     mass = 11.36;
 };

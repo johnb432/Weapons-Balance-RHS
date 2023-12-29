@@ -6,9 +6,9 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Args <ARRAY>
- * - 0: Old Weapon <STRING>
+ * - 0: Old Weapon <ARRAY>
  * - 1: New Weapon <STRING>
- * - 2: Delay until switch happens (default: 0.1) <NUMBER> Minimum is 0.1s
+ * - 2: Delay until switch happens (default: 0.1) <NUMBER>
  * 2: Function to execute (default: {}) <CODE> (optional)
  * 3: Arguments to pass to functon (default: []) <ARRAY>
  * 4: Condition (default: [true, true]) <ARRAY>
@@ -149,6 +149,6 @@ wb_interactionWeaponInProgress = true;
     };
 
     wb_interactionWeaponInProgress = false;
-}, [_unit, _weaponInfo, _newWeapon, _weaponState, (_unit currentZeroing [_weaponState select 0, _weaponState select 1]) select 1, _removeWeapon], _delay max 0.1] call CBA_fnc_waitAndExecute;
+}, [_unit, _weaponInfo, _newWeapon, _weaponState, (_unit currentZeroing [_weaponState select 0, _weaponState select 1]) select 1, _removeWeapon], _delay] call CBA_fnc_waitAndExecute;
 
 true

@@ -18,7 +18,12 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "wb_rhs_prep"
+            "wb_rhs_main_prep",
+            "cba_main",
+            "rhs_main_loadorder",
+            "rhsgref_main_loadorder",
+            "rhssaf_main_loadorder",
+            "rhsusf_main_loadorder"
         };
         author = "johnb43";
         authors[] = {
@@ -27,6 +32,7 @@ class CfgPatches {
             "NeilZar"
         };
         url = "https://github.com/johnb432/Weapons-Balance-RHS";
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
@@ -53,6 +59,13 @@ class CfgFunctions {
             };
             class acc_npz_handler {
                 file = PATH_TO_FUNC(rhs_npz_dismount);
+            };
+
+            class accGripod {
+                file = PATH_TO_FUNC(accGripod);
+            };
+            class accGripod_change {
+                file = PATH_TO_FUNC(accGripod_change);
             };
 
             class fold_ak {
@@ -84,6 +97,7 @@ class CfgWeapons {
     #include "weapons\CfgWeapM14.hpp"
     #include "weapons\CfgWeapMisc.hpp"
     #include "weapons\CfgWeapMisc556.hpp"
+    #include "weapons\CfgWeapMuzzle.hpp"
     #include "weapons\CfgWeapSAW.hpp"
     #include "weapons\CfgWeapSCAR.hpp"
     #include "weapons\CfgLaunchers.hpp"

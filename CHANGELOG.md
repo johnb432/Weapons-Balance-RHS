@@ -1,3 +1,8 @@
+# Changelog for Weapons balance 25.2.2024
+
+1.2.3.0
+- Even better grip switching detection.
+
 # Changelog for Weapons balance 29.12.2023
 
 1.2.2.0

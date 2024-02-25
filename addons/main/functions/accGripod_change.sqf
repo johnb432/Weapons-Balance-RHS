@@ -20,9 +20,10 @@ _unit setVariable ["rhs_gripod_acc", _grip];
 private _cfgWeapons = configFile >> "CfgWeapons";
 
 private _weapon = primaryWeapon _unit;
+private _gripType = getText (_cfgWeapons >> _grip >> "rhs_grip_type");
 
-_grip = if (_grip != "") then {
-    getText (_cfgWeapons >> _weapon >> getText (_cfgWeapons >> _grip >> "rhs_grip_type"))
+_grip = if (_grip != "" && _gripType != "") then {
+    getText (_cfgWeapons >> _weapon >> _gripType)
 } else {
     getText (_cfgWeapons >> _weapon >> "baseWeapon")
 };

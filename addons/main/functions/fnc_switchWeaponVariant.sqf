@@ -6,14 +6,14 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Args <ARRAY>
- * - 0: Old Weapon <ARRAY>
+ * - 0: Old Weapon <STRING>
  * - 1: New Weapon <STRING>
- * - 2: Delay until switch happens (default: 0.1) <NUMBER>
- * 2: Function to execute (default: {}) <CODE> (optional)
- * 3: Arguments to pass to functon (default: []) <ARRAY>
- * 4: Condition (default: [true, true]) <ARRAY>
- * - 0: Check if in vehicle <BOOLEAN> Action isn't exectuted by default if unit is in a vehicle
- * - 1: Check if rhs_fold_checkOptic should be checked <BOOLEAN> Action isn't exectuted by default if unit has optic mounted
+ * - 2: Delay until switch happens <NUMBER> (default: 0)
+ * 2: Function to execute <CODE> (default: {})
+ * 3: Arguments to pass to functon <ARRAY> (default: [])
+ * 4: Condition <ARRAY> (default: [true, true])
+ * - 0: Check if in vehicle <BOOLEAN> (default: Action isn't exectuted if unit is in a vehicle)
+ * - 1: Check if rhs_fold_checkOptic should be checked <BOOLEAN> (default: Action isn't exectuted if unit has optic mounted)
  *
  * Return Value:
  * None
@@ -105,6 +105,9 @@ wb_interactionWeaponInProgress = true;
     params ["_unit", "_weaponInfo", "_newWeapon", "_weaponState", "_zeroingIndex", "_removeWeapon"];
     _weaponInfo params ["_weapon", "_muzzle", "_siderail", "_scope", "_primaryMuzzleMagInfo", "_secondaryMuzzleMagInfo", "_underbarrel"];
 
+    private _flashlight = _unit isFlashlightOn _weapon;
+    private _IR = _unit isIRLaserOn _weapon;
+
     if (_removeWeapon) then {
         _unit removeWeapon (_weaponState select 0);
     };
@@ -146,6 +149,14 @@ wb_interactionWeaponInProgress = true;
     // Set weapon zeroing; Try secondary muzzle first, then try normal muzzle
     if !(_unit setWeaponZeroing [_newWeapon, _oldMuzzle, _zeroingIndex]) then {
         _unit setWeaponZeroing [_newWeapon, _newWeapon, _zeroingIndex];
+    };
+
+    if (_flashlight) then {
+        _unit action ["GunLightOn", _unit]
+    };
+
+    if (_IR) then {
+        _unit action ["IRLaserOn", _unit];
     };
 
     wb_interactionWeaponInProgress = false;

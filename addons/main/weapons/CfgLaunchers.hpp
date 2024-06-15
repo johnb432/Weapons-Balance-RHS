@@ -1,6 +1,6 @@
 class Launcher;
 class Launcher_Base_F: Launcher {
-    class WeaponSlotsInfo {};
+    class WeaponSlotsInfo;
 };
 
 class rhs_weap_m80: Launcher_Base_F {

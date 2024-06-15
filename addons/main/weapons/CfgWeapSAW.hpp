@@ -80,4 +80,11 @@ class rhs_weap_m249_pip_S_para_folded: rhs_weap_m249_pip_S_para {
 class rhs_weap_M249_base;
 class rhs_weap_m240_base: rhs_weap_M249_base {
     UiPicture = "\a3\weapons_f\data\ui\icon_mg_ca.paa";
+
+    class manual: Mode_FullAuto {
+        sounds[] = {"StandardSound", "SilencedSound"};
+    };
+    class FullAuto: Mode_FullAuto {
+        sounds[] = {"StandardSound", "SilencedSound"};
+    };
 };

@@ -11,3 +11,5 @@
 #endif
 
 #define PATH_TO_FUNC(func) QUOTE(MAINPREFIX\PREFIX\SUBPREFIX\COMPONENT\functions\func.sqf)
+
+#define MAGAZINE_WELL WB_Magazines

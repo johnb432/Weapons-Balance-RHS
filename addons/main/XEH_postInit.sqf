@@ -5,6 +5,9 @@ if (!hasInterface) exitWith {};
 ["loadout", {
     params ["_unit", "_new", "_old"];
 
+    // Ignore changes when tactical reloading is doing its thing
+    if (_unit getVariable ["NIArms_altReloads_isReloading", false]) exitwith {};
+
     // Only works on primary weapons
     private _grip = _new select 0 param [6, ""];
 

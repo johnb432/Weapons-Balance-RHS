@@ -34,26 +34,26 @@ class rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow: rhs_mag_30Rnd_556x45_M85
 };
 
 class rhssaf_30rnd_556x45_EPR_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 class rhssaf_30rnd_556x45_MDIM_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 class rhssaf_30rnd_556x45_SOST_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 class rhssaf_30rnd_556x45_SPR_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 class rhssaf_30rnd_556x45_TDIM_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 class rhssaf_30rnd_556x45_Tracers_G36: 30Rnd_556x45_Stanag {
-    mass = 8;
+    mass = 9.35;
 };
 
 class rhsgref_30rnd_556x45_vhs2: CA_Magazine {
-    mass = 8;
+    mass = 9.35;
 };
 
 class rhsgref_30rnd_556x45_m21: CA_Magazine {

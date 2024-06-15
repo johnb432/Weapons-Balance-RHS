@@ -97,6 +97,7 @@ class rhs_weap_mk17_LB: rhs_weap_SCAR_H_LB_Base {
 class rhs_weap_mk17_LB_Folded: rhs_weap_mk17_LB {
     baseWeapon = "rhs_weap_mk17_LB_Folded";
     displayName = "Mk 17 Mod 0 LB (FDE/Folded)";
+    picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_mk17_LB_folded_ca.paa";
     scopeArsenal = 0;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 81.8;
@@ -123,6 +124,7 @@ class rhs_weap_mk17_STD: rhs_weap_SCAR_H_STD_Base {
 class rhs_weap_mk17_STD_Folded: rhs_weap_mk17_STD {
     baseWeapon = "rhs_weap_mk17_STD_Folded";
     displayName = "Mk 17 Mod 0 STD (FDE/Folded)";
+    picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_mk17_STD_folded_ca.paa";
     scopeArsenal = 0;
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = 78.8;

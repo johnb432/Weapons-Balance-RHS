@@ -81,6 +81,8 @@ class CfgFunctions {
     };
 };
 
+class Mode_FullAuto;
+
 class rhs_russian_ak_barrel_slot;
 
 class CfgWeapons {

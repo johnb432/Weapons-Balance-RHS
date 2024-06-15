@@ -15,6 +15,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_WB_RHS
 #endif
 
-#define MAGAZINE_WELL WB_Magazines
-
 #include "script_macros.hpp"

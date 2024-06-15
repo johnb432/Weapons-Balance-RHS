@@ -48,5 +48,5 @@ private _weapon = currentWeapon _unit;
 
     if ("rhs_acc_npz" in (items _unit)) exitWith {};
 
-    (objectParent _unit) addItemCargo "rhs_acc_npz";
+    (objectParent _unit) addItemCargoGlobal ["rhs_acc_npz", 1];
 }, _weapon, [true, false]] call FUNC(switchWeaponVariant);

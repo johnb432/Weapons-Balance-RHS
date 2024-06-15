@@ -290,6 +290,12 @@ class asdg_MuzzleSlot_762R: asdg_MuzzleSlot {
     };
 };
 
+class asdg_MuzzleSlot_9MM_SMG: asdg_MuzzleSlot {
+    class compatibleItems {
+        rhsusf_acc_omega9k = 1;
+    };
+};
+
 class UK3CB_MuzzleSlot_556_HK33: asdg_MuzzleSlot {
     class compatibleItems {
         rhsusf_acc_nt4_black = 1;

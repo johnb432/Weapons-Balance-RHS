@@ -1,3 +1,10 @@
+# Changelog for Weapons balance 15.6.2024
+
+1.2.4.0
+- Added more attachment compatbility.
+- Fixed some code.
+- M240 now plays suppressed sounds when a suppressor is on a gun.
+
 # Changelog for Weapons balance 25.2.2024
 
 1.2.3.0

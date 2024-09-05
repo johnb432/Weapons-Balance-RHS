@@ -18,8 +18,8 @@ private _unit = call CBA_fnc_currentUnit;
 private _weapon = currentWeapon _unit;
 
 // Remove additional handler if it's present
-if ((uiNameSpace getVariable ["rhs_handler_fold_pp", -1]) isNotEqualTo -1) then {
-    (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNameSpace getVariable "rhs_handler_fold_pp"];
+if ((uiNamespace getVariable ["rhs_handler_fold_pp", -1]) isNotEqualTo -1) then {
+    (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNamespace getVariable "rhs_handler_fold_pp"];
     _unit setVariable ["rhs_mtz_ak_mode", nil];
 };
 
@@ -29,15 +29,15 @@ if (_unit getVariable ["rhs_mtz_ak_mode", ""] isNotEqualTo "") exitWith {
 };
 
 _unit setVariable ["rhs_mtz_ak_mode", _weapon];
-uiNameSpace setVariable ["rhs_mtz_rail_ctrl", _this select 0];
+uiNamespace setVariable ["rhs_mtz_rail_ctrl", _this select 0];
 
 private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
     private _unit = call CBA_fnc_currentUnit;
 
     // Remove EH
     if (isNull ((uiNamespace getVariable "rhs_mtz_rail_ctrl") displayCtrl 9897)) exitWith {
-        (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNameSpace getVariable "rhs_handler_mtz_ak"];
-        uiNameSpace setVariable ["rhs_handler_mtz_ak", nil];
+        (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNamespace getVariable "rhs_handler_mtz_ak"];
+        uiNamespace setVariable ["rhs_handler_mtz_ak", nil];
         _unit setVariable ["rhs_mtz_ak_mode", nil];
     };
 
@@ -55,11 +55,11 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
             // Drop on ground if no space in player's inventory
             [_unit, "rhs_acc_mtz", true] call CBA_fnc_addItem;
 
-            (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNameSpace getVariable "rhs_handler_mtz_ak"];
-            uiNameSpace setVariable ["rhs_handler_mtz_ak", nil];
+            (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNamespace getVariable "rhs_handler_mtz_ak"];
+            uiNamespace setVariable ["rhs_handler_mtz_ak", nil];
             _unit setVariable ["rhs_mtz_ak_mode", nil];
         }] call FUNC(switchWeaponVariant);
     };
 }];
 
-uiNameSpace setVariable ["rhs_handler_mtz_ak", _id];
+uiNamespace setVariable ["rhs_handler_mtz_ak", _id];

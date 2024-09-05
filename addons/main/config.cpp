@@ -68,9 +68,6 @@ class CfgFunctions {
                 file = PATH_TO_FUNC(accGripod_change);
             };
 
-            class fold_ak {
-                file = PATH_TO_FUNC(rhs_fold);
-            };
             class fold_PP {
                 file = PATH_TO_FUNC(rhs_fold);
             };
@@ -105,10 +102,12 @@ class CfgWeapons {
     #include "weapons\CfgLaunchers.hpp"
 
     class Vest_Camo_Base;
-    class VestItem;
-    class rhs_6b43 : Vest_Camo_Base {
+    class rhs_6b23: Vest_Camo_Base {
+        class ItemInfo;
+    };
+    class rhs_6b43: rhs_6b23 {
         scope = 2;
-        class ItemInfo: VestItem {
+        class ItemInfo: ItemInfo {
             containerClass = "Supply140";
             mass = 100;
         };

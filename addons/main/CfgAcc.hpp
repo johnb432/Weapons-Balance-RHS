@@ -243,9 +243,7 @@ class asdg_OpticSideRail_AK: asdg_OpticSideMount {
     };
 };
 
-class asdg_MuzzleSlot: asdg_SlotInfo {
-    class compatibleItems;
-};
+class asdg_MuzzleSlot;
 class asdg_MuzzleSlot_545R: asdg_MuzzleSlot {
     class compatibleItems {
         rhs_acc_pbs4 = 1;
@@ -264,6 +262,17 @@ class asdg_MuzzleSlot_556: asdg_MuzzleSlot {
 class rhs_western_rifle_muzzle_slot: asdg_MuzzleSlot_556 {
     class compatibleItems: compatibleItems {};
 };
+class UK3CB_MuzzleSlot_556_HK33: asdg_MuzzleSlot_556 {
+    class compatibleItems {
+        rhsusf_acc_nt4_black = 1;
+        rhsusf_acc_nt4_tan = 1;
+        rhsusf_acc_rotex5_grey = 1;
+        rhsusf_acc_rotex5_tan = 1;
+        rhsusf_acc_sf3p556 = 1;
+        rhsusf_acc_sfmb556 = 1;
+        rhssaf_acc_g36_rotex = 1;
+    };
+};
 
 class asdg_MuzzleSlot_762: asdg_MuzzleSlot {
     class compatibleItems {
@@ -271,6 +280,32 @@ class asdg_MuzzleSlot_762: asdg_MuzzleSlot {
         rhsusf_acc_aac_m14dcqd_silencer_d = 1;
         rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
         rhsusf_acc_m14_flashsuppresor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
+    };
+};
+class UK3CB_MuzzleSlot_762_G3: asdg_MuzzleSlot_762 {
+    class compatibleItems {
+        rhsusf_acc_aac_762sd_silencer = 1;
+        rhsusf_acc_aac_762sdn6_silencer = 1;
+        rhsusf_acc_aac_scarh_silencer = 1;
+        rhsusf_acc_aac_m14dcqd_silencer = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_d = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
+        rhsusf_acc_m14_flashsuppresor = 1;
+        rhsgref_sdn6_suppressor = 1;
+        rhsgref_acc_falmuzzle_l1a1 = 1;
+    };
+};
+class UK3CB_MuzzleSlot_762_M14: asdg_MuzzleSlot_762 {
+    class compatibleItems {
+        rhsusf_acc_aac_762sd_silencer = 1;
+        rhsusf_acc_aac_762sdn6_silencer = 1;
+        rhsusf_acc_aac_scarh_silencer = 1;
+        rhsusf_acc_aac_m14dcqd_silencer = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_d = 1;
+        rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
+        rhsusf_acc_m14_flashsuppresor = 1;
+        rhsgref_sdn6_suppressor = 1;
         rhsgref_acc_falmuzzle_l1a1 = 1;
     };
 };
@@ -293,45 +328,6 @@ class asdg_MuzzleSlot_762R: asdg_MuzzleSlot {
 class asdg_MuzzleSlot_9MM_SMG: asdg_MuzzleSlot {
     class compatibleItems {
         rhsusf_acc_omega9k = 1;
-    };
-};
-
-class UK3CB_MuzzleSlot_556_HK33: asdg_MuzzleSlot {
-    class compatibleItems {
-        rhsusf_acc_nt4_black = 1;
-        rhsusf_acc_nt4_tan = 1;
-        rhsusf_acc_rotex5_grey = 1;
-        rhsusf_acc_rotex5_tan = 1;
-        rhsusf_acc_sf3p556 = 1;
-        rhsusf_acc_sfmb556 = 1;
-        rhssaf_acc_g36_rotex = 1;
-    };
-};
-
-class UK3CB_MuzzleSlot_762_G3: asdg_MuzzleSlot {
-    class compatibleItems {
-        rhsusf_acc_aac_762sd_silencer = 1;
-        rhsusf_acc_aac_762sdn6_silencer = 1;
-        rhsusf_acc_aac_scarh_silencer = 1;
-        rhsusf_acc_aac_m14dcqd_silencer = 1;
-        rhsusf_acc_aac_m14dcqd_silencer_d = 1;
-        rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
-        rhsusf_acc_m14_flashsuppresor = 1;
-        rhsgref_sdn6_suppressor = 1;
-        rhsgref_acc_falmuzzle_l1a1 = 1;
-    };
-};
-class UK3CB_MuzzleSlot_762_M14: asdg_MuzzleSlot {
-    class compatibleItems {
-        rhsusf_acc_aac_762sd_silencer = 1;
-        rhsusf_acc_aac_762sdn6_silencer = 1;
-        rhsusf_acc_aac_scarh_silencer = 1;
-        rhsusf_acc_aac_m14dcqd_silencer = 1;
-        rhsusf_acc_aac_m14dcqd_silencer_d = 1;
-        rhsusf_acc_aac_m14dcqd_silencer_wd = 1;
-        rhsusf_acc_m14_flashsuppresor = 1;
-        rhsgref_sdn6_suppressor = 1;
-        rhsgref_acc_falmuzzle_l1a1 = 1;
     };
 };
 

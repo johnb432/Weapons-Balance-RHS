@@ -3,7 +3,7 @@ class rhs_weap_lmg_minimipara: rhs_weap_saw_base {
     class WeaponSlotsInfo;
 };
 class rhs_weap_minimi_para_railed: rhs_weap_lmg_minimipara {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 159.5;
     };
 };

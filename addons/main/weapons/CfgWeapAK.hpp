@@ -59,12 +59,12 @@ class rhs_weap_ak74m_desert_folded: rhs_weap_ak74m_folded {
 
 class rhs_weap_ak74m_zenitco01: rhs_weap_ak74m {
     rhs_fold = "";
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 80.5;
     };
 };
 class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 81.5;
     };
 };
@@ -75,7 +75,7 @@ class rhs_weap_ak74m_zenitco01_npz: rhs_weap_ak74m_zenitco01 {
 };
 
 class rhs_weap_ak74mr: rhs_weap_ak74m {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 81.5;
     };
 };
@@ -310,7 +310,7 @@ class rhs_weap_ak103_npz: rhs_weap_ak103 {
     };
 };
 class rhs_weap_ak103_zenitco01: rhs_weap_ak103 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 80.5;
     };
 };
@@ -327,7 +327,7 @@ class rhs_weap_ak103_zenitco01_npz: rhs_weap_ak103_zenitco01 {
 };
 class rhs_weap_ak103_zenitco01_b33: rhs_weap_ak103_zenitco01 {
     rhs_fold = "";
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 81.5;
     };
 };
@@ -358,7 +358,7 @@ class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01 {
     };
 };
 class rhs_weap_ak104_zenitco01_b33: rhs_weap_ak104_zenitco01 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 72.5;
     };
 };
@@ -389,7 +389,7 @@ class rhs_weap_ak105_zenitco01_npz: rhs_weap_ak105_zenitco01 {
     };
 };
 class rhs_weap_ak105_zenitco01_b33: rhs_weap_ak105_zenitco01 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 72.5;
     };
 };
@@ -414,7 +414,7 @@ class rhs_weap_akmn_npz: rhs_weap_akmn {
     };
 };
 class rhs_weap_akm_zenitco01_b33: rhs_weap_akmn {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 71.1;
     };
 };

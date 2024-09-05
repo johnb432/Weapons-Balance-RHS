@@ -66,7 +66,7 @@ class rhsgref_30rnd_556x45_m21_t: rhsgref_30rnd_556x45_m21 {
 class rhsusf_200Rnd_556x45_M995_soft_pouch: rhsusf_100Rnd_556x45_M995_soft_pouch {
     author = "Red Hammer Studios & johnb43";
     count = 200;
-    descriptionshort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
+    descriptionShort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
     displayname = "200rnd M249 Softpack M995 AP";
     mass = 45.87;
     model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_200rnd_softpouch_mag";
@@ -75,7 +75,7 @@ class rhsusf_200Rnd_556x45_M995_soft_pouch: rhsusf_100Rnd_556x45_M995_soft_pouch
 class rhsusf_200Rnd_556x45_M995_soft_pouch_coyote: rhsusf_100Rnd_556x45_M995_soft_pouch_coyote {
     author = "Red Hammer Studios & johnb43";
     count = 200;
-    descriptionshort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
+    descriptionShort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
     displayname = "200rnd M249 Softpack M995 AP";
     mass = 45.87;
     model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_200rnd_softpouch_mag";
@@ -84,7 +84,7 @@ class rhsusf_200Rnd_556x45_M995_soft_pouch_coyote: rhsusf_100Rnd_556x45_M995_sof
 class rhsusf_200Rnd_556x45_M995_soft_pouch_ucp: rhsusf_100Rnd_556x45_M995_soft_pouch_ucp {
     author = "Red Hammer Studios & johnb43";
     count = 200;
-    descriptionshort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
+    descriptionShort = "Caliber: 5.56x45mm AP NATO<br />Rounds: 200<br />Used in: M249";
     displayname = "200rnd M249 Softpack M995 AP";
     mass = 45.87;
     model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_200rnd_softpouch_mag";

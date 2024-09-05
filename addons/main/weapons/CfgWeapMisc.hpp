@@ -170,7 +170,7 @@ class rhsusf_weap_MP7A2_folded_winter: rhsusf_weap_MP7A2_folded {
 };
 
 class rhs_weap_M590_5RD: Rifle_Base_F {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 67.5;
     };
 };

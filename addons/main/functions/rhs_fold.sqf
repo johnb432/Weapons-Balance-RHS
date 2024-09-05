@@ -18,8 +18,8 @@ private _unit = call CBA_fnc_currentUnit;
 private _weapon = currentWeapon _unit;
 
 // Remove additional handler if it's present
-if (uiNameSpace getVariable ["rhs_handler_fold_weapon", -1] isNotEqualTo -1) then {
-    (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNameSpace getVariable "rhs_handler_fold_weapon"];
+if (uiNamespace getVariable ["rhs_handler_fold_weapon", -1] isNotEqualTo -1) then {
+    (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNamespace getVariable "rhs_handler_fold_weapon"];
     _unit setVariable ["rhs_fold_weapon_mode", nil];
 };
 
@@ -29,17 +29,17 @@ if (_unit getVariable ["rhs_fold_weapon_mode", ""] isNotEqualTo "") exitWith {
 };
 
 _unit setVariable ["rhs_fold_weapon_mode", _weapon];
-uiNameSpace setVariable ["rhs_weapon_fold_ctrl", _this # 0];
+uiNamespace setVariable ["rhs_weapon_fold_ctrl", _this # 0];
 
 private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
     private _unit = call CBA_fnc_currentUnit;
 
     // Remove EH
     if (isNull (uiNamespace getVariable "rhs_weapon_fold_ctrl" displayCtrl 9899)) exitWith {
-        (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNameSpace getVariable "rhs_handler_fold_weapon"];
+        (findDisplay 46) displayRemoveEventHandler ["KeyUp", uiNamespace getVariable "rhs_handler_fold_weapon"];
         _unit setVariable ["rhs_fold_weapon_mode", nil];
-        uiNameSpace setVariable ["rhs_handler_fold_weapon", nil];
-        uiNameSpace setVariable ["rhs_weapon_fold_ctrl", displayNull];
+        uiNamespace setVariable ["rhs_handler_fold_weapon", nil];
+        uiNamespace setVariable ["rhs_weapon_fold_ctrl", displayNull];
     };
 
     // Proper key detected
@@ -68,4 +68,4 @@ private _id = (findDisplay 46) displayAddEventHandler ["KeyUp", {
     };
 }];
 
-uiNameSpace setVariable ["rhs_handler_fold_weapon" ,_id];
+uiNamespace setVariable ["rhs_handler_fold_weapon" ,_id];

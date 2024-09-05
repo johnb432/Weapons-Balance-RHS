@@ -16,7 +16,7 @@ class rhs_weap_m80_used: rhs_weap_m80 {
 };
 
 class rhs_weap_panzerfaust60: Launcher_Base_F {
-    class WeaponSlotsInfo {
+    class WeaponSlotsInfo: WeaponSlotsInfo {
         allowedSlots[] = {901};
         mass = 138;
     };
@@ -28,7 +28,7 @@ class launch_O_Titan_F: launch_Titan_base {
 };
 class rhs_weap_fim92: launch_O_Titan_F {
     magazineWell[] += {"CBA_FIM"};
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 114.4;
     };
 };

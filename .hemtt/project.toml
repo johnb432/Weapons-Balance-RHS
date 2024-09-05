@@ -14,8 +14,10 @@ include = [
     "README.md"
 ]
 
-[binarize]
-enabled = false
-
-[asc]
-enabled = true
+[lints.sqf.banned_commands]
+options.banned = [
+    "execVM",
+]
+options.ignore = [
+    "addPublicVariableEventHandler",
+]

@@ -177,13 +177,13 @@ class rhs_weap_m27iar: rhs_weap_m4a1 {
     class WeaponSlotsInfo;
 };
 class rhs_weap_m27iar_grip: rhs_weap_m27iar {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 82.2;
         class GripodSlot: asdg_UnderSlot {};
     };
 };
 class rhs_weap_hk416d10: rhs_weap_m4a1 {
-    class WeaponSlotsInfo: WeaponSlotsInfo {
+    class WeaponSlotsInfo {
         mass = 68.8;
     };
 };

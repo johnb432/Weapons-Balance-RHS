@@ -19,7 +19,7 @@ class rhs_VOG25P: rhs_VOG25 {
 
 class rhs_mag_M433_HEDP;
 class rhs_VOG25_HEDP: rhs_mag_M433_HEDP {
-    descriptionshort = "Type: High Explosive Dual Purpose Grenade<br />Caliber: 40 mm<br />Rounds: 1<br />Used in: GP-25";
+    descriptionShort = "Type: High Explosive Dual Purpose Grenade<br />Caliber: 40 mm<br />Rounds: 1<br />Used in: GP-25";
     displayName = "VOG25 (HEDP)";
     initspeed = 76.5;
 };

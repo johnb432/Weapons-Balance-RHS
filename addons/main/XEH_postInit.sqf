@@ -9,11 +9,13 @@ if (!hasInterface) exitWith {};
     if (_unit getVariable ["NIArms_altReloads_isReloading", false]) exitWith {};
 
     // Only works on primary weapons
-    private _grip = _new select 0 param [6, ""];
+    private _weapon = _new select 0 param [0, ""];
+    private _newGrip = _new select 0 param [6, ""];
+    private _oldGrip = _old select 0 param [6, ""];
 
-    if ((_grip == _old select 0 param [6, ""]) && {getText (_cfgWeapons >> _new select 0 param [0, ""] >> "baseWeapon") == getText (_cfgWeapons >> _old select 0 param [0, ""] >> "baseWeapon")}) exitWith {};
+    if ((_newGrip == _oldGrip) && {getText (_cfgWeapons >> _primaryWeapon >> "baseWeapon") == getText (_cfgWeapons >> _old select 0 param [0, ""] >> "baseWeapon")}) exitWith {};
 
-    [_unit, _grip] call RHS_fnc_accGripod_change;
+    [_unit, _weapon, _newGrip, _oldGrip] call RHS_fnc_accGripod_change;
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 wb_interactionWeaponInProgress = false;

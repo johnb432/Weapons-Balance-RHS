@@ -1,3 +1,8 @@
+# Changelog for Weapons balance 28.9.2024
+
+1.2.6.0
+- Fixed this mod breaking 3CB BAF grip system, which lead to crashes in some instances.
+
 # Changelog for Weapons balance 5.9.2024
 
 1.2.5.0
